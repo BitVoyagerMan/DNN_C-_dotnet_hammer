@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+
+    <Setting>
+      <Name><![CDATA[data-transition]]></Name>
+      <Alias><![CDATA[Transition]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[random]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[papercut,flyin,turnoff,cube,3dcurtain-vertical,3dcurtain-horizontal,premium-random,boxslide,boxfade,slotzoom-horizontal,slotzoom-vertical,slotslide-horizontal,slotslide-vertical,slotfade-horizontal,slotfade-vertical,curtain-1,curtain-2,curtain-3,slideleft,slideright,slideup,slidedown,slidehorizontal,slidevertical,fade,random]]></ListContent>
+      <Description><![CDATA[The appearance transition of this slide. You can define more than one, so in each loop the next slide transition type will be shown.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+      <Categories><![CDATA[Background Options]]></Categories>
+    </Setting>
+   
+
+
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    
+    <Name>
+      <![CDATA[Effect_03_SkitterSlideshow]]>
+    </Name>
+    
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    
+    <Version>
+      <![CDATA[01.00.06]]>
+    </Version>
+    
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_03_SkitterSlideshow/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.animate-colors-min.js,jquery.skitter.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.easing.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Description,Picture,UrlLink]]>
+    </DisplayByNormal>
+    
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/SkitterSlideshow.aspx]]>
+    </DemoUrl>
+  </EffectDB>
+</DNNGo_DNNGallery>
+<!--http://thiagosf.net/projects/jquery/skitter/-->

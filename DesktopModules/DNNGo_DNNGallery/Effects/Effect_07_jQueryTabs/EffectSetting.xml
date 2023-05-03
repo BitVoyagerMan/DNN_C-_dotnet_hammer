@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <Setting>
+      <Name>
+        <![CDATA[ width ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Width ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 100% ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ duration ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Duration ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 150 ]]>
+      </DefaultValue>
+	  <Description>
+        <![CDATA[ ms ]]>
+      </Description>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ event ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Event ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ click ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ click,mouseover ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+    </Setting>
+
+    <Setting>
+      <Name>
+        <![CDATA[ collapsible ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Collapsible ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <Description>
+        <![CDATA[ Set to true to allow an already selected tab to become unselected again upon reselection. ]]>
+      </Description>
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ fx ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Fx ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ opacity ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ opacity,height,width ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <!--<Setting>
+      <Name>
+        <![CDATA[ RotateStop]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Rotate Stop ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ rotate ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Rotate ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 3000 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ ms ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>-->
+  
+
+    <Setting>
+      <Name>
+        <![CDATA[ SelectedExpires ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Cookie Expires ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 0 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ days (store cookie for a day, without, it would be a session cookie) ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

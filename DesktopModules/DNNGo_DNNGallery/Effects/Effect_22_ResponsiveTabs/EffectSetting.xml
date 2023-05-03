@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <Setting>
+      <Name><![CDATA[Color]]></Name>
+      <Alias><![CDATA[Color]]></Alias>
+      <Width><![CDATA[50]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[#00bfa7]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[animationtime]]></Name>
+      <Alias><![CDATA[Animation Time]]></Alias>
+      <Width><![CDATA[50]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[200]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+  
+  </EffectSettings>
+</DNNGo_DNNGallery>

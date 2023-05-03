@@ -1,0 +1,147 @@
+﻿.Theme_21_LinkAndZoom_Projects{
+	margin:0px auto;	
+	position:relative;
+}
+.Theme_21_LinkAndZoom_Projects ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.Theme_21_LinkAndZoom_Projects li {
+	padding: 0;
+	position: relative;
+	margin:0px;
+	display: block;
+	float: left;
+}
+.Theme_21_LinkAndZoom_Projects .carousel_title{
+	margin:0px;
+	position: absolute;
+	display: none!important;
+}
+.Theme_21_LinkAndZoom_Projects .carousel_cap{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	text-align: center;
+	color:#fff;
+	line-height: 18px;
+	padding:10px 0px 10px 0px;
+	background-color: rgba(0,0,0,0.6);
+	font-size:15px;
+}
+.Theme_21_LinkAndZoom_Projects .prev{
+	text-indent:-9999px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	background:url(images/arrow_l.png) 50% 50% no-repeat ;
+	display: block;
+	cursor: pointer;
+	top:-36px;
+	position:absolute;
+	right:42px;
+	outline:none;
+}
+
+.Theme_21_LinkAndZoom_Projects .next{
+	text-indent:-9999px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	background:url(images/arrow_r.png) 50% 50% no-repeat ;
+	display: block;
+	cursor: pointer;
+	top:-36px;
+	position:absolute;
+	right:14px;
+	outline:none;
+}
+.Theme_21_LinkAndZoom_Projects .pager {
+	text-align: center;
+	height:16px;
+	line-height:16px;
+	display:none!important;
+}
+.Theme_21_LinkAndZoom_Projects .pager a {
+	margin: 0 3px;
+	text-decoration: none;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(images/bullets.png) 0px 0px no-repeat;
+	outline:none;
+	text-indent:-9999px;
+	overflow: hidden;
+	text-decoration: none;
+}
+*+html .Theme_21_LinkAndZoom_Projects .pager a{
+	display:inline;	
+}
+.Theme_21_LinkAndZoom_Projects .pager a.selected {
+	background:url(images/bullets.png) 0px -16px no-repeat;
+}
+.Theme_21_LinkAndZoom_Projects .timer {
+	background-color: #999;
+	height: 6px;
+	width: 0px;
+}
+.Theme_21_LinkAndZoom_Projects .carousel_image a{
+	display: block;	
+}
+.Theme_21_LinkAndZoom_Projects .image-zoom a{
+	background: url("images/zoom_icon.png") no-repeat  50% 50% ;
+}
+.Theme_21_LinkAndZoom_Projects .image-link a{
+	background: url("images/link_icon.png") no-repeat  50% 50% ;
+}
+
+
+.Theme_21_LinkAndZoom_Projects .carousel_image{ position:relative; }
+.Theme_21_LinkAndZoom_Projects .Icon_list { 
+position:absolute ; top:50%; left:50%;height:61px; width:100%; 
+	transition:all ease 400ms;
+	-moz-transition:all ease 400ms; /* Firefox 4 */
+	-webkit-transition:all ease 400ms; /* Safari and Chrome */
+	-o-transition:all ease 400ms; /* Opera */
+	-ms-transition:all ease 400ms; /* IE9? */
+	z-index:-1;
+	opacity:0;
+ }
+.Theme_21_LinkAndZoom_Projects .carousel_image:hover .Icon_list {
+		transition:all ease 1000ms;
+	-moz-transition:all ease 1000ms; /* Firefox 4 */
+	-webkit-transition:all ease 1000ms; /* Safari and Chrome */
+	-o-transition:all ease 1000ms; /* Opera */
+	-ms-transition:all ease 1000ms; /* IE9? */
+	z-index:1000;
+	opacity:1;
+	} 
+	
+.Theme_21_LinkAndZoom_Projects .Icon_zoom {
+	background: url(images/Icon.png) no-repeat 0px 0px ;
+	width:61px ; 
+	height:61px; 
+	position:absolute ; 
+	bottom:50%; 
+	left:-61px;    
+}
+.Theme_21_LinkAndZoom_Projects .Icon_link {
+	background: url(images/Icon.png) no-repeat -62px 0px ;
+	width:61px ; 
+	height:61px;
+	position:absolute ; 
+	bottom:50%; 
+	left:0px; 
+}
+.Theme_21_LinkAndZoom_Projects .Icon_list_2 .Icon_zoom  {
+	left:-30px;
+ }
+.Theme_21_LinkAndZoom_Projects .Icon_list_3 .Icon_link  {
+	left:-30px;
+ }
+

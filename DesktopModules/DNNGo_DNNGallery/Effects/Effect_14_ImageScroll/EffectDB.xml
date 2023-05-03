@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_14_ImageScroll]]>
+    </Name>
+    <Description>
+      <![CDATA[Here's a module of Smooth image Scroll in action. I've set the default options so the user can scroll using the hotspots or the mouse wheel . I've also told the scroller to start auto scrolling as soon as the page loads and stop auto scrolling as soon as the user interacts with the scoller. you can to try touch scrolling.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.02.05]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_14_ImageScroll/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.kinetic.min.js,jquery.smoothdivscroll-1.3-min.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.mousewheel.min.js,jquery.easing.js,jquery.fancybox.js,jquery.fancybox-media.js,jquery.fancybox.css]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Description,Thumbnails,UrlLink,Linktype]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/ImageScroll.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+  </EffectDB>
+</DNNGo_DNNGallery>

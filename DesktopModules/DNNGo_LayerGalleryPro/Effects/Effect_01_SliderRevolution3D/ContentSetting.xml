@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_LayerGalleryPro>
+  <EffectSettings>
+    <Setting>
+      <Name><![CDATA[data-transition]]></Name>
+      <Alias><![CDATA[Transition]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[fade]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[papercut,flyin,turnoff,cube,3dcurtain-vertical,3dcurtain-horizontal,premium-random,boxslide,boxfade,slotzoom-horizontal,slotzoom-vertical,slotslide-horizontal,slotslide-vertical,slotfade-horizontal,slotfade-vertical,curtain-1,curtain-2,curtain-3,slideleft,slideright,slideup,slidedown,slidehorizontal,slidevertical,fade,random]]></ListContent>
+      <Description><![CDATA[The appearance transition of this slide. You can define more than one, so in each loop the next slide transition type will be shown.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+      <Categories><![CDATA[Background Options]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[data-slotamount]]></Name>
+      <Alias><![CDATA[Slotamount]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[7]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The number of slots or boxes the slide is divided into. If you use boxfade, over 7 slots can be juggy.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+      <Categories><![CDATA[Background Options]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[data-masterspeed]]></Name>
+      <Alias><![CDATA[Master speed]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[300]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The speed of the transition in "ms".  default value is 300 (0.3 sec)]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+      <Categories><![CDATA[Background Options]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[data-delay]]></Name>
+      <Alias><![CDATA[Delay]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[6000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[A new Dealy value for the Slide. If no delay defined per slide, the dealy defined via Options will be used]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+      <Categories><![CDATA[Background Options]]></Categories>
+    </Setting>
+
+
+    
+  </EffectSettings>
+</DNNGo_LayerGalleryPro>
+
+
+

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_15_GalleryView]]>
+    </Name>
+    <Description>
+      <![CDATA[Photo gallery jQuery plugins are every where you turn.  featuring a list of jQuery galleries, carousels, sliders and slideshows. GalleryView  capable of creating a wide variety of gallery types. GalleryView is to provide an extensive set of options to the user. Not only will the user be able to adjust photo and thumbnail sizes, and transition speeds, but he will also have the ability to choose from a selection of element positions, transition styles and other features.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.02.05]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_15_GalleryView/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.galleryview.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.timers.js,jquery.easing.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Picture,Description]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/GalleryView.aspx]]>
+    </DemoUrl>
+  </EffectDB>
+</DNNGo_DNNGallery>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_08_TransBanner]]>
+    </Name>
+    <Description>
+      <![CDATA[This is a jQuery Banner Rotator / Slideshow with translucent background set for caption. <BR />
+Supports Responsive and fluid layouts.<BR />
+Supports touch swipe navigation on iPad and Android tablets.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.01.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_08_TransBanner/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[trans-banner.min.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.easing.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Description,Picture,UrlLink,Options]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/TransBanner.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+  </EffectDB>
+</DNNGo_DNNGallery>

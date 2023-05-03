@@ -1,0 +1,55 @@
+﻿<div id="liteAccordion${ModuleID}" class="$ThemeName" style="width:${xf.ViewXmlSetting("containerWidth","800")}px; height:${xf.ViewXmlSetting("containerHeight","320")}px;">
+    #if($DataList.Count > 0)
+    <ol>
+        #foreach($DataItem in $DataList)
+        <li>
+            <h2>
+                <span>$DataItem.Title</span></h2>
+            <div>
+                <div class="figure">
+                    $DataItem.ContentText
+                    #if($DataItem.Description != "")
+                        <div class="AccordionDescription">
+                            $DataItem.Description
+                        </div>
+                    #end
+                </div>
+            </div>
+        </li>
+        #end
+    </ol>
+    #end
+    <noscript>
+        <p>
+            Please enable JavaScript to get the full experience.</p>
+    </noscript>
+</div>
+<script type="text/javascript">
+    jQuery(function($) {
+        $('#liteAccordion${ModuleID}').liteAccordion({
+            onTriggerSlide: function () {
+                this.find("div[class='AccordionDescription']").fadeOut();
+            },
+            onSlideAnimComplete: function () {
+                this.find("div[class='AccordionDescription']").fadeIn();
+            },
+            containerWidth: ${xf.ViewXmlSetting("containerWidth",800)},                   // fixed (px)  
+            containerHeight: ${xf.ViewXmlSetting("containerHeight",320)},                  // fixed (px)  
+ 
+            autoScaleImages : ${xf.ViewXmlSetting("autoScaleImages","false")},                // if a single image is placed within the slide, this will be automatically scaled to fit
+
+            activateOn : '${xf.ViewXmlSetting("activateOn","click")}',                   // click or mouseover  
+            firstSlide : ${xf.ViewXmlSetting("firstSlide",1)},                         // displays slide (n) on page load  
+            slideSpeed : ${xf.ViewXmlSetting("slideSpeed",800)},                       // slide animation speed  
+   
+            autoPlay : ${xf.ViewXmlSetting("autoPlay","false")},                       // automatically cycle through slides  
+            pauseOnHover : ${xf.ViewXmlSetting("pauseOnHover","false")},                   // pause on hover  
+            cycleSpeed : ${xf.ViewXmlSetting("cycleSpeed",6000)},                      // time between slide cycles  
+            easing : '${xf.ViewXmlSetting("easing","swing")}',                       // custom easing function  
+
+            theme : '$ThemeName',                                                   // basic, dark, light, or stitch  
+            rounded : ${xf.ViewXmlSetting("rounded","true")},                        // square or rounded corners  
+            enumerateSlides : ${xf.ViewXmlSetting("enumerateSlides","true")}                // put numbers on slides  
+        }).find("div[class='AccordionDescription']:first").show();
+    });
+</script>

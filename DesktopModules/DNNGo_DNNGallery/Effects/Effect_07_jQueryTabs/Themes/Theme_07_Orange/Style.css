@@ -1,0 +1,211 @@
+﻿/*!
+ * jQuery UI CSS Framework 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+/*!
+ * jQuery UI CSS Framework 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS,%20Tahoma,%20Verdana,%20Arial,%20sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=f6a828&bgTextureHeader=12_gloss_wave.png&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=03_highlight_soft.png&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=02_glass.png&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=1c94c4&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=02_glass.png&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=03_highlight_soft.png&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=08_diagonals_thick.png&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=08_diagonals_thick.png&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=01_flat.png&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
+ */
+
+
+/* Component containers
+----------------------------------*/
+.Theme_07_Orange .ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.Theme_07_Orange .ui-widget .ui-widget { font-size: 1em; }
+.Theme_07_Orange .ui-widget input, 
+.Theme_07_Orange .ui-widget select, 
+.Theme_07_Orange .ui-widget textarea, 
+.Theme_07_Orange .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.Theme_07_Orange .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
+.Theme_07_Orange .ui-widget-content a { color: #333333; }
+.Theme_07_Orange .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.Theme_07_Orange .ui-widget-header a { color: #ffffff; }
+
+/* Interaction states
+----------------------------------*/
+.Theme_07_Orange .ui-state-default, 
+.Theme_07_Orange .ui-widget-content .ui-state-default, 
+.Theme_07_Orange .ui-widget-header .ui-state-default { 
+	border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
+.Theme_07_Orange .ui-state-default a, 
+.Theme_07_Orange .ui-state-default a:link, 
+.Theme_07_Orange .ui-state-default a:visited { 
+	color: #1c94c4; text-decoration: none; }
+.Theme_07_Orange .ui-state-hover, 
+.Theme_07_Orange .ui-widget-content .ui-state-hover, 
+.Theme_07_Orange .ui-widget-header .ui-state-hover, 
+.Theme_07_Orange .ui-state-focus, 
+.Theme_07_Orange .ui-widget-content .ui-state-focus, 
+.Theme_07_Orange .ui-widget-header .ui-state-focus { 
+	border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
+.Theme_07_Orange .ui-state-hover a, 
+.Theme_07_Orange .ui-state-hover a:hover { 
+	color: #c77405; text-decoration: none; }
+.Theme_07_Orange .ui-state-active, 
+.Theme_07_Orange .ui-widget-content .ui-state-active, 
+.Theme_07_Orange .ui-widget-header .ui-state-active { 
+	border: 1px solid #fbd850; background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #eb8f00; }
+.Theme_07_Orange .ui-state-active a, 
+.Theme_07_Orange .ui-state-active a:link, 
+.Theme_07_Orange .ui-state-active a:visited { 
+	color: #eb8f00; text-decoration: none; }
+.Theme_07_Orange .ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.Theme_07_Orange .ui-state-highlight, 
+.Theme_07_Orange .ui-widget-content .ui-state-highlight, 
+.Theme_07_Orange .ui-widget-header .ui-state-highlight  {
+	border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+.Theme_07_Orange .ui-state-highlight a, 
+.Theme_07_Orange .ui-widget-content .ui-state-highlight a,
+.Theme_07_Orange .ui-widget-header .ui-state-highlight a { 
+	color: #363636; }
+.Theme_07_Orange .ui-state-error, 
+.Theme_07_Orange .ui-widget-content .ui-state-error, 
+.Theme_07_Orange .ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+.Theme_07_Orange .ui-state-error a, 
+.Theme_07_Orange .ui-widget-content .ui-state-error a, 
+.Theme_07_Orange .ui-widget-header .ui-state-error a { 
+	color: #ffffff; }
+.Theme_07_Orange .ui-state-error-text, 
+.Theme_07_Orange .ui-widget-content .ui-state-error-text, 
+.Theme_07_Orange .ui-widget-header .ui-state-error-text { 
+	color: #ffffff; }
+.Theme_07_Orange .ui-priority-primary, 
+.Theme_07_Orange .ui-widget-content .ui-priority-primary, 
+.Theme_07_Orange .ui-widget-header .ui-priority-primary { 
+	font-weight: bold; }
+.Theme_07_Orange .ui-priority-secondary, 
+.Theme_07_Orange .ui-widget-content .ui-priority-secondary,  
+.Theme_07_Orange .ui-widget-header .ui-priority-secondary { 
+	opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.Theme_07_Orange .ui-state-disabled, 
+.Theme_07_Orange .ui-widget-content .ui-state-disabled, 
+.Theme_07_Orange .ui-widget-header .ui-state-disabled { 
+	opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.Theme_07_Orange .ui-corner-all, 
+.Theme_07_Orange .ui-corner-top, 
+.Theme_07_Orange .ui-corner-left, 
+.Theme_07_Orange .ui-corner-tl { 
+	-moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; }
+.Theme_07_Orange .ui-corner-all, 
+.Theme_07_Orange .ui-corner-top, 
+.Theme_07_Orange .ui-corner-right, 
+.Theme_07_Orange .ui-corner-tr { 
+	-moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.Theme_07_Orange .ui-corner-all, 
+.Theme_07_Orange .ui-corner-bottom, 
+.Theme_07_Orange .ui-corner-left, 
+.Theme_07_Orange .ui-corner-bl { 
+	-moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
+.Theme_07_Orange .ui-corner-all, 
+.Theme_07_Orange .ui-corner-bottom, 
+.Theme_07_Orange .ui-corner-right, 
+.Theme_07_Orange .ui-corner-br { 
+	-moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+/* Overlays */
+.Theme_07_Orange .ui-widget-overlay { background: #666666 url(images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat; opacity: .50;filter:Alpha(Opacity=50); }
+.Theme_07_Orange .ui-widget-shadow { margin: -5px 0 0 -5px; padding: 5px; background: #000000 url(images/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x; opacity: .20;filter:Alpha(Opacity=20); -moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }/*!
+ * jQuery UI Resizable 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+.Theme_07_Orange .ui-resizable { position: relative;}
+.Theme_07_Orange .ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
+.Theme_07_Orange .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.Theme_07_Orange .ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.Theme_07_Orange .ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.Theme_07_Orange .ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.Theme_07_Orange .ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.Theme_07_Orange .ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.Theme_07_Orange .ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.Theme_07_Orange .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.Theme_07_Orange .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/*!
+ * jQuery UI Selectable 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Selectable#theming
+ */
+.Theme_07_Orange .ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+/*!
+ * jQuery UI Tabs 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.Theme_07_Orange .ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.Theme_07_Orange .ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.Theme_07_Orange .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.Theme_07_Orange .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.Theme_07_Orange .ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.Theme_07_Orange .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, 
+.Theme_07_Orange .ui-tabs .ui-tabs-nav li.ui-state-disabled a, 
+.Theme_07_Orange .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.Theme_07_Orange .ui-tabs .ui-tabs-nav li a, 
+.Theme_07_Orange .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.Theme_07_Orange .ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.Theme_07_Orange .ui-tabs .ui-tabs-hide { display: none !important; }

@@ -1,0 +1,31 @@
+﻿<div class="$ThemeName" style="width:${xf.ViewXmlSetting("width","100%")};">
+     <div id="accordion${ModuleID}">
+          #if($DataList.Count > 0)
+             #foreach($DataItem in $DataList)
+                <h3 class="item-${velocityCount}"><a href="#">$DataItem.Title</a></h3>
+	            <div>
+		                $DataItem.ContentText
+	            </div>
+           #end
+         #end
+    </div>
+</div>
+
+
+
+
+
+ 
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+	    $("#accordion${ModuleID}").accordion({
+	        heightStyle: "${xf.ViewXmlSetting("heightStyle","auto")}",
+	        collapsible: ${xf.ViewXmlSetting("collapsible","true")},
+	        event: "${xf.ViewXmlSetting("event","click")}",//mouseover
+	        active:${xf.ViewXmlSetting("active","true")}
+        }); 
+	});
+</script>
+ 
+
+  

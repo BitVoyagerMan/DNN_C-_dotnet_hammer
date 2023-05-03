@@ -1,0 +1,1535 @@
+﻿<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="${Module.ModulePath}Effects/${EffectName}/css/settings-ie8.css">
+<![endif]-->
+
+<div class="rev_slider_wrapper #if(${xf.ViewXmlSetting("slidelayout","auto")}=="fullwidth")fullwidthbanner-container#elseif(${xf.ViewXmlSetting("slidelayout","auto")}=="fullscreen")fullscreen-container#end" style="
+ #if(${xf.ViewXmlSetting("background_color","")}!="")background-color:${xf.ViewXmlSetting("background_color","")};#end
+ #if(${xf.ViewXmlSetting("padding","0")} !="" && ${xf.ViewXmlSetting("padding","0")}!="0")padding:${xf.ViewXmlSetting("padding","0")}px;#end
+ margin:0px auto;
+ #if(${xf.ViewXmlSetting("show_background_image","on")} =="on" )
+ background-image:url('${xf.ViewXmlSetting("background_image","")}');
+ background-repeat:${xf.ViewXmlSetting("bg_repeat","no-repeat")};
+ background-size:${xf.ViewXmlSetting("bg_fit","cover")};
+ background-position:${xf.ViewXmlSetting("bg_position","center center")};
+ #end
+ #if(${xf.ViewXmlSetting("position","center")} !="center" )
+ float:${xf.ViewXmlSetting("position","center")};
+ #if(${xf.ViewXmlSetting("margin_left","0")} !="0" )
+ margin-left:${xf.ViewXmlSetting("margin_left","0")}px;
+ #end
+ #if(${xf.ViewXmlSetting("margin_right","0")} !="0" )
+ margin-right:${xf.ViewXmlSetting("margin_right","0")}px;
+ #end
+ #end
+
+ #if(${xf.ViewXmlSetting("margin_top","0")} !="0" )
+ margin-top:${xf.ViewXmlSetting("margin_top","0")}px;
+ #end
+ #if(${xf.ViewXmlSetting("margin_bottom","0")} !="0" )
+ margin-bottom:${xf.ViewXmlSetting("margin_bottom","0")}px;
+ #end 
+"
+id="rev_slider_wrapper${ModuleID}"
+
+>
+#if(${xf.ViewXmlSetting("slider_id","")} == "")
+	#set($slideid = "LayerGallery${ModuleID}") 
+#else
+#set($slideid = ${xf.ViewXmlSetting("slider_id","")}) 
+#end
+
+<!-- the ID here will be used in the JavaScript below to initialize the slider -->
+<div id="$slideid" class="rev_slider #if(${xf.ViewXmlSetting("OverflowHidden","off")} == "on")tp-overflow-hidden#end " style="display:none;
+ #if(${xf.ViewXmlSetting("maxWidth","")}!="")max-width:${xf.ViewXmlSetting("maxWidth","")}px;#end
+" data-version="5.4.5">
+<ul>
+ #set($slideindex = 0) 
+ 
+  #if($DataList.Count > 0) 
+  #foreach($DataItem in $DataList) 
+  <!-- SliderOptions Dictionary  --> 
+  #set($SOS = $xf.ViewDicts($DataItem)) 
+  #if(${xf.GetValue($SOS,"state","published")} =="published") 
+  	#set($slideindex = $slideindex+1) 
+  <!-- SLIDE.${DataItem.ID}--> 
+  <!-- MINIMUM SLIDE STRUCTURE -->
+  
+  <li 
+        #if(${xf.GetValue($SOS,"filters","none")}!="none")data-mediafilter="${xf.GetValue($SOS,"filters","none")}"#end
+    	#if(${xf.GetValue($SOS,"delay","0")}!="0" && ${xf.GetValue($SOS,"delay","0")}!="")data-delay="${xf.GetValue($SOS,"delay","0")}"#end
+    	#if(${xf.GetValue($SOS,"stoponpurpose","false")}!="false")data-ssop="true"#end
+    	#if(${xf.GetValue($SOS,"invisibleslide","false")}!="false")data-invisible="true"#end
+			data-hideafterloop="${xf.GetValue($SOS,"hideslideafter","")}"
+			
+			data-hideslidedesktop="${xf.GetValue($SOS,"hideslidedesktop","")}" 
+			data-hideslidenotebook="${xf.GetValue($SOS,"hideslidenotebook","")}" 
+			data-hideslidetablet="${xf.GetValue($SOS,"hideslidetablet","")}" 
+			data-hideslidemobile="${xf.GetValue($SOS,"hideslideonmobile","")}" 
+			
+    	data-thumb="${xf.Link(${xf.GetValue($SOS,"thumb_img","")})}"
+    	#if(${xf.GetValue($SOS,"transition","fade")}!="") 
+    	data-transition="${xf.GetValue($SOS,"transition","fade")}"
+    	#else
+    	data-transition="fade"
+    	#end
+    	data-slotamount="${xf.GetValue($SOS,"slot_amount","default")}"
+    	data-rotate="${xf.GetValue($SOS,"transition_rotation","default")}"
+    	data-masterspeed="${xf.GetValue($SOS,"transition_duration","default")}"
+    	data-easein="${xf.GetValue($SOS,"transition_ease_in","default")}"
+    	data-easeout="${xf.GetValue($SOS,"transition_ease_out","default")}"
+    	
+    	data-param1="${xf.GetValue($SOS,"slideparam1","")}"
+    	data-param2="${xf.GetValue($SOS,"slideparam2","")}"
+    	data-param3="${xf.GetValue($SOS,"slideparam3","")}"
+    	data-title="${xf.GetValue($SOS,"slidetitle","")}"
+		data-index="rs-${xf.GetValue($SOS,"id","")}"
+		#if(${xf.GetValue($SOS,"class_attr","")}!="")class="${xf.GetValue($SOS,"class_attr","")}"#end
+		#if(${xf.GetValue($SOS,"id_attr","")}!="")id="${xf.GetValue($SOS,"id_attr","")}"#end
+   		${xf.GetValue($SOS,"data_attr","")}
+   		#if(${xf.GetValue($SOS,"enable_link","off")}=="on")
+			#if(${xf.GetValue($SOS,"link_type","regular")}=="regular")
+				data-link="${xf.GetValue($SOS,"rev_link","")}" 
+				data-target="${xf.GetValue($SOS,"link_open_in","")}" 
+			#elseif(${xf.GetValue($SOS,"slide_link","nothing")} !="nothing")
+				data-link="slide" 
+				data-linktoslide="${xf.GetValue($SOS,"slide_link","nothing")}" 
+  			#end
+				data-slideindex="${xf.GetValue($SOS,"link_pos","")}"
+		   #end
+		   
+		#if(${velocityCount}==1 && !${xf.IsDNN920}) data-fstransition="fade" #end 
+		#if(${xf.GetValue($SOS,"staticSlide","off")} == "on")    
+			data-staticlayers="true" 
+			data-staticoverflow="${xf.GetValue($SOS,"StaticOverflow","visible")}" 
+			data-staticposition="${xf.GetValue($SOS,"StaticPosition","front")}" 
+		#end 
+    >
+  #set($bgtype =${xf.GetValue($SOS,"bgtype","image")})
+  
+  #if($bgtype == "image") <img 
+
+		#if(${xf.ViewXmlSetting("lazyLoad_type","none")}!="none")
+			src="${Module.ModulePath}Resource/images/dummy.png"
+			data-lazyload="${xf.Link(${xf.GetValue($SOS,"bgimg","")})}"
+		#else
+			src="${xf.Link(${xf.GetValue($SOS,"bgimg","")})}"
+		#end 
+
+         alt="${xf.GetValue($SOS,"bgalt","")}"
+         title="${xf.GetValue($SOS,"bgtitle","")}" 
+         class="rev-slidebg" 
+         
+         #if(${xf.ViewXmlSetting("use_parallax","on")}!="on")
+         data-bgparallax="off"
+         #elseif(${xf.GetValue($SOS,"slide_parallax_level","-")}!="-")
+         data-bgparallax="${xf.GetValue($SOS,"slide_parallax_level","-")}"
+         #end
+         
+         #if(${xf.GetValue($SOS,"kenburn_effect","on")} =="on")
+			 #if(${xf.GetValue($SOS,"kenburn_bg_position","center center")}=="percentage")
+				data-bgposition="${xf.GetValue($SOS,"kenburn_position_x","0")}% ${xf.GetValue($SOS,"kenburn_position_y","0")}%" 
+			 #else
+			 	data-bgposition="${xf.GetValue($SOS,"kenburn_bg_position","center center")}"
+			 #end
+       	 data-kenburns="on" 
+         data-duration="${xf.GetValue($SOS,"kb_duration","9000")}" 
+         data-ease="${xf.GetValue($SOS,"kb_easing","Linear.easeNone")}" 
+         data-scalestart="${xf.GetValue($SOS,"kb_start_fit","100")}" 
+         data-scaleend="${xf.GetValue($SOS,"kb_end_fit","200")}" 
+         data-offsetstart="${xf.GetValue($SOS,"kb_start_offset_x","0")} ${xf.GetValue($SOS,"kb_start_offset_y","0")}" 
+         data-offsetend="${xf.GetValue($SOS,"kb_end_offset_x","0")} ${xf.GetValue($SOS,"kb_end_offset_y","0")}"
+         data-rotatestart="${xf.GetValue($SOS,"kb_start_rotate","0")}" 
+         data-rotateend="${xf.GetValue($SOS,"kb_end_rotate","0")}"
+		 data-blurstart="${xf.GetValue($SOS,"kb_blur_start","0")}"
+		 data-blurend="${xf.GetValue($SOS,"kb_blur_end","0")}"
+		 data-bgrepeat="no-repeat"
+		 #else
+			 #if(${xf.GetValue($SOS,"slide_bg_position","center center")}=="percentage")
+				 data-bgposition="${xf.GetValue($SOS,"bg_position_x","0")}% ${xf.GetValue($SOS,"bg_position_y","0")}%" 
+			 #else
+				 data-bgposition="${xf.GetValue($SOS,"slide_bg_position","center center")}" 
+			 #end
+			 data-bgrepeat="${xf.GetValue($SOS,"slide_bg_repeat","no-repeat")}"
+			 #if(${xf.GetValue($SOS,"slide_bg_fit","cover")}=="percentage")
+				data-bgfit="${xf.GetValue($SOS,"bg_fit_x","0")}% ${xf.GetValue($SOS,"bg_fit_y","0")}%" 
+			 #else
+				data-bgfit="${xf.GetValue($SOS,"slide_bg_fit","cover")}"
+			 #end
+         #end  /> 
+         #elseif($bgtype == "transparent") 
+         <img src="${Module.ModulePath}Resource/images/transparent.png" class="rev-slidebg" #if(${xf.ViewXmlSetting("use_parallax","on")}=="on")data-bgparallax="off"#end alt="${xf.GetValue($SOS,"slidetitle","")}"> 
+         #elseif($bgtype == "color") 
+         <img src="${Module.ModulePath}Resource/images/transparent.png" class="rev-slidebg" #if(${xf.ViewXmlSetting("use_parallax","on")}=="on")data-bgparallax="off"#end data-bgcolor="${xf.GetValue($SOS,"bgcolor","#E7E7E7")}" alt="${xf.GetValue($SOS,"slidetitle","")}"> 
+         #elseif($bgtype == "youtube" || $bgtype == "vimeo" || $bgtype == "html5")
+			  <img 	
+				src="${Module.ModulePath}Resource/images/dummy.png"
+				#if($bgtype == "youtube")
+					#if(${xf.Link(${xf.GetValue($SOS,"youtubecover","")})}!="")
+					data-lazyload="${xf.Link(${xf.GetValue($SOS,"youtubecover","")})}"  
+					#else
+					data-lazyload="https://img.youtube.com/vi/${xf.GetValue($SOS,"youtubeid","")}/maxresdefault.jpg"  
+					#end
+				#elseif($bgtype == "vimeo")
+					data-lazyload="${xf.Link(${xf.GetValue($SOS,"vimeocover","")})}" 
+				#else 
+					data-lazyload="${xf.Link(${xf.GetValue($SOS,"html5cover","")})}" 
+				#end  
+		    	alt="${xf.GetValue($SOS,"slidetitle","")}"
+			    #if(${xf.ViewXmlSetting("use_parallax","on")}=="on")data-bgparallax="off"#end
+					 class="rev-slidebg" 
+					 data-bgposition="center center" 
+					 data-bgfit="cover" 
+					 data-bgrepeat="no-repeat"
+					 #if(${xf.GetValue($SOS,"slide_parallax_level","-")}!="-")data-bgparallax="${xf.GetValue($SOS,"slide_parallax_level","-")}"#end
+					  />
+  <!-- BACKGROUND VIDEO LAYER -->
+  <div 
+			 	class="rs-background-video-layer" 
+				#if($bgtype == "youtube")
+					 data-ytid="${xf.GetValue($SOS,"youtubeid","")}" 
+					 
+		 	    data-videoattributes="${xf.GetValue($SOS,"video_arguments","")}#if(${xf.GetValue($SOS,"video_arguments","")}=="")hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0;#end&enablejsapi=1#if(${xf.GetValue($SOS,"video_start_at","")}!="")&start=${xf.GetValue($SOS,"video_start_at","")}#end#if(${xf.GetValue($SOS,"video_end_at","")}!="")&end=${xf.GetValue($SOS,"video_end_at","")};#end#if(${xf.GetValue($SOS,"input_video_mute","off")}!="on")&amp;volume=${xf.GetValue($SOS,"input_video_volume","0")}#end"
+					 
+				#elseif($bgtype == "vimeo")
+					 data-vimeoid="${xf.GetValue($SOS,"vimeoid","")}" 
+				data-videoattributes="${xf.GetValue($SOS,"video_arguments","")}#if(${xf.GetValue($SOS,"video_arguments","")}=="")title=0&amp;byline=0&amp;portrait=0&amp;api=1#end#if(${xf.GetValue($SOS,"video_loop","none")} !="none")&loop=1#end#if(${xf.GetValue($SOS,"video_start_at","")}!="")&start=${xf.GetValue($SOS,"video_start_at","")}#end#if(${xf.GetValue($SOS,"video_end_at","")}!="")&end=${xf.GetValue($SOS,"video_end_at","")};#end"
+					 
+				#else 
+					data-videoogv="${xf.Link(${xf.GetValue($SOS,"html5ovg","")})}"
+					data-videowebm="${xf.Link(${xf.GetValue($SOS,"html5webm","")})}"
+					data-videomp4="${xf.Link(${xf.GetValue($SOS,"html5mp4","")})}"
+					data-videopreload="auto" 
+		 	    data-videoattributes="${xf.GetValue($SOS,"video_arguments","")}&enablejsapi=1&api=1#if(${xf.GetValue($SOS,"video_start_at","")}!="")&start=${xf.GetValue($SOS,"video_start_at","")};#end#if(${xf.GetValue($SOS,"video_end_at","")}!="")&end=${xf.GetValue($SOS,"video_end_at","")};#end"
+				#end  
+				 data-autoplay="true" 
+				 
+				 data-videorate="${xf.GetValue($SOS,"video_speed","1")}" 
+				 #if(${xf.GetValue($SOS,"video_nextslide","on")}=="on") data-nextslideatend="true" #end  
+				 
+				 #if(${xf.GetValue($SOS,"video_force_rewind","on")}=="on") data-forcerewind="on" data-autoplayonlyfirsttime="false" #else  #end  
+				 
+				 #if(${xf.GetValue($SOS,"video_loop","none")} !="none") data-videoloop="${xf.GetValue($SOS,"video_loop","none")}" #end
+			
+				 
+				#if(${xf.GetValue($SOS,"video_force_cover","off")} == "on")
+					#if(${xf.GetValue($SOS,"video_dotted_overlay","none")} != "none")
+						data-dottedoverlay="${xf.GetValue($SOS,"video_dotted_overlay","none")}"
+					#else	
+						data-forceCover="1"
+					#end
+				#end  				
+				data-aspectratio="${xf.GetValue($SOS,"video_ratio","16:9")}"			
+				#if(${xf.GetValue($SOS,"video_mute","off")} == "on") 		
+					data-volume="mute"
+				#else
+					#if($bgtype != "html5")
+						data-volume="${xf.GetValue($SOS,"video_volume","100")}" 
+					#else
+						data-volume="100" 
+					#end  	
+				#end  
+				
+				
+				
+				
+				#if(${xf.GetValue($SOS,"video_start_at","")}!="")
+				data-videostartat="${xf.GetValue($SOS,"video_start_at","")}"
+				#end
+				#if(${xf.GetValue($SOS,"video_end_at","")}!="")
+				data-videoendat="${xf.GetValue($SOS,"video_end_at","")}"
+				#end
+				
+				alt="${xf.GetValue($SOS,"slidetitle","")}"
+			>
+  </div>
+  #end
+
+			
+  #foreach($LayerItem in $LayerList)	
+  #if($LayerItem.ContentID == $DataItem.ID) 
+  <!-- LayerOptions Dictionary  --> 
+  #set($LOS = $xf.ViewDicts($LayerItem)) 
+  <!-- LAYER NR.${LayerItem.ID} --> 
+	#set($click_layer_action = ${xf.GetValue($LOS,"click_layer_action","none")}) 
+	#set($enter_layer_action = ${xf.GetValue($LOS,"enter_layer_action","none")}) 
+	#set($leave_layer_action = ${xf.GetValue($LOS,"leave_layer_action","none")}) 
+
+  #if($click_layer_action=="simplelink" && ${xf.GetValue($LOS,"click_link_type","jquery")} =="a")
+	<a href="${xf.Link(${xf.GetValue($LOS,"Url","")})}" target="${xf.GetValue($LOS,"click_link_target","_self")}"  #if(${xf.GetValue($LOS,"click_link_follow","follow")}=="nofollow")rel="nofollow" #end
+  #else
+    <${xf.GetValue($LOS,"html_tag","div")} 
+  #end
+  class="tp-caption  #if(${xf.GetValue($LOS,"parallaxsettings","-")}!="-")rs-parallaxlevel-${xf.GetValue($LOS,"parallaxsettings","-")}#end #if(${xf.GetValue($LOS,"layer_resizeme","on")}=="on")tp-resizeme#end #if(${xf.GetValue($LOS,"attClass","")}!="") ${xf.GetValue($LOS,"attClass","")} #end #if(${xf.GetValue($LOS,"type","image")}=="video") tp-videolayer #if(${xf.GetValue($LOS,"input_video_fullwidth","off")}=="on")fullscreenvideo#end #if(${xf.GetValue($LOS,"input_video_large_controls","on")}!="on")disabled_lc#end#elseif(${xf.GetValue($LOS,"type","image")}=="button") rev-btn #end #if(${xf.ViewXmlSetting("def_layer_selection","off")} == "on")tp-layer-selectable#end" 
+  
+		data-visibility="['${xf.Link(${xf.GetValue($LOS,"visible-desktop","on")})}','${xf.Link(${xf.GetValue($LOS,"visible-notebook","on")})}','${xf.Link(${xf.GetValue($LOS,"visible-tablet","on")})}','${xf.Link(${xf.GetValue($LOS,"visible-mobile","on")})}']"
+
+		#if(${xf.GetValue($SOS,"staticSlide","")} == "on")    
+		data-startslide="${xf.GetValue($LOS,"startslide","0")}" 
+		data-endslide="#if(${xf.GetValue($LOS,"endslide","1")}!="last")${xf.GetValue($LOS,"endslide","1")}#else${DataList.Count}#end" 
+		#end 
+
+		data-frames='[{
+						#if(${xf.GetValue($LOS,"animation_overwrite","")}=="wait")
+						"delay": "bytrigger", 
+						#elseif(${xf.GetValue($LOS,"layer_on_slider_hover","on")}=="on")
+						"delay":"sliderenter",
+						#else
+						"delay": ${xf.GetValue($LOS,"layer_delay","500")}, 
+						#end
+					  
+					  #if(${xf.GetValue($LOS,"layer_animation","")}=="customin") 
+					  #if(${xf.GetValue($LOS,"Masking","off")}!="on") 
+					  "from": "#if(${xf.GetValue($LOS,"TransitionX","")}!="")x:${xf.GetValue($LOS,"TransitionX","")};#end#if(${xf.GetValue($LOS,"TransitionY","")}!="")y:${xf.GetValue($LOS,"TransitionY","")};#end#if(${xf.GetValue($LOS,"TransitionZ","")}!="")z:${xf.GetValue($LOS,"TransitionZ","")};#end#if(${xf.GetValue($LOS,"RotationX","")}!="")rX:${xf.GetValue($LOS,"RotationX","")}deg;#end#if(${xf.GetValue($LOS,"RotationY","")}!="")rY:${xf.GetValue($LOS,"RotationY","")}deg;#end#if(${xf.GetValue($LOS,"RotationZ","")}!="")rZ:${xf.GetValue($LOS,"RotationZ","")}deg;#end#if(${xf.GetValue($LOS,"ScaleX","")}!="")sX:${xf.GetValue($LOS,"ScaleX","")};#end#if(${xf.GetValue($LOS,"ScaleY","")}!="")sY:${xf.GetValue($LOS,"ScaleY","")};#end#if(${xf.GetValue($LOS,"SkewX","")}!="")skX:${xf.GetValue($LOS,"SkewX","")}px;#end#if(${xf.GetValue($LOS,"SkewY","")}!="")skY:${xf.GetValue($LOS,"SkewY","")}px;#end#if(${xf.GetValue($LOS,"leyOpacity","")}!="")opacity:${xf.GetValue($LOS,"leyOpacity","")};#elseif(${xf.GetValue($LOS,"leyOpacity","")}=="")opacity:0;#end#if(${xf.GetValue($LOS,"leyBlur","")}!="")fb:${xf.GetValue($LOS,"leyBlur","")}px;#end#if(${xf.GetValue($LOS,"Grayscale","")}!="")fg:${xf.GetValue($LOS,"Grayscale","")}%;#end#if(${xf.GetValue($LOS,"Brightness","")}!="")fbr:${xf.GetValue($LOS,"Brightness","")}%;#end", 
+					  #else
+					  	 "from":"z:0;",
+						   "sfx_effect":"${xf.GetValue($LOS,"MaskingDirection","blockfromleft")}",
+						   #if(${xf.GetValue($LOS,"MaskingColor","")}!="")"sfxcolor":"${xf.GetValue($LOS,"MaskingColor","")}",#end
+						   "mask":"x:${xf.GetValue($LOS,"mask_anim_xstart","0")}px;y:${xf.GetValue($LOS,"mask_anim_ystart","0")}px;s:inherit;e:inherit;",
+					   #end
+					   
+					   #if(${xf.GetValue($LOS,"color_start_sw","off")}=="on")"color":"${xf.GetValue($LOS,"color_start","")}",#end
+					   #if(${xf.GetValue($LOS,"bg_start_sw","off")}=="on")"bgcolor":"${xf.GetValue($LOS,"bg_start","")}",#end
+					  
+					  #elseif(${xf.GetValue($LOS,"layer_animation","")}=="none")
+				     
+				      #else
+				      "from":"${xf.GetValue($LOS,"layer_animation","")}", 
+					  #end   
+						"to":"#if(${xf.GetValue($LOS,"layer_opacity","")}!="")o:${xf.GetValue($LOS,"layer_opacity","")};#else o:1;#end#if(${xf.GetValue($LOS,"layer_x_scalex","")}!="")sX:${xf.GetValue($LOS,"layer_x_scalex","")};#end#if(${xf.GetValue($LOS,"layer_y_scalex","")}!="")sY:${xf.GetValue($LOS,"layer_y_scalex","")};#end#if(${xf.GetValue($LOS,"layer_x_skew","")}!="")skX:${xf.GetValue($LOS,"layer_x_skew","")}px;#end#if(${xf.GetValue($LOS,"layer_y_skew","")}!="")skY:${xf.GetValue($LOS,"layer_y_skew","")}px;#end#if(${xf.GetValue($LOS,"layer_x_rotate","")}!="")rX:${xf.GetValue($LOS,"layer_x_rotate","")};#end#if(${xf.GetValue($LOS,"layer_y_rotate","")}!="")rY:${xf.GetValue($LOS,"layer_y_rotate","")};#end#if(${xf.GetValue($LOS,"layer_z_rotate","")}!="")rZ:${xf.GetValue($LOS,"layer_z_rotate","")};#end#if(${xf.GetValue($LOS,"layer_2d_origin_x","")}!="" || ${xf.GetValue($LOS,"layer_2d_origin_y","")}!="")tO:${xf.GetValue($LOS,"layer_2d_origin_x","")}% ${xf.GetValue($LOS,"layer_2d_origin_y","")}%;#end#if(${xf.GetValue($LOS,"layer_pers","")}!="")tP:${xf.GetValue($LOS,"layer_pers","")};#end#if(${xf.GetValue($LOS,"layer_z","")}!="")z:${xf.GetValue($LOS,"layer_z","")};#end#if(${xf.GetValue($LOS,"layer_blur","")}!="")fb:${xf.GetValue($LOS,"layer_blur","")}px;#end#if(${xf.GetValue($LOS,"layer_grayscale","")}!="")fg:${xf.GetValue($LOS,"layer_grayscale","")}%;#end#if(${xf.GetValue($LOS,"layer_brightness","")}!="")fbr:${xf.GetValue($LOS,"layer_brightness","")}%;#end",
+					  "frame":"0",
+					  #if(${xf.GetValue($LOS,"layer_split","none")}!="none" && (${xf.GetValue($LOS,"Masking","off")}!="on" || ${xf.GetValue($LOS,"layer_animation","")}!="customin" ))
+					  
+					 #if(${Module.IsEditable} || ${Module.IsAdministrator})"split":"none", #else "split":"${xf.GetValue($LOS,"layer_split","none")}",#end
+
+					  "splitdelay":${xf.GetValue($LOS,"layer_splitdelay","0.1")},
+					  "split_direction":"${xf.GetValue($LOS,"layer_split_direction","forward")}",
+					  #end
+					  #if(${xf.GetValue($LOS,"layer_easing","nothing")}!="nothing")"ease":"${xf.GetValue($LOS,"layer_easing","nothing")}",#end
+					  "speed": #if(${xf.GetValue($LOS,"layer_speed","300")}!="")${xf.GetValue($LOS,"layer_speed","300")}#else 0 #end
+					  }, 
+				  	  {
+						#if(${xf.GetValue($LOS,"animation_overwrite","")}=="waitout" || ${xf.GetValue($LOS,"animation_overwrite","")}=="wait")
+				  		"delay": "bytrigger", 
+						#elseif(${xf.GetValue($LOS,"layer_on_slider_hover","on")}=="on")
+						"delay":"sliderleave",
+				  		#else
+				  		  #if(${xf.GetValue($LOS,"layer_enddelay","")}!="")
+						  "delay": ${xf.GetValue($LOS,"layer_enddelay","")}, 
+						  #else
+						  "delay": "wait", 
+						  #end
+				  		#end
+					  
+					  #if(${xf.GetValue($LOS,"layer_endanimation","")}=="customin")
+					  #if(${xf.GetValue($LOS,"endMasking","off")}!="on") 
+					  "to": "#if(${xf.GetValue($LOS,"endTransitionX","")}!="")x:${xf.GetValue($LOS,"endTransitionX","")};#end#if(${xf.GetValue($LOS,"endTransitionY","")}!="")y:${xf.GetValue($LOS,"endTransitionY","")};#end#if(${xf.GetValue($LOS,"endTransitionZ","")}!="")z:${xf.GetValue($LOS,"endTransitionZ","")};#end#if(${xf.GetValue($LOS,"endRotationX","")}!="")rX:${xf.GetValue($LOS,"endRotationX","")}deg;#end#if(${xf.GetValue($LOS,"endRotationY","")}!="")rY:${xf.GetValue($LOS,"endRotationY","")}deg;#end#if(${xf.GetValue($LOS,"endRotationZ","")}!="")rZ:${xf.GetValue($LOS,"endRotationZ","")}deg;#end#if(${xf.GetValue($LOS,"endScaleX","")}!="")sX:${xf.GetValue($LOS,"endScaleX","")};#end#if(${xf.GetValue($LOS,"endScaleY","")}!="")sY:${xf.GetValue($LOS,"endScaleY","")};#end#if(${xf.GetValue($LOS,"endSkewX","")}!="")skX:${xf.GetValue($LOS,"endSkewX","")}px;#end#if(${xf.GetValue($LOS,"endSkewY","")}!="")skY:${xf.GetValue($LOS,"endSkewY","")}px;#end#if(${xf.GetValue($LOS,"endOpacity","")}!="")opacity:${xf.GetValue($LOS,"endOpacity","")};#elseif(${xf.GetValue($LOS,"endOpacity","")}=="")opacity:0;#end#if(${xf.GetValue($LOS,"endBlur","")}!="")fb:${xf.GetValue($LOS,"endBlur","")}px;#end#if(${xf.GetValue($LOS,"endGrayscale","")}!="")fg:${xf.GetValue($LOS,"endGrayscale","")}%;#end#if(${xf.GetValue($LOS,"endBrightness","")}!="")fbr:${xf.GetValue($LOS,"endBrightness","")}%;#end", 
+					  #end
+					   #if(${xf.GetValue($LOS,"endMasking","off")}=="on") 
+					   "sfx_effect":"${xf.GetValue($LOS,"endMaskingDirection","blocktoleft")}",
+					   #if(${xf.GetValue($LOS,"endMaskingColor","")}!="")"sfxcolor":"${xf.GetValue($LOS,"endMaskingColor","")}",#end
+					   "mask":"x:${xf.GetValue($LOS,"mask_anim_endxstart","0")}px;y:${xf.GetValue($LOS,"mask_anim_endystart","0")}px;s:inherit;e:inherit;",
+					   #end
+					   #if(${xf.GetValue($LOS,"color_start_endsw","off")}=="on")"color":"${xf.GetValue($LOS,"color_endstart","")}",#end
+					   #if(${xf.GetValue($LOS,"bg_start_endsw","off")}=="on")"bgcolor":"${xf.GetValue($LOS,"bg_endstart","")}",#end
+					  #elseif(${xf.GetValue($LOS,"layer_animation","")}=="none")
+					  #elseif(${xf.GetValue($LOS,"layer_animation","")}=="")
+					  "to": "${xf.GetValue($LOS,"layer_animation","")}", 
+					  #elseif(${xf.GetValue($LOS,"layer_endanimation","")}=="")
+					  
+					  #else
+					  "to": "${xf.GetValue($LOS,"layer_endanimation","")}", 
+					  #end  
+					  "frame":"9999",
+					  #if(${xf.GetValue($LOS,"layer_endsplit","none")}!="none" && (${xf.GetValue($LOS,"endMasking","off")}!="on" || ${xf.GetValue($LOS,"layer_endanimation","")}!="customin" ))
+					  #if(${Module.IsEditable} || ${Module.IsAdministrator})"split":"none", #else "split":"${xf.GetValue($LOS,"layer_endsplit","none")}",#end
+					  "splitdelay":${xf.GetValue($LOS,"layer_endsplitdelay","0.1")},
+					  "split_direction":"${xf.GetValue($LOS,"layer_endsplit_direction","forward")}",
+			  	  	  #end
+					  #if(${xf.GetValue($LOS,"layer_endeasing","nothing")}!="nothing")"ease":"${xf.GetValue($LOS,"layer_endeasing","nothing")}",#end
+					  "speed": #if(${xf.GetValue($LOS,"layer_endspeed","300")}!="")${xf.GetValue($LOS,"layer_endspeed","300")}#else 0 #end
+				  	  }#if(${xf.GetValue($LOS,"css_font_hover","off")}=="on"),{"frame":"hover","speed":"${xf.GetValue($LOS,"hover_animation_speed","300")}","ease":"${xf.GetValue($LOS,"hover_animation_easing","Power0.easeIn")}","style":"#if(${xf.GetValue($LOS,"color_hover","#ffffff")}!="")c:${xf.GetValue($LOS,"color_hover","#ffffff")};#else c:#ffffff;#end#if(${xf.GetValue($LOS,"css_text-decoration_hover","none")}!="")td:${xf.GetValue($LOS,"css_text-decoration_hover","none")};#end#if(${xf.GetValue($LOS,"bg_color_hover","rgba(0,0,0,1)")}!="")bg:${xf.GetValue($LOS,"bg_color_hover","rgba(0,0,0,1)")};#end#if(${xf.GetValue($LOS,"css_border-color_hover","")}!="")bc:${xf.GetValue($LOS,"css_border-color_hover","")};#end "} #end ]' 
+					#if($click_layer_action != "none" || $enter_layer_action!="none" || $leave_layer_action!="none")
+					data-actions='[#if($click_layer_action!="none" && !($click_layer_action=="simplelink" && ${xf.GetValue($LOS,"click_ink_type","jquery")} =="a")){
+								"event": "click", 
+								#if($click_layer_action=="simplelink")
+									#if(${xf.GetValue($LOS,"click_link_type","jquery")} =="jquery")
+										"target":"${xf.GetValue($LOS,"click_link_target","_self")}",
+										"url":"${xf.Link(${xf.GetValue($LOS,"Url","")})}",
+										"action": "$click_layer_action",
+									#end	
+								#elseif($click_layer_action=="callback")
+									"callback":"${xf.GetValue($LOS,"click_link_function","")}",
+									"action": "$click_layer_action",
+								#elseif($click_layer_action=="scrollbelow")
+									"offset":"${xf.GetValue($LOS,"click_link_sloffset","")}",
+									"speed":"${xf.GetValue($LOS,"click_link_speed","500")}",
+									"ease":"${xf.GetValue($LOS,"click_link_easing","")}",
+									"action": "$click_layer_action",
+								#elseif($click_layer_action=="jumpto")
+									"slide":"rs-${xf.GetValue($LOS,"click_link_jumpto","")}",
+									"action": "jumptoslide",
+								#elseif($click_layer_action=="next")
+									"slide":"next",
+									"action": "jumptoslide",
+								#elseif($click_layer_action=="prev")
+									"slide":"previous",
+									"action": "jumptoslide",
+								#elseif($click_layer_action=="startlayer" || $click_layer_action=="stoplayer" || $click_layer_action=="togglelayer" || $click_layer_action=="playvideo" || $click_layer_action=="stopvideo"|| $click_layer_action=="togglevideo" || $click_layer_action=="mutevideo"|| $click_layer_action=="unmutevideo" || $click_layer_action=="toggle_mute_video"|| $click_layer_action=="simulateclick" || $click_layer_action=="toggleclass" )
+									"layer":"slide-${xf.GetValue($SOS,"id","")}-layer-${xf.GetValue($LOS,"click_link_layer","")}",
+									"action": "$click_layer_action",
+									#if($click_layer_action=="toggleclass")
+									"classname":"${xf.GetValue($LOS,"click_link_class","")}",
+									#end
+								#else
+								"action": "$click_layer_action", 
+								#end
+								"delay":"${xf.GetValue($LOS,"click_link_delay","500")}"
+								},#end#if($enter_layer_action!="none")
+								{
+									"event": "mouseenter", 
+									#if($enter_layer_action=="simplelink")
+										"target":"${xf.GetValue($LOS,"enter_link_target","_self")}",
+										"url":"${xf.Link(${xf.GetValue($LOS,"Url","")})}",
+										"action": "$enter_layer_action",
+									#elseif($enter_layer_action=="callback")
+										"callback":"${xf.GetValue($LOS,"enter_link_function","")}",
+										"action": "$enter_layer_action",
+									#elseif($enter_layer_action=="scrollbelow")
+										"offset":"${xf.GetValue($LOS,"enter_link_sloffset","")}",
+										"speed":"${xf.GetValue($LOS,"enter_link_speed","500")}",
+										"ease":"${xf.GetValue($LOS,"enter_link_easing","")}",
+										"action": "$enter_layer_action",
+									#elseif($enter_layer_action=="jumpto")
+										"slide":"rs-${xf.GetValue($LOS,"enter_link_jumpto","")}",
+										"action": "jumptoslide",
+									#elseif($enter_layer_action=="next")
+										"slide":"next",
+										"action": "jumptoslide",
+									#elseif($enter_layer_action=="prev")
+										"slide":"previous",
+										"action": "jumptoslide",
+									#elseif($enter_layer_action=="startlayer" || $enter_layer_action=="stoplayer" || $enter_layer_action=="togglelayer" || $enter_layer_action=="playvideo" || $enter_layer_action=="stopvideo"|| $enter_layer_action=="togglevideo" || $enter_layer_action=="mutevideo"|| $enter_layer_action=="unmutevideo" || $enter_layer_action=="toggle_mute_video"|| $enter_layer_action=="simulateclick" || $enter_layer_action=="toggleclass" )
+										"layer":"slide-${xf.GetValue($SOS,"id","")}-layer-${xf.GetValue($LOS,"enter_link_layer","")}",
+										"action": "$enter_layer_action",
+										#if($enter_layer_action=="toggleclass")
+										"classname":"${xf.GetValue($LOS,"enter_link_class","")}",
+										#end
+									#else
+									"action": "$enter_layer_action", 
+									#end
+									"delay":"${xf.GetValue($LOS,"enter_link_delay","500")}"
+								},
+							#end#if($leave_layer_action!="none")
+								{
+									"event": "mouseleave", 
+									#if($leave_layer_action=="simplelink")
+										"target":"${xf.GetValue($LOS,"leave_link_target","_self")}",
+										"url":"${xf.Link(${xf.GetValue($LOS,"Url","")})}",
+										"action": "$leave_layer_action",
+									#elseif($leave_layer_action=="callback")
+										"callback":"${xf.GetValue($LOS,"leave_link_function","")}",
+										"action": "$leave_layer_action",
+									#elseif($leave_layer_action=="scrollbelow")
+										"offset":"${xf.GetValue($LOS,"leave_link_sloffset","")}",
+										"speed":"${xf.GetValue($LOS,"leave_link_speed","500")}",
+										"ease":"${xf.GetValue($LOS,"leave_link_easing","")}",
+										"action": "$leave_layer_action",
+									#elseif($leave_layer_action=="jumpto")
+										"slide":"rs-${xf.GetValue($LOS,"leave_link_jumpto","")}",
+										"action": "jumptoslide",
+									#elseif($leave_layer_action=="next")
+										"slide":"next",
+										"action": "jumptoslide",
+									#elseif($leave_layer_action=="prev")
+										"slide":"previous",
+										"action": "jumptoslide",
+									#elseif($leave_layer_action=="startlayer" || $leave_layer_action=="stoplayer" || $leave_layer_action=="togglelayer" || $leave_layer_action=="playvideo" || $leave_layer_action=="stopvideo"|| $leave_layer_action=="togglevideo" || $leave_layer_action=="mutevideo"|| $leave_layer_action=="unmutevideo" || $leave_layer_action=="toggle_mute_video"|| $leave_layer_action=="simulateclick" || $leave_layer_action=="toggleclass" )
+										"layer":"slide-${xf.GetValue($SOS,"id","")}-layer-${xf.GetValue($LOS,"leave_link_layer","")}",
+										"action": "$leave_layer_action",
+										#if($leave_layer_action=="toggleclass")
+										"classname":"${xf.GetValue($LOS,"leave_link_class","")}",
+										#end
+									#else
+									"action": "$leave_layer_action", 
+									#end
+									"delay":"${xf.GetValue($LOS,"leave_link_delay","500")}"
+								},#end{}]'
+					#end	
+				
+					 
+					 	 
+		#if(${xf.GetValue($LOS,"layer_blendmode","normal")}	)
+			data-blendmode="${xf.GetValue($LOS,"layer_blendmode","normal")}"
+		#end	
+					 	 	 	 	 
+		data-lasttriggerstate="${xf.GetValue($LOS,"tigger_memory","reset")}"
+
+		#if(${xf.GetValueByStringItems($LOS,"v_align","left")}!="")
+		data-x="[${xf.GetValueByStringItems($LOS,"v_align","left")}]"  
+		#end
+		#if(${xf.GetValueByStringItems($LOS,"h_align","top")}!="")
+		data-y="[${xf.GetValueByStringItems($LOS,"h_align","top")}]" 
+		#end
+
+		#if(${xf.GetValueByStringItems($LOS,"top","0")}!="")
+		data-hoffset="[${xf.GetValueByStringItems($LOS,"top","0")}]"
+		#end
+		#if(${xf.GetValueByStringItems($LOS,"left","0")}!="")
+		data-voffset="[${xf.GetValueByStringItems($LOS,"left","0")}]" 
+		#end
+		
+		
+	    #if(${xf.GetValue($LOS,"type","image")}=="image") 
+		
+
+	  	#else
+			#if(${xf.GetValue($LOS,"width","")}!="")
+			data-width="[${xf.GetValueByStringItems($LOS,"width","")}]"
+			#else
+			
+			#end
+			
+			#if(${xf.GetValue($LOS,"height","")}!="")
+			data-height="[${xf.GetValueByStringItems($LOS,"height","")}]"
+			#else
+			data-height="none"
+			#end
+			
+		#end
+		
+		
+		data-responsive_offset="${xf.GetValue($LOS,"layer_resp_offset","on")}" 
+		#if(${xf.GetValue($LOS,"layer_resize-full","on")}!="on")
+		data-responsive="off"
+		#end
+		#if(${xf.GetValue($LOS,"withoutcorner","grid")}!="grid")
+		data-basealign="${xf.GetValue($LOS,"withoutcorner","grid")}" 
+		#end
+		#if(${xf.GetValue($LOS,"attId","")}!="")
+		id="${xf.GetValue($LOS,"attId","")}"
+		#else
+		id="slide-${xf.GetValue($SOS,"id","")}-layer-${xf.GetValue($LOS,"id","")}" 
+		#end
+		
+		#if(${xf.GetValue($LOS,"attTitle","")}!="")title="${xf.GetValue($LOS,"attTitle","")}"#end
+		#if(${xf.GetValue($LOS,"attAlt","")}!="")alt="${xf.GetValue($LOS,"attAlt","")}"#end
+  		#if(${xf.GetValue($LOS,"tabindex","")}!="")index="${xf.GetValue($LOS,"attTabindex","")}"#end
+		#if(${xf.GetValue($LOS,"rel","")}!="")rel="${xf.GetValue($LOS,"attRel","")}"#end
+      
+		#if(${xf.GetValue($LOS,"attWrapperID","")}!="")data-wrapper_id="${xf.GetValue($LOS,"attWrapperID","")}"#end
+		#if(${xf.GetValue($LOS,"attWrapperClass","")}!="")data-wrapper_class="${xf.GetValue($LOS,"attWrapperClass","")}"#end 	
+		
+		#if(${xf.GetValue($LOS,"type","image")}=="image")
+       	 data-type="image" 
+        #elseif(${xf.GetValue($LOS,"type","image")}=="button")	 
+       	 data-type="button"
+       	 
+        #elseif(${xf.GetValue($LOS,"type","image")}=="video")
+        	data-type="video" 
+			#if(${xf.GetValue($LOS,"videotype","")}=="YouTube")
+				data-ytid="${xf.GetValue($LOS,"ytb","")}" 
+	 	    
+		 	    data-videoattributes="${xf.GetValue($LOS,"input_video_arguments","")}#if(${xf.GetValue($LOS,"input_video_arguments","")}=="")hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0;#end&enablejsapi=1#if(${xf.GetValue($LOS,"input_video_start_at","")}!="")&start=${xf.GetValue($LOS,"input_video_start_at","")}#end#if(${xf.GetValue($LOS,"input_video_end_at","")}!="")&end=${xf.GetValue($LOS,"input_video_end_at","")};#end#if(${xf.GetValue($LOS,"input_video_mute","off")}!="on")&amp;volume=${xf.GetValue($LOS,"input_video_volume","0")}#end"
+		 	    
+			#elseif(${xf.GetValue($LOS,"videotype","")}=="Vimeo")
+				data-vimeoid="${xf.GetValue($LOS,"vimeo","")}" 
+				data-videoattributes="${xf.GetValue($LOS,"input_video_arguments","")}#if(${xf.GetValue($LOS,"input_video_arguments","")}=="")title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;showinfo=0&amp;rel=0;#end#if(${xf.GetValue($LOS,"input_video_loop","none")} !="none")&loop=1#end#if(${xf.GetValue($LOS,"input_video_start_at","")}!="")&start=${xf.GetValue($LOS,"input_video_start_at","")}#end#if(${xf.GetValue($LOS,"input_video_end_at","")}!="")&end=${xf.GetValue($LOS,"input_video_end_at","")};#end"			#else
+			
+				data-videomp4="${xf.Link(${xf.GetValue($LOS,"html5mp4","http://")})}" 
+				#if(${xf.Link(${xf.GetValue($LOS,"html5webm","")})}!="http://")data-videoogv="${xf.Link(${xf.GetValue($LOS,"html5webm","")})}" #end
+				#if(${xf.Link(${xf.GetValue($LOS,"html5webm","")})}!="http://")data-videowebm="${xf.Link(${xf.GetValue($LOS,"html5ogg","")})}"#end
+		 	    data-videoattributes="${xf.GetValue($LOS,"input_video_arguments","")}&enablejsapi=1&api=1#if(${xf.GetValue($LOS,"input_video_start_at","")}!="")&start=${xf.GetValue($LOS,"input_video_start_at","")};#end#if(${xf.GetValue($LOS,"input_video_end_at","")}!="")&end=${xf.GetValue($LOS,"input_video_end_at","")};#end"
+		#end
+	    
+ 	    
+ 	    #if(${xf.GetValue($LOS,"input_video_start_at","")}!="")
+			data-videostartat="${xf.GetValue($LOS,"input_video_start_at","")}" 
+ 	    #end
+ 	    #if(${xf.GetValue($LOS,"input_video_start_at","")}!="")
+			data-videoendat="${xf.GetValue($LOS,"input_video_end_at","")}"
+ 	    #end
+ 	     
+ 	    data-videoloop="${xf.GetValue($LOS,"input_video_loop","none")}"
+ 	    
+ 	    #if(${xf.GetValue($LOS,"select_video_autoplay","false")}!="false")
+		data-autoplay="${xf.GetValue($LOS,"select_video_autoplay","false")}" 
+	    #else
+	    data-autoplay="off" 
+	    #end
+	    
+ 	    #if(${xf.GetValue($LOS,"input_video_stopallvideo","off")}=="on")
+ 	    data-stopallvideos="true" 
+ 	    #end
+ 	    
+ 	    #if(${xf.GetValue($LOS,"input_video_allowfullscreen","off")}=="on") 	    
+ 	    data-allowfullscreenvideo="true" 
+ 	    #end
+ 	    
+ 	    #if(${xf.GetValue($LOS,"input_video_nextslide","off")}=="on") 	    
+ 	    data-nextslideatend="true" 
+ 	    #end
+ 	    
+ 	    #if(${xf.GetValue($LOS,"input_video_force_rewind","off")}=="on") 
+ 	     data-forcerewind="on"
+ 	     data-autoplayonlyfirsttime="false"
+ 	    #end
+  	    
+ 	    #if(${xf.GetValue($LOS,"input_video_control","off")}=="off") 
+ 	    data-videocontrols="controls"
+ 	    #else
+ 	    data-videocontrols="none"
+ 	    #end
+ 	    
+ 	    #if(${xf.GetValue($LOS,"input_video_mute","off")}=="on") 
+ 	    data-volume="mute"
+ 	    #else
+ 	    data-volume="${xf.GetValue($LOS,"input_video_volume","0")}"
+ 	    #end
+ 	    
+ 	    #if(${xf.GetValue($LOS,"input_video_show_cover_pause","off")}=="on") 
+ 	    data-showcoveronpause="on"
+ 	    #end
+
+		data-videorate="${xf.GetValue($LOS,"input_video_speed","1")}" 
+ 	   
+		#if(${xf.GetValue($LOS,"input_video_play_inline","off")}=="on")
+		data-videoinline="true"
+ 	    #end
+ 	    
+		#if(${xf.GetValue($LOS,"input_video_preload","auto")}!="auto")
+	    data-videopreload="${xf.GetValue($LOS,"input_video_preload","auto")}"
+	    #end
+	    
+	    #if(${xf.GetValue($LOS,"poster_image","")}!="")
+	    data-videoposter="${xf.Link(${xf.GetValue($LOS,"poster_image","")})}" 
+	    #elseif(${xf.GetValue($LOS,"videotype","")}=="YouTube")
+	    #if(${xf.GetValue($LOS,"select_video_autoplay","false")}!="false")
+	   	 data-videoposter="https://img.youtube.com/vi/${xf.GetValue($LOS,"ytb","")}/maxresdefault.jpg" 
+	    #end
+	    #end
+	          
+	    #if(${xf.GetValue($LOS,"input_disable_on_mobile","off")}=="on")
+	    data-disablevideoonmobile="1" 
+	    #end
+	    #if(${xf.GetValue($LOS,"input_use_poster_on_mobile","off")}=="on")
+	    data-noposteronmobile="on" 
+	    #end
+ 	    
+ 	    #if(${xf.GetValue($LOS,"input_video_fullwidth","off")}=="on") 
+			#if(${xf.GetValue($LOS,"input_video_cover","off")}=="on") 
+				data-forceCover="1"
+				#if(${xf.GetValue($LOS,"input_video_dotted_overlay","none")}!="none")data-dottedoverlay="${xf.GetValue($LOS,"input_video_dotted_overlay","none")}"#end
+				 data-aspectratio="${xf.GetValue($LOS,"input_video_ratio","16:9")}"	
+			#end
+	    	 data-videowidth="100%" 
+	    	 data-videoheight="100%"
+ 	    #else
+ 	    	#if(${xf.GetValue($LOS,"width","")}!="")
+			data-videowidth="${xf.GetValueByStringItems($LOS,"width","")}"
+			#else
+			data-videowidth="600"
+			#end
+			#if(${xf.GetValue($LOS,"height","")}!="")
+			data-videoheight="${xf.GetValueByStringItems($LOS,"height","")}" 
+			#else
+			data-videoheight="400"
+			#end
+ 	    #end	    
+ 	    
+  	    #end
+	    #if(${xf.GetValue($LOS,"layer_hidden","off")}=="on")
+	   	 data-captionhidden="on" 
+	    #end
+		#if(${xf.GetValue($LOS,"padding_top","")}!="")
+		data-paddingtop="[${xf.GetValue($LOS,"padding_top","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"padding_right","")}!="")
+		data-paddingright="[${xf.GetValue($LOS,"padding_right","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"padding_bottom","")}!="")
+		data-paddingbottom="[${xf.GetValue($LOS,"padding_bottom","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"padding_left","")}!="")
+		data-paddingleft="[${xf.GetValue($LOS,"padding_left","")}]"
+		#end
+		#if(${xf.GetValueByStringItems($LOS,"css_text-align","inherit")}!="")
+		data-textAlign="[${xf.GetValueByStringItems($LOS,"css_text-align","inherit")}]"
+		#end
+		#if(${xf.GetValue($LOS,"margin_top","")}!="")
+		data-margintop="[${xf.GetValue($LOS,"margin_top","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"margin_right","")}!="")
+		data-marginright="[${xf.GetValue($LOS,"margin_right","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"margin_bottom","")}!="")
+		data-marginbottom="[${xf.GetValue($LOS,"margin_bottom","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"margin_left","")}!="")
+		data-marginleft="[${xf.GetValue($LOS,"margin_left","")}]"
+		#end
+		
+		#if(${xf.GetValue($LOS,"font_size","")}!="")
+		data-fontsize="[${xf.GetValue($LOS,"font_size","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"line_height","")}!="")
+		data-lineheight="[${xf.GetValue($LOS,"line_height","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"font_weight","")}!="")
+		data-fontweight="[${xf.GetValue($LOS,"font_weight","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"color","")}!="")
+		data-color="[${xf.GetValue($LOS,"color","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"letter_spacing","")}!="")
+		data-letterspacing="[${xf.GetValue($LOS,"letter_spacing","")}]"
+		#end
+		#if(${xf.GetValue($LOS,"layer_auto_line_break","")}!="")
+		data-whitespace="[${xf.GetValue($LOS,"layer_auto_line_break","")}]"
+		#end
+	
+	
+	  
+		style="
+		z-index:7; 
+		#if(${xf.GetValue($LOS,"font_family","")}!="")font-family:${xf.GetValue($LOS,"font_family","")};#end
+		#if(${xf.GetValue($LOS,"css_font-style","")}=="on")font-style:italic;#end
+		#if(${xf.GetValue($LOS,"css_text-decoration","none")}!="none")text-decoration:${xf.GetValue($LOS,"css_text-decoration","none")};#end
+		#if(${xf.GetValue($LOS,"css_text-transform","none")}!="none")text-transform:${xf.GetValue($LOS,"css_text-transform","none")};#end
+		#if(${xf.GetValue($LOS,"bg_color","")}!="")background-color:${xf.GetValue($LOS,"bg_color","")};#end
+		  
+		#if(${xf.GetValueByItem0($LOS,"font_size","")}!="")font-size:${xf.GetValueByItem0($LOS,"font_size","")}px;#end
+		#if(${xf.GetValueByItem0($LOS,"line_height","")}!="")line-height:${xf.GetValueByItem0($LOS,"line_height","")}px;#end
+		#if(${xf.GetValueByItem0($LOS,"font_weight","")}!="normal")font-weight:${xf.GetValueByItem0($LOS,"font_weight","normal")};#end
+		#if(${xf.GetValueByItem0($LOS,"letter_spacing","")}!="")letter-spacing:${xf.GetValueByItem0($LOS,"letter_spacing","")}px;#end
+		#if(${xf.GetValueByItem0($LOS,"color","")}!="")color:${xf.GetValueByItem0($LOS,"color","")};#end
+		#if(${xf.GetValueByItem0($LOS,"css_text-align","inherit")}!="inherit")text-align:${xf.GetValueByItem0($LOS,"css_text-align","inherit")};#end
+		#if(${xf.GetValueByItem0($LOS,"layer_auto_line_break","")}!="")white-space:${xf.GetValueByItem0($LOS,"layer_auto_line_break","")};#end
+	
+
+
+
+
+		#if(${xf.GetValue($LOS,"bg_image","")}!="")
+			background-image:url('${xf.Link(${xf.GetValue($LOS,"bg_image","")})}');
+			background-position:${xf.GetValue($LOS,"layer_bg_position","Center Center")};
+			background-size:${xf.GetValue($LOS,"layer_bg_size","cover")};
+			background-repeat:${xf.GetValue($LOS,"layer_bg_repeat","no-repeat")};
+		#end
+		
+		
+		
+		#if(${xf.GetValue($LOS,"css_border-color","")}!="")border-color:${xf.GetValue($LOS,"css_border-color","")};#end
+		#if(${xf.GetValue($LOS,"css_border-style","none")}!="")border-style:${xf.GetValue($LOS,"css_border-style","")};#end
+		
+		border-width:#if(${xf.GetValue($LOS,"css_border-width-top","")}!="")${xf.GetValue($LOS,"css_border-width-top","")}px#else 0 #end
+		#if(${xf.GetValue($LOS,"css_border-width-right","")}!="")${xf.GetValue($LOS,"css_border-width-right","")}px#else 0 #end
+		#if(${xf.GetValue($LOS,"css_border-width-bottom","")}!="")${xf.GetValue($LOS,"css_border-width-bottom","")}px#else 0 #end
+		#if(${xf.GetValue($LOS,"css_border-width-left","")}!="")${xf.GetValue($LOS,"css_border-width-left","")}px;#else 0 ;#end
+		
+		border-radius:#if(${xf.GetValue($LOS,"css_border-radius-top","")}!="")${xf.GetValue($LOS,"css_border-radius-top","")}px#else 0 #end
+		#if(${xf.GetValue($LOS,"css_border-radius-right","")}!="")${xf.GetValue($LOS,"css_border-radius-right","")}px#else 0 #end
+		#if(${xf.GetValue($LOS,"css_border-radius-bottom","")}!="")${xf.GetValue($LOS,"css_border-radius-bottom","")}px#else 0 #end
+		#if(${xf.GetValue($LOS,"css_border-radius-left","")}!="")${xf.GetValue($LOS,"css_border-radius-left","")}px;#else 0 ;#end
+		"
+		>
+  	    
+	    #if(${xf.GetValue($LOS,"layer_loop_animation","")}!="none")
+ 	    
+  <div class="rs-looped ${xf.GetValue($LOS,"layer_loop_animation","")}"
+  	     
+  	    #if(${xf.GetValue($LOS,"layer_loop_animation","")}=="rs-pendulum" || ${xf.GetValue($LOS,"layer_loop_animation","")}=="rs-rotate")
+  	    
+		data-easing="${xf.GetValue($LOS,"layer_loop_easing","")}"
+		data-speed="${xf.GetValue($LOS,"layer_loop_speed","2")}"
+		data-startdeg="${xf.GetValue($LOS,"layer_loop_startdeg","-20")}"
+		data-enddeg="${xf.GetValue($LOS,"layer_loop_enddeg","20")}"
+		data-origin="${xf.GetValue($LOS,"layer_loop_xorigin","50")}% ${xf.GetValue($LOS,"layer_loop_yorigin","50")}%"
+    
+  	    #elseif(${xf.GetValue($LOS,"layer_loop_animation","")}=="rs-slideloop")
+  	    
+		data-easing="${xf.GetValue($LOS,"layer_loop_easing","")}"
+		data-speed="${xf.GetValue($LOS,"layer_loop_speed","2")}"
+		data-xs="${xf.GetValue($LOS,"layer_loop_xstart","0")}"
+		data-xe="${xf.GetValue($LOS,"layer_loop_xend","0")}"
+		data-ys="${xf.GetValue($LOS,"layer_loop_ystart","0")}"
+		data-ye="${xf.GetValue($LOS,"layer_loop_yend","0")}"
+ 	    
+  	    #elseif(${xf.GetValue($LOS,"layer_loop_animation","")}=="rs-pulse")
+  	    
+		data-easing="${xf.GetValue($LOS,"layer_loop_easing","")}"
+		data-speed="${xf.GetValue($LOS,"layer_loop_speed","2")}"
+		data-zoomstart="${xf.GetValue($LOS,"layer_loop_zoomstart","1")}"
+		data-zoomend="${xf.GetValue($LOS,"layer_loop_zoomend","1")}"
+ 	    
+  	    #elseif(${xf.GetValue($LOS,"layer_loop_animation","")}=="rs-wave")
+  	    
+		data-speed="${xf.GetValue($LOS,"layer_loop_speed","2")}"
+		data-angle="${xf.GetValue($LOS,"layer_loop_angle","1")}"
+		data-radius="${xf.GetValue($LOS,"layer_loop_radius","10")}"
+		data-origin="${xf.GetValue($LOS,"layer_loop_xorigin","50")}% ${xf.GetValue($LOS,"layer_loop_yorigin","50")}%"
+ 	    
+  	    #end
+  	    >
+  #end
+  #if(${xf.GetValue($LOS,"type","image")}=="image") <img 
+
+		#if(${xf.ViewXmlSetting("lazyLoad_type","none")}!="none")
+			src="${Module.ModulePath}Resource/images/dummy.png"
+			data-lazyload="${xf.Link(${xf.GetValue($LOS,"contentimg","")})}"
+		#else
+			src="${xf.Link(${xf.GetValue($LOS,"contentimg","")})}"
+		#end 
+		 
+		 alt="${xf.GetValue($LOS,"attAlt","")}"
+		#if(${xf.GetValue($LOS,"width","")}!="")data-ww="[${xf.GetValueByStringItems($LOS,"width","")}]"#else data-ww="none" #end
+		#if(${xf.GetValue($LOS,"height","")}!="")data-hh="[${xf.GetValueByStringItems($LOS,"height","")}]"#else data-hh="none" #end
+       
+        > #elseif(${xf.GetValue($LOS,"type","image")}=="text")
+  ${xf.GetValue($LOS,"contenttext","")}          
+#elseif(${xf.GetValue($LOS,"type","image")}=="button")
+  ${xf.GetValue($LOS,"buttontext","")}          
+  #end  
+  
+#if(${xf.GetValue($LOS,"layer_cornerleft","nothing")}=="curved")
+	<div class='frontcorner'></div>
+#elseif(${xf.GetValue($LOS,"layer_cornerleft","nothing")}=="reverced")
+	<div class='frontcornertop'></div>
+#end
+#if(${xf.GetValue($LOS,"layer_cornerright","nothing")}=="curved")
+	<div class='backcorner'></div>
+#elseif(${xf.GetValue($LOS,"layer_cornerright","nothing")}=="reverced")
+	<div class='backcornertop'></div>
+#end
+  
+  #if(${xf.GetValue($LOS,"layer_loop_animation","")}!="none")
+  </div>
+  #end
+  
+  #if($click_layer_action=="simplelink" && ${xf.GetValue($LOS,"click_link_type","jquery")} =="a")
+	</a>
+  #else
+   </${xf.GetValue($LOS,"html_tag","div")}>
+  #end
+    
+     
+  #end
+  #end
+
+  </li>
+  #end
+  #end
+  
+  #else
+  <li> <img src="${Module.ModulePath}Resource/images/transparent.png" alt="video_forest" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> </li>
+  #end
+
+
+  
+</ul>
+
+ 
+
+#if(${xf.ViewXmlSetting("enable_progressbar","on")}=="on")
+<div class="tp-bannertimer #if(${xf.ViewXmlSetting("show_timerbar","top")}=="bottom")tp-bottom #end" style="height: ${xf.ViewXmlSetting("progress_height","5")}px; background-color: ${xf.ViewXmlSetting("progressbar_color","rgba(0,0,0,0.15)")};"></div>
+#end
+</div>
+</div>
+
+
+		<style>
+		#if(${xf.ViewXmlSetting("use_spinner","-1")} != '-1' && ${xf.ViewXmlSetting("use_spinner","-1")} != '5')			
+		#if(${xf.ViewXmlSetting("use_spinner","-1")}=="3")	
+		#$slideid .tp-loader.spinner3 .bounce1,
+		#$slideid .tp-loader.spinner3 .bounce2,
+		#$slideid .tp-loader.spinner3 .bounce3{
+			background-color:${xf.ViewXmlSetting("spinner_color","#ffffff")}!important;
+		}	
+		#elseif(${xf.ViewXmlSetting("use_spinner","-1")}=="4")	
+			#$slideid .tp-loader.spinner4 .dot1,
+			#$slideid .tp-loader.spinner4 .dot2 {
+				background-color:${xf.ViewXmlSetting("spinner_color","#ffffff")}!important;
+			}
+		#else
+		 #$slideid .spinner${xf.ViewXmlSetting("use_spinner","-1")}{
+		 	background-color:${xf.ViewXmlSetting("spinner_color","#ffffff")}!important;
+		 } 
+		#end	
+		#end
+		#if(${xf.ViewXmlSetting("disable_on_mobile","off")} == 'on' )			
+		@media only screen and (max-width: 767px) {
+			#rev_slider_wrapper${ModuleID},
+			#rev_slider_wrapper${ModuleID} + .tp-fullwidth-forcer{
+				display: none!important;
+			}
+		}	
+		#end
+		</style>
+
+		
+		<script type="text/javascript">
+ 
+    jQuery(document).ready(function() {
+	var gridwidth =[${xf.ViewXmlSetting("sizewidth",1240)},${xf.ViewXmlSetting("sizewidth",1240)},${xf.ViewXmlSetting("sizewidth",1240)},${xf.ViewXmlSetting("sizewidth",1240)}];
+	var gridheight =[${xf.ViewXmlSetting("sizeheight",600)},${xf.ViewXmlSetting("sizeheight",600)},${xf.ViewXmlSetting("sizeheight",600)},${xf.ViewXmlSetting("sizeheight",600)}];
+
+
+		jQuery("#$slideid > ul > li").each(function(){
+			var staticitme =$(this);
+
+			if(staticitme.data("staticlayers") && staticitme.children(".tp-caption").length){
+				var staticlayers=$('<div class="tp-static-layers"></div>');
+				jQuery("#$slideid").children("ul").after(staticlayers);
+				if(staticitme.data("staticoverflow")=="hidden"){
+					staticlayers.css({
+						overflow:"hidden",
+						width:"100%",
+						height:"100%",
+						top:"0px",
+						left:"0px"
+					})
+				}
+				if(staticitme.data("staticposition")=="back"){ 
+					staticlayers.addClass("tp-static-layers-back")
+				}
+				staticitme.children(".tp-caption").each(function(){ 
+					$(this).addClass("tp-static-layer").data("startslide",$(this).data("startslide")-1).data("endslide",$(this).data("endslide")-1);
+					staticlayers.append($(this));
+				});
+
+				staticitme.remove();
+			}
+			if(staticitme.data("staticlayers") && !staticitme.children(".tp-caption").length){
+				staticitme.remove();
+			}
+
+		});
+
+
+
+	if("${xf.ViewXmlSetting("custom_size_notebook","off")}" =="on"){
+		gridwidth[1]  = gridwidth[2] = gridwidth[3] =  ${xf.ViewXmlSetting("notebookwidth",1024)};
+		gridheight[1] = gridheight[2] = gridheight[3] = ${xf.ViewXmlSetting("notebookheight",600)};
+
+	}
+	if("${xf.ViewXmlSetting("custom_size_tablet","off")}" =="on"){
+		gridwidth[2]  = gridwidth[3] = ${xf.ViewXmlSetting("tabletwidth",778)};
+		gridheight[2] = gridheight[3] = ${xf.ViewXmlSetting("tabletheight",500)};
+	}
+	if("${xf.ViewXmlSetting("custom_size_mobile","off")}" =="on"){
+		gridwidth[3] =  ${xf.ViewXmlSetting("mobilewidth",480)};
+		gridheight[3] =  ${xf.ViewXmlSetting("mobileheight",400)};
+	}
+
+	var responsiveLevels = [${xf.ViewXmlSetting("DesktopGridWidth","1240")},${xf.ViewXmlSetting("NotebookGridWidth","1024")},${xf.ViewXmlSetting("TabletGridWidth","778")},${xf.ViewXmlSetting("MobileGridWidth","480")}];
+
+	jQuery("#$slideid > ul > li").each(function(){
+			var e =$(this);
+
+		
+
+			if(e.data("hideslidedesktop")=="on" && (document.documentElement.clientWidth >= responsiveLevels[1])){
+				e.remove();
+			}
+			if(e.data("hideslidenotebook")=="on" && ( document.documentElement.clientWidth < responsiveLevels[1] && document.documentElement.clientWidth >= responsiveLevels[2] ) ){
+				e.remove();
+			}
+			if(e.data("hideslidetablet")=="on" &&  ( document.documentElement.clientWidth < responsiveLevels[2] && document.documentElement.clientWidth >= responsiveLevels[3] ) ){
+				e.remove();
+			}
+			if(e.data("hideslidemobile")=="on" && ( document.documentElement.clientWidth < responsiveLevels[3] ) ){
+				e.remove();
+			}
+	});
+
+
+	#if(${xf.ViewXmlSetting("loop_slide","off")}=="on" && $slideindex == 1 )
+	jQuery("#$slideid > ul").append(jQuery("#$slideid > ul >li").eq(0).clone());
+	#end
+	
+	jQuery("#$slideid").show().revolution({
+			
+		#if(${xf.ViewXmlSetting("start_js_after_delay",0)}>0)												 
+		startDelay:${xf.ViewXmlSetting("start_js_after_delay",0)},
+		#end
+
+		sliderType:"standard",
+		jsFileLocation:"${Module.ModulePath}Resource/js/",
+		sliderLayout:"${xf.ViewXmlSetting("slidelayout","auto")}",	
+		dottedOverlay:"${xf.ViewXmlSetting("background_dotted_overlay","none")}",
+		delay:${xf.ViewXmlSetting("delay","9000")},	
+						   
+						   
+		#set($enable_arrows = ${xf.ViewXmlSetting("enable_arrows","off")})
+		#set($enable_bullets = ${xf.ViewXmlSetting("enable_bullets","off")})
+		#set($enable_tabs = ${xf.ViewXmlSetting("enable_tabs","off")})
+		#set($enable_thumbnails = ${xf.ViewXmlSetting("enable_thumbnails","off")})
+
+		#set($touch_enabled = ${xf.ViewXmlSetting("touchenabled","on")})
+		#set($touch_enabled_desktop = ${xf.ViewXmlSetting("touchenabled_desktop","off")})
+		#set($keyboard_enabled = ${xf.ViewXmlSetting("keyboard_navigation","off")})
+		#set($keyboard_direction = ${xf.ViewXmlSetting("keyboard_direction","horizontal")})
+		#set($mousescroll_enabled = ${xf.ViewXmlSetting("mousescroll_navigation","off")})
+		#set($mousescroll_reverse = ${xf.ViewXmlSetting("mousescroll_navigation_reverse","default")})    
+						   
+	   #if($enable_arrows == 'on' || $enable_bullets == 'on' || $enable_tabs == 'on' || $enable_thumbnails == 'on' || $touch_enabled == 'on' || $keyboard_enabled == 'on' || $mousescroll_enabled != 'off')
+		navigation:{
+			keyboardNavigation:"$keyboard_enabled",
+			keyboard_direction: "$keyboard_direction",
+			mouseScrollNavigation:"$mousescroll_enabled",
+			mouseScrollReverse:"$mousescroll_reverse",
+			onHoverStop:"${xf.ViewXmlSetting("stop_on_hover","on")}",						   
+			#set($add_comma = false )	 
+			#if($touch_enabled == 'on')
+				#set($add_comma = true )
+				touch:{
+					touchenabled:"$touch_enabled",
+					touchOnDesktop:"$touch_enabled_desktop",
+					swipe_threshold: ${xf.ViewXmlSetting("swipe_velocity","75")},
+					swipe_min_touches: ${xf.ViewXmlSetting("swipe_min_touches","50")},
+					swipe_direction: "${xf.ViewXmlSetting("swipe_direction","horizontal")}",
+					drag_block_vertical: #if(${xf.ViewXmlSetting("drag_block_vertical","off")} =="on") true #else false #end
+			   },
+			#end	
+			#if($enable_arrows == 'on')
+				#set( $navigation_arrow_style = ${xf.ViewXmlSetting("navigation_arrow_style","round")} )					   
+				#set( $arrows_always_on = ${xf.ViewXmlSetting("arrows_always_on",true)} )					   
+				#if(${xf.ViewXmlSetting("hide_arrows_on_mobile","on")}=="on") 
+				  #set($hide_arrows_on_mobile = "true" )
+				#else 
+				  #set($hide_arrows_on_mobile = "false" )
+				#end 			   
+				#if(${xf.ViewXmlSetting("hide_arrows_over","off")}=="on") 
+				  #set($hide_arrows_over = "true" )
+				#else 
+				  #set($hide_arrows_over = "false" )
+				#end 
+				arrows: {
+					enable:"$enable_arrows" == "on"?true:false,
+					#if(${xf.ViewXmlSetting("rtl_arrows","off")}=="on")
+					rtl:true, 
+					#end			   
+					#if($hide_arrows_on_mobile == "true")
+					hide_under:${xf.ViewXmlSetting("arrows_under_hidden","600")},
+					#end
+					#if($hide_arrows_over == "true")
+					hide_over:"${xf.ViewXmlSetting("arrows_over_hidden","0")}",
+					#end
+					hide_onleave:"$arrows_always_on"=="True"?true:false,	
+					#if($arrows_always_on)
+					hide_delay:${xf.ViewXmlSetting("hide_arrows","200")},
+					hide_delay_mobile:${xf.ViewXmlSetting("hide_arrows_mobile","1200")},
+					#end
+					left: {
+						#if(${xf.ViewXmlSetting("leftarrow_position","slider")} =="grid" || ${xf.ViewXmlSetting("leftarrow_position","slider")} == "layergrid")
+						container:"layergrid",
+						#end
+						h_align:"${xf.ViewXmlSetting("leftarrow_align_hor","left")}",
+						v_align:"${xf.ViewXmlSetting("leftarrow_align_vert","center")}",
+						h_offset:${xf.ViewXmlSetting("leftarrow_offset_hor","30")},
+						v_offset:${xf.ViewXmlSetting("leftarrow_offset_vert","0")}										
+					},
+					right: {
+						#if(${xf.ViewXmlSetting("rightarrow_position","slider")} == "grid" || ${xf.ViewXmlSetting("rightarrow_position","slider")} == "layergrid")
+						container:"layergrid",
+						#end
+						h_align:"${xf.ViewXmlSetting("rightarrow_align_hor","right")}",
+						v_align:"${xf.ViewXmlSetting("rightarrow_align_vert","center")}",
+						h_offset:${xf.ViewXmlSetting("rightarrow_offset_hor","30")},
+						v_offset:${xf.ViewXmlSetting("rightarrow_offset_vert","0")}										
+					},
+					#if($navigation_arrow_style == "news-header")
+					style:"news-header",
+					tmp:themepunch_arrow_html("news-header"),
+					#elseif($navigation_arrow_style == "round")	
+					style:"hesperiden",
+					#elseif($navigation_arrow_style == "navbar")	
+					style:"gyges",
+					tmp:'',
+					#elseif($navigation_arrow_style == "preview1")	
+					style:"hades",
+					tmp:themepunch_arrow_html("hades"),
+					#elseif($navigation_arrow_style == "preview2")
+					style:"ares",
+					tmp:themepunch_arrow_html("ares"),
+					#elseif($navigation_arrow_style == "preview3")	
+					style:"hebe",
+					tmp:themepunch_arrow_html("hebe"),
+					#elseif($navigation_arrow_style == "preview4")	
+					style:"hermes",
+					tmp:themepunch_arrow_html("hermes"),
+					#elseif($navigation_arrow_style == "round-old")	
+					style:"hephaistos",
+					#elseif($navigation_arrow_style == "square-old")
+					style:"persephone",	
+					#elseif($navigation_arrow_style == "navbar-old")
+					style:"erinyen",
+					tmp:themepunch_arrow_html("erinyen"),
+					#elseif($navigation_arrow_style == "zeus")	
+					style:"zeus",
+					tmp:themepunch_arrow_html("zeus"),
+					#elseif($navigation_arrow_style == "metis")	
+					style:"metis",
+					tmp:'',
+					#elseif($navigation_arrow_style == "dione")	
+					style:"dione",
+					tmp:themepunch_arrow_html("dione"),
+					#elseif($navigation_arrow_style == "uranus")	
+					style:"uranus",
+					#elseif($navigation_arrow_style == "custom")	
+					style:"${xf.ViewXmlSetting("navigation_arrow_custom","")}",		
+					tmp:'<span class=\"arrow\"></span>',			
+					#elseif($navigation_arrow_style == "")	
+					style:"",
+					tmp:'',
+					#end
+					hide_onmobile:"$hide_arrows_on_mobile"
+				},
+			#end
+			#if($enable_bullets == 'on')
+				#set( $navigation_bullets_style = ${xf.ViewXmlSetting("navigation_bullets_style","round-old")} )					   
+				#set( $bullets_always_on = ${xf.ViewXmlSetting("bullets_always_on",true)} )
+				#if(${xf.ViewXmlSetting("hide_bullets_on_mobile","on")}=="on") 
+				  #set($hide_bullets_on_mobile = "true" )
+				#else 
+				  #set($hide_bullets_on_mobile = "false" )
+				#end 			   
+				#if(${xf.ViewXmlSetting("hide_bullets_over","off")}=="on") 
+				  #set($hide_bullets_over = "true" )
+				#else 
+				  #set($hide_bullets_over = "false" )
+				#end 
+				
+				bullets: {
+					enable:"$enable_bullets"=="on"?true:false,
+					#if(${xf.ViewXmlSetting("rtl_bullets","off")} == "on")
+					rtl:true,
+					#end
+					#if($hide_bullets_on_mobile == 'true')
+						hide_under:${xf.ViewXmlSetting("bullets_under_hidden","600")},
+					#end
+					#if($hide_bullets_over == 'true')
+					   hide_over:${xf.ViewXmlSetting("bullets_over_hidden","0")},
+					#end
+					hide_onleave:"$bullets_always_on"=="True"?true:false,
+					#if($bullets_always_on)
+						hide_delay:${xf.ViewXmlSetting("hide_bullets","200")},
+						hide_delay_mobile:${xf.ViewXmlSetting("hide_bullets_mobile","1200")},
+					#end
+					direction:"${xf.ViewXmlSetting("bullets_direction","horizontal")}",
+					#if(${xf.ViewXmlSetting("bullets_position","slider")} =="grid" || ${xf.ViewXmlSetting("bullets_position","slider")} == "layergrid")
+					container:"layergrid",
+					#end
+					h_align:"${xf.ViewXmlSetting("bullets_align_hor","center")}",
+					v_align:"${xf.ViewXmlSetting("bullets_align_vert","bottom")}",
+					h_offset:${xf.ViewXmlSetting("bullets_offset_hor","0")},
+					v_offset:${xf.ViewXmlSetting("bullets_offset_vert","30")},
+					space:${xf.ViewXmlSetting("bullets_space","5")},					
+					#if($navigation_bullets_style == "news-header")
+					style:"news-header",
+					tmp:'',
+					#elseif($navigation_bullets_style == "round")
+					style:"hesperiden",
+					tmp:'',	
+					#elseif($navigation_bullets_style == "navbar")
+					style:"gyges",
+					tmp:'',	
+					#elseif($navigation_bullets_style == "preview1")
+					style:"hades",
+					tmp:themepunch_bullet_html("hades"),	
+					#elseif($navigation_bullets_style == "preview2")
+					style:"ares",
+					tmp:themepunch_bullet_html("ares"),	
+					#elseif($navigation_bullets_style == "preview3")
+					style:"hebe",
+					tmp:themepunch_bullet_html("hebe"),	
+					#elseif($navigation_bullets_style == "preview4")
+					style:"hermes",
+					tmp:'',	
+					#elseif($navigation_bullets_style == "round-old")
+					style:"hephaistos",
+					tmp:'',	
+					#elseif($navigation_bullets_style == "square-old")
+					style:"persephone",
+					tmp:'',	
+					#elseif($navigation_bullets_style == "navbar-old")
+					style:"erinyen",
+					tmp:'',	
+					#elseif($navigation_bullets_style == "zeus")
+					style:"zeus",
+					tmp:themepunch_bullet_html("zeus"),	
+					#elseif($navigation_bullets_style == "metis")
+					style:"metis",
+					tmp:themepunch_bullet_html("metis"),	
+					#elseif($navigation_bullets_style == "dione")
+					style:"dione",
+					tmp:themepunch_bullet_html("dione"),	
+					#elseif($navigation_bullets_style == "uranus")
+					style:"uranus",
+					tmp:themepunch_bullet_html("uranus"),	
+					#elseif($navigation_bullets_style == "custom")	
+					style:"${xf.ViewXmlSetting("navigation_bullets_custom","")}",					
+					#elseif($navigation_bullets_style == "")
+					style:"",
+					tmp:themepunch_bullet_html("default"),	
+					#end
+					hide_onmobile:"$hide_bullets_on_mobile"
+				},
+			#end
+			#if($enable_thumbnails == 'on')
+				#set( $thumbnails_style = ${xf.ViewXmlSetting("thumbnails_style","round")} )					   
+				#set( $thumbs_always_on = ${xf.ViewXmlSetting("thumbs_always_on",false)} )
+				#if(${xf.ViewXmlSetting("hide_thumbs_on_mobile","off")}=="on") 
+				  #set($hide_thumbs_on_mobile = "true" )
+				#else 
+				  #set($hide_thumbs_on_mobile = "false" )
+				#end 			   
+				#if(${xf.ViewXmlSetting("hide_thumbs_over","off")}=="on") 
+				  #set($hide_thumbs_over = "true" )
+				#else 
+				  #set($hide_thumbs_over = "false" )
+				#end 			   
+				thumbnails: {
+					enable:"$enable_thumbnails",
+					#if(${xf.ViewXmlSetting("rtl_thumbnails","off")} == "on")
+					rtl:true,
+					#end
+					width:${xf.ViewXmlSetting("thumb_width","100")},
+					height:${xf.ViewXmlSetting("thumb_height","50")},
+					min_width:${xf.ViewXmlSetting("thumb_width_min","100")},
+					wrapper_padding:${xf.ViewXmlSetting("thumbnails_padding","5")},
+					wrapper_color:"${xf.ViewXmlSetting("thumbnails_wrapper_color","")}"==""?"transparent":"${xf.ViewXmlSetting("thumbnails_wrapper_color","")}",				
+					visibleAmount:${xf.ViewXmlSetting("thumb_amount","5")},
+					#if($hide_thumbs_on_mobile == 'true')
+						hide_under:${xf.ViewXmlSetting("thumbs_under_hidden","0")},
+					#end
+					#if($hide_thumbs_over == 'true')
+						hide_over:${xf.ViewXmlSetting("thumbs_over_hidden","0")},
+					#end
+					#if($thumbs_always_on == 'true')
+						hide_delay:${xf.ViewXmlSetting("hide_thumbs","200")},
+						hide_delay_mobile:${xf.ViewXmlSetting("hide_thumbs_mobile","1200")},
+					#end
+					direction:"${xf.ViewXmlSetting("thumbnail_direction","horizontal")}",
+					span:"${xf.ViewXmlSetting("span_thumbnails_wrapper","off")}"=="on"?true:false,
+					position:"${xf.ViewXmlSetting("thumbnails_inner_outer","inner")}",
+					#if(${xf.ViewXmlSetting("thumbnails_inner_outer","inner")} == 'inner')
+					#if(${xf.ViewXmlSetting("thumbnails_position","slider")} =="grid" || ${xf.ViewXmlSetting("thumbnails_position","slider")} == "layergrid")
+					container:"layergrid",
+					#end
+					#end
+					space:${xf.ViewXmlSetting("thumbnails_space","5")},
+					h_align:"${xf.ViewXmlSetting("thumbnails_align_hor","center")}",
+					v_align:"${xf.ViewXmlSetting("thumbnails_align_vert","bottom")}",
+					h_offset:${xf.ViewXmlSetting("thumbnails_offset_hor","0")},
+					v_offset:${xf.ViewXmlSetting("thumbnails_offset_vert","20")},
+					#if($thumbnails_style == "news-header")
+					style:"news-header",
+					tmp:themepunch_thumbnail_html("news-header"),
+					#elseif($thumbnails_style == "round")
+					style:"hesperiden",
+					tmp:themepunch_thumbnail_html("hesperiden"),
+					#elseif($thumbnails_style == "navbar")
+					style:"gyges",
+					tmp:themepunch_thumbnail_html("gyges"),
+					#elseif($thumbnails_style == "preview1")
+					style:"hades",
+					tmp:themepunch_thumbnail_html("hades"),
+					#elseif($thumbnails_style == "custom")
+					style:"custom",
+					tmp:themepunch_thumbnail_html("custom"),
+					#elseif($thumbnails_style == "navbar-old")
+					style:"erinyen",
+					tmp:themepunch_thumbnail_html("erinyen"),
+					#elseif($thumbnails_style == "zeus")
+					style:"zeus",
+					tmp:themepunch_thumbnail_html("zeus"),
+					#elseif($thumbnails_style == "")
+					style:"",
+					tmp:themepunch_thumbnail_html("default"),
+					#end	
+					hide_onmobile:"$hide_thumbs_on_mobile",
+					hide_onleave:"$thumbs_always_on"=="Ttue"?true:false
+				},
+			#end	
+			#if($enable_tabs == 'on')
+				#set( $tabs_style = ${xf.ViewXmlSetting("tabs_style","")} )					   
+				#set( $tabs_always_on = ${xf.ViewXmlSetting("thumbs_always_on",false)} )
+				#if(${xf.ViewXmlSetting("hide_tabs_on_mobile","off")}=="on") 
+				  #set($hide_tabs_on_mobile = "true" )
+				#else 
+				  #set($hide_tabs_on_mobile = "false" )
+				#end 			   
+				#if(${xf.ViewXmlSetting("hide_tabs_over","off")}=="on") 
+				  #set($hide_tabs_over = "true" )
+				#else 
+				  #set($hide_tabs_over = "false" )
+				#end 			   
+				tabs: {
+				 	enable:"$enable_tabs",
+					#if(${xf.ViewXmlSetting("rtl_tabs","off")} == "on")
+					rtl:true,
+					#end
+					width:${xf.ViewXmlSetting("tabs_width","100")},
+					height:${xf.ViewXmlSetting("tabs_height","50")},
+					min_width:${xf.ViewXmlSetting("tabs_width_min","100")},
+					wrapper_padding:${xf.ViewXmlSetting("tabs_padding","5")},
+					wrapper_color:"${xf.ViewXmlSetting("tabs_wrapper_color","")}"==""?"transparent":"${xf.ViewXmlSetting("tabs_wrapper_color","")}",
+					visibleAmount:${xf.ViewXmlSetting("tabs_amount","5")},
+					hide_onmobile:"$hide_tabs_on_mobile",
+					#if($hide_tabs_on_mobile == 'true')
+					hide_under:${xf.ViewXmlSetting("tabs_under_hidden","0")},
+					#end
+					#if($hide_tabs_over == 'true')
+					hide_over:${xf.ViewXmlSetting("tabs_over_hidden","0")},
+					#end		
+					#if($tabs_always_on)
+					hide_delay:${xf.ViewXmlSetting("hide_tabs","200")},
+					hide_delay_mobile:${xf.ViewXmlSetting("hide_tabs_mobile","1200")},
+					#end
+					hide_delay:${xf.ViewXmlSetting("hide_tabs","200")},
+					direction:"${xf.ViewXmlSetting("tabs_direction","horizontal")}",
+					span:"${xf.ViewXmlSetting("span_tabs_wrapper","off")}"=="on"?true:false,
+
+					position:"${xf.ViewXmlSetting("tabs_inner_outer","inner")}",
+					#if(${xf.ViewXmlSetting("tabs_inner_outer","inner")} == 'inner')
+					#if(${xf.ViewXmlSetting("tabs_position","slider")} =="grid" || ${xf.ViewXmlSetting("tabs_position","slider")} == "layergrid")
+					container:"layergrid",
+					#end
+					#end
+					space:${xf.ViewXmlSetting("tabs_space","5")},
+					h_align:"${xf.ViewXmlSetting("tabs_align_hor","center")}",
+					v_align:"${xf.ViewXmlSetting("tabs_align_vert","bottom")}",
+					h_offset:${xf.ViewXmlSetting("tabs_offset_hor","0")},
+					v_offset:${xf.ViewXmlSetting("tabs_offset_vert","20")},
+																								
+					#if($tabs_style == "news-header")
+					style:"news-header",
+					tmp:themepunch_tabs_html("news-header"),
+					#elseif($tabs_style == "round")
+					style:"hesperiden",
+					tmp:themepunch_tabs_html("hesperiden"),
+					#elseif($tabs_style == "navbar")
+					style:"gyges",
+					tmp:themepunch_tabs_html("gyges"),
+					#elseif($tabs_style == "preview1")
+					style:"hades",
+					tmp:themepunch_tabs_html("hades"),
+					#elseif($tabs_style == "preview2")
+					style:"ares",
+					tmp:themepunch_tabs_html("ares"),
+					#elseif($tabs_style == "preview3")
+					style:"hebe",
+					tmp:themepunch_tabs_html("hebe"),
+					#elseif($tabs_style == "preview4")
+					style:"hermes",
+					tmp:themepunch_tabs_html("hermes"),
+					#elseif($tabs_style == "hermes")
+					style:"custom",
+					tmp:themepunch_tabs_html("custom"),
+					#elseif($tabs_style == "navbar-old")
+					style:"erinyen",
+					tmp:themepunch_tabs_html("erinyen"),
+					#elseif($tabs_style == "zeus")
+					style:"zeus",
+					tmp:themepunch_tabs_html("zeus"),
+					#elseif($tabs_style == "metis")
+					style:"metis",
+					tmp:themepunch_tabs_html("metis"),
+					#end																																										
+					hide_onleave:"$tabs_always_on"=="True"?true:false
+				},
+			#end
+			},
+		#else
+		navigation: {			
+			onHoverStop:"${xf.ViewXmlSetting("stop_on_hover","on")}"		
+		},
+		#end
+	
+		#set( $label_viewport = ${xf.ViewXmlSetting("viewport","off")} )					   
+		#set( $label_presetheight = ${xf.ViewXmlSetting("label_presetheight","off")} )					   
+		#set( $viewport_start = ${xf.ViewXmlSetting("viewport_start","wait")} )					   
+		#set( $viewport_area = ${xf.ViewXmlSetting("viewport_area","80")} )					   
+	
+		#if($label_viewport == 'on')
+		viewPort: {
+			enable:true,
+			outof:"$viewport_start",
+			visible_area:"$viewport_area%",
+			presize:"$label_presetheight"=="on"?true:false
+		},
+		#end
+		gridwidth:gridwidth,
+		gridheight:gridheight,
+		responsiveLevels:responsiveLevels, 
+		visibilityLevels:[${xf.ViewXmlSetting("DesktopGridWidth","1240")},${xf.ViewXmlSetting("NotebookGridWidth","1024")},${xf.ViewXmlSetting("TabletGridWidth","778")},${xf.ViewXmlSetting("MobileGridWidth","480")}],
+		#if(${xf.ViewXmlSetting("fade_scrolleffect","off")} != 'off' || ${xf.ViewXmlSetting("blur_scrolleffect","off")} != 'off' || ${xf.ViewXmlSetting("grayscale_scrolleffect","off")} != 'off')
+		#set( $use_scrolleffect ="on" )		
+		#else
+		#set( $use_scrolleffect ="off" )		
+		#end	
+	
+		#if($use_scrolleffect =='on') 
+		scrolleffect: {
+		#if(${xf.ViewXmlSetting("fade_scrolleffect","off")} == "on")
+			fade:"${xf.ViewXmlSetting("fade_scrolleffect","off")}",				
+		#end
+		#if(${xf.ViewXmlSetting("blur_scrolleffect","off")} =="on")
+			blur:"${xf.ViewXmlSetting("blur_scrolleffect","off")}",			
+		#end
+		#if(${xf.ViewXmlSetting("grayscale_scrolleffect","off")} == 'on')
+			grayscale:"${xf.ViewXmlSetting("grayscale_scrolleffect","off")}",	
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_maxblur","10")} != '10')
+			maxblur:"${xf.ViewXmlSetting("scrolleffect_maxblur","10")}",
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_bg","off")} != 'off')
+			on_slidebg:"${xf.ViewXmlSetting("scrolleffect_bg","off")}",
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_layers","off")} == 'on')
+			on_layers:"${xf.ViewXmlSetting("scrolleffect_layers","off")}",
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_parallax_layers","off")} == 'on')
+			on_parallax_layers:"${xf.ViewXmlSetting("scrolleffect_parallax_layers","off")}",
+		#end				
+		#if(${xf.ViewXmlSetting("scrolleffect_static_layers","off")} != 'off')
+			on_static_layers:"${xf.ViewXmlSetting("scrolleffect_static_layers","off")}",
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_static_parallax_layers","off")} != 'off')
+			on_parallax_static_layers:"${xf.ViewXmlSetting("scrolleffect_static_parallax_layers","off")}",
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_direction","both")} != 'both')
+			direction:"${xf.ViewXmlSetting("scrolleffect_direction","both")}",
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_multiplicator","1.3")} != '1.3')
+			multiplicator:"${xf.ViewXmlSetting("scrolleffect_multiplicator","1.3")}",
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_multiplicator_layers","1.3")} != '1.3')
+			multiplicator_layers:"${xf.ViewXmlSetting("scrolleffect_multiplicator_layers","1.3")}",
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_tilt","30")} != '30')
+			tilt:${xf.ViewXmlSetting("scrolleffect_tilt","30")},
+		#end
+		#if(${xf.ViewXmlSetting("scrolleffect_off_mobile","off")} != 'on')
+			disable_on_mobile:"${xf.ViewXmlSetting("scrolleffect_off_mobile","off")}",
+		#end
+		},
+		#end	
+	
+		#set( $use_parallax = ${xf.ViewXmlSetting("use_parallax","on")})					   
+
+		#if($use_parallax == 'on')
+		#set( $parallax_ddd = ${xf.ViewXmlSetting("ddd_parallax","off")} )					   
+		#set( $parallax_type = ${xf.ViewXmlSetting("parallax_type","on")} )					   
+		#set( $parallax_origo = ${xf.ViewXmlSetting("parallax_origo","enterpoint")} )					   
+		#set( $parallax_speed = ${xf.ViewXmlSetting("parallax_speed","400")} )		
+ 					   
+
+		#if ($parallax_ddd=="on") 
+			#set( $parallax_type = "3D" )					   
+			#set( $parallax_origo = "slidercenter" )					   
+		#end		
+	
+		parallax: {
+		type:"$parallax_type",
+		origo:"$parallax_origo",
+		speed:${xf.ViewXmlSetting("parallax_speed","2000")},
+		speedbg:${xf.ViewXmlSetting("parallax_background_speed","0")},
+		speedls:${xf.ViewXmlSetting("parallax_layers_speed","2000")},
+		levels:[${xf.ViewXmlSetting("parallax_level_1","2")},${xf.ViewXmlSetting("parallax_level_2","3")},${xf.ViewXmlSetting("parallax_level_3","4")},${xf.ViewXmlSetting("parallax_level_4","5")},${xf.ViewXmlSetting("parallax_level_5","6")},${xf.ViewXmlSetting("parallax_level_6","7")},${xf.ViewXmlSetting("parallax_level_7","12")},${xf.ViewXmlSetting("parallax_level_8","16")},${xf.ViewXmlSetting("parallax_level_9","10")},${xf.ViewXmlSetting("parallax_level_10","50")},${xf.ViewXmlSetting("parallax_level_11","47")},${xf.ViewXmlSetting("parallax_level_12","48")},${xf.ViewXmlSetting("parallax_level_13","49")},${xf.ViewXmlSetting("parallax_level_14","50")},${xf.ViewXmlSetting("parallax_level_15","51")}#if ($parallax_type == '3D'),${xf.ViewXmlSetting("parallax_level_3d","55")}#end],
+		#if ($parallax_type == '3D') 
+		ddd_shadow:"${xf.ViewXmlSetting("ddd_parallax_shadow","off")}",
+		ddd_bgfreeze:"${xf.ViewXmlSetting("ddd_parallax_bgfreeze","off")}",
+		ddd_overflow:"${xf.ViewXmlSetting("ddd_parallax_overflow","off")}"=="on"?"hidden":"visible",
+		ddd_layer_overflow:"${xf.ViewXmlSetting("ddd_parallax_layer_overflow","off")}"=="on"?"hidden":"visible",
+		ddd_z_correction:"${xf.ViewXmlSetting("ddd_parallax_zcorrection","65")}",
+		#end
+		#if(${xf.ViewXmlSetting("disable_parallax_mobile","off")} == 'on')
+			disable_onmobile:"on",
+		#end
+		},
+		#end
+	
+		#if (${xf.ViewXmlSetting("use_parallax","on")} != "on" || (${xf.ViewXmlSetting("use_parallax","on")} == "on" && ${xf.ViewXmlSetting("ddd_parallax","off")} != "on"))
+		shadow:"${xf.ViewXmlSetting("shadow_type","0")}",
+		#end
+		#if(${xf.ViewXmlSetting("use_spinner","-1")} == '-1')
+		spinner:"off",
+		#else
+		spinner:"spinner${xf.ViewXmlSetting("use_spinner","-1")}",
+		#end
+		stopLoop:"${xf.ViewXmlSetting("stop_slider","off")}",
+		
+		#if(${xf.ViewXmlSetting("loop_slide","off")}=="on" && $slideindex == 1 )
+		stopAfterLoops:0,
+		stopAtSlide:1,
+		#elseif(${xf.ViewXmlSetting("stop_slider","off")}=="off")
+		stopAfterLoops:"-1",
+		stopAtSlide:"-1",
+		#else		
+		stopAfterLoops:"${xf.ViewXmlSetting("stop_after_loops","0")}",
+		stopAtSlide:"${xf.ViewXmlSetting("stop_at_slide","1")}",
+		#end
+		 
+		
+		shuffle:"${xf.ViewXmlSetting("shuffle","off")}",
+		autoHeight:"${xf.ViewXmlSetting("RespectAspectRatio","off")}",
+	
+		#if(${xf.ViewXmlSetting("slidelayout","auto")} == "fullscreen")				
+		 fullScreenAutoWidth:"${xf.ViewXmlSetting("forcefullWidth","off")}",
+	     fullScreenAlignForce: "${xf.ViewXmlSetting("forcefullWidth","off")}",	
+		 fullScreenOffsetContainer: "${xf.ViewXmlSetting("fullscreen_offset_container","")}",	
+		 fullScreenOffset:"${xf.ViewXmlSetting("fullscreen_offset_size","")}",	
+		#end
+				
+		#if(${xf.ViewXmlSetting("minHeight","")} !="")
+		minHeight:"${xf.ViewXmlSetting("minHeight","")}",
+		#end
+			
+				
+				
+		#if(${xf.ViewXmlSetting("enable_progressbar","on")} != "on")
+		disableProgressBar:"on",
+		#end
+		hideThumbsOnMobile:"${xf.ViewXmlSetting("hide_thumbs_on_mobile","off")}",
+		hideSliderAtLimit:${xf.ViewXmlSetting("hide_slider_under","0")},
+		hideCaptionAtLimit:${xf.ViewXmlSetting("hide_defined_layers_under","0")},
+		hideAllCaptionAtLilmit:(${xf.ViewXmlSetting("hide_all_layers_under","0")}+1),
+		disableFocusListener:"${xf.ViewXmlSetting("disable_focus_listener","on")}"=="on"?true:false,
+	
+		#if(${xf.ViewXmlSetting("start_with_slide_enable","off")} == "on")
+		/*startWithSlide:"${xf.ViewXmlSetting("start_with_slide","1")}",*/
+		#end
+		
+		 disable_onmobile: 'off',		
+		 lazyType: "${xf.ViewXmlSetting("lazyLoad_type","none")}",
+		
+		#if(${xf.ViewXmlSetting("jquery_debugmode","off")}=="on")
+		debugMode:true,
+		#end
+		#if(${xf.ViewXmlSetting("waitforinit", "off")} == "on")/*waitForInit:true,*/#end
+		fallbacks: {
+			#if(${xf.ViewXmlSetting("allow_android_html5_autoplay","off")} != 'on')
+			allowHTML5AutoPlayOnAndroid: false,
+			#end
+			#if(${xf.ViewXmlSetting("ignore_height_changes","off")} != 'off')
+			ignoreHeightChanges:"${xf.ViewXmlSetting("ignore_height_changes","off")}",
+			ignoreHeightChangesSize:"${xf.ViewXmlSetting("ignore_height_changes_px","0")}",
+			#end
+			#if(${xf.ViewXmlSetting("disable_kenburns_on_mobile","off")}== 'on')
+			panZoomDisableOnMobile:"on",
+			#end	
+			simplifyAll:"${xf.ViewXmlSetting("simplify_ie8_ios4","off")}"
+		}
+    });
+
+				
+});
+ 
+</script> 
+
+
+
+
+
+

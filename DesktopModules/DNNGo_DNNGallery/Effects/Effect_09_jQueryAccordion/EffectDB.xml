@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_09_jQueryAccordion]]>
+    </Name>
+    <Description>
+      <![CDATA[Click headers to expand/collapse content that is broken into logical sections, much like tabs.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.01.01]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_09_jQueryAccordion/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[ContentText,Media]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/jQueryAccordion.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+  </EffectDB>
+</DNNGo_DNNGallery>

@@ -1,0 +1,74 @@
+﻿.Theme_10_Default .sponsorListHolder{
+}
+
+.Theme_10_Default .sponsor{
+	/*width:180px;
+	height:180px;*/
+	float:left;
+	margin:4px;
+	/* Giving the sponsor div a relative positioning: */
+	position:relative;
+	cursor:pointer;
+	
+}
+
+.Theme_10_Default .sponsorFlip{
+	/*  The sponsor div will be positioned absolutely with respect
+		to its parent .sponsor div and fill it in entirely */
+	text-align:center;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	border:1px solid #ddd;	
+	background:url("images/background.jpg") no-repeat center center #EFEFEF;;
+}
+
+.Theme_10_Default .sponsorFlip:hover{
+	border:1px solid #999;
+	
+	/* CSS3 inset shadow: */
+	-moz-box-shadow:0 0 30px #999 inset;
+	-webkit-box-shadow:0 0 30px #999 inset;
+	box-shadow:0 0 30px #999 inset;
+}
+
+.Theme_10_Default .sponsorFlip img{
+	/* Centering the logo image in the middle of the sponsorFlip div */
+	text-align:center;
+	padding-top:15px;
+}
+
+.Theme_10_Default .sponsorData{
+	/* Hiding the .sponsorData div */
+	display:none;
+}
+
+.Theme_10_Default .sponsorDescription{
+	font-size:16px;
+	padding:10px 10px 5px 10px;
+	font-style:italic;
+}
+
+.Theme_10_Default .sponsorURL{
+	font-size:12px;
+	text-align:left;
+	padding:5px 10px 5px 10px;
+}
+
+.Theme_10_Default .clear{
+	/* This class clears the floats */
+	clear:both;
+}
+
+.Theme_10_Default .pager{
+	padding:10px 0px;	
+}
+
+.Theme_10_Default .pager span{
+	padding:0px 4px;	
+}
+.Theme_10_Default .pager a{
+	padding:0px 4px;	
+}

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <Setting>
+      <Name><![CDATA[animationLoop]]></Name>
+      <Alias><![CDATA[Animation Loop]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Should the animation loop? If false, directionNav will received "disable" classes at either end]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[smoothHeight]]></Name>
+      <Alias><![CDATA[Smooth Height]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Allows a high degree of automatic]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[slideshow]]></Name>
+      <Alias><![CDATA[Slide show]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Animate slider automatically]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[randomize]]></Name>
+      <Alias><![CDATA[Randomize]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[false]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Randomize slide order]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[pauseOnHover]]></Name>
+      <Alias><![CDATA[Pause On Hover]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[false]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Pause the slideshow when hovering over slider, then resume when no longer hovering]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[touch]]></Name>
+      <Alias><![CDATA[Touch]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Allow touch swipe navigation of the slider on touch-enabled devices]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[controlNav]]></Name>
+      <Alias><![CDATA[Control Nav]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Create navigation for paging control of each clide? Note: Leave true for manualControls usage]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[directionNav]]></Name>
+      <Alias><![CDATA[Direction Nav]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Create navigation for previous/next navigation?]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[keyboard]]></Name>
+      <Alias><![CDATA[Keyboard]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Allow slider navigating via keyboard left/right keys]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[pausePlay]]></Name>
+      <Alias><![CDATA[Pause Play]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Create pause/play dynamic element]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[slideshowSpeed]]></Name>
+      <Alias><![CDATA[Slide show Speed]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[3000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Set the speed of the slideshow cycling, in milliseconds]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[animationSpeed]]></Name>
+      <Alias><![CDATA[Animation Speed]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[600]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Set the speed of animations, in milliseconds]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    
+    
+    
+
+    
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

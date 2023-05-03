@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+
+
+    <Setting>
+      
+      <Name>
+        <![CDATA[ animation ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Effect ]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ random ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[150]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[ random,cube,cubeRandom,block,cubeStop,cubeStopRandom,cubeHide,cubeSize,horizontal,showBars,showBarsRandom,tube,fade,fadeFour,paralell,blind,blindHeight,blindWidth,directionTop,directionBottom,directionRight,directionLeft,cubeSpread,glassCube,glassBlock,circles,circlesInside,circlesRotate,cubeShow,upBars,downBars,hideBars,swapBars,swapBarsBack,swapBlocks,cut ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      
+      <Name>
+        <![CDATA[ width ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Width]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ 700 ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      
+      <Name>
+        <![CDATA[ height ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Height ]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ 300 ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <Setting>
+      
+      <Name>
+        <![CDATA[ interval ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Interval Time ]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ 2500 ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[ ms ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+    <Setting>
+      
+      <Name>
+        <![CDATA[ numbers ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Numbers ]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      
+      <Name>
+        <![CDATA[ navigation ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Navigation ]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      
+      <Name>
+        <![CDATA[ thumbs ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[Thumbs ]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      
+      <Name>
+        <![CDATA[ hideTools ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Hide Tools]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      
+      <Name>
+        <![CDATA[ auto_play ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Auto Play]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      
+      <Name>
+        <![CDATA[ dots ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Dots]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+<Setting>
+      
+      <Name>
+        <![CDATA[ progressbar ]]>
+      </Name>
+      
+      <Alias>
+        <![CDATA[ Progress Bar]]>
+      </Alias>
+      
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+      
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+    </Setting>  
+
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

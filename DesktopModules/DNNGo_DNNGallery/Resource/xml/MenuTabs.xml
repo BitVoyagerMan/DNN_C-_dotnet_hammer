@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <Tabs>
+    <!--Dashboard-->
+    <!--<TabItem>
+      <Token><![CDATA[Dashboard]]></Token>
+      <Title><![CDATA[Dashboard]]></Title>
+      --><!--<Src><![CDATA[Manager_Dashboard.ascx]]></Src>--><!--
+      <Src><![CDATA[]]></Src>
+      <Icon><![CDATA[fa fa-dashboard]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[]]></IsAdministrator>
+    </TabItem>-->
+
+    <!--数据管理-->
+    <TabItem>
+      <Token><![CDATA[DataList]]></Token>
+      <Title><![CDATA[Gallery]]></Title>
+      <Src><![CDATA[Setting_ManagerLists.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[ManagerList]]></Token>
+      <Title><![CDATA[All Items]]></Title>
+      <Src><![CDATA[Setting_ManagerLists.ascx]]></Src>
+      <Icon><![CDATA[fa clip-list-4]]></Icon>
+      <Parent><![CDATA[DataList]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[AddNew]]></Token>
+      <Title><![CDATA[Add New]]></Title>
+      <Src><![CDATA[Setting_ManagerItem.ascx]]></Src>
+      <Icon><![CDATA[fa fa-plus]]></Icon>
+      <Parent><![CDATA[DataList]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Groups]]></Token>
+      <Title><![CDATA[Groups]]></Title>
+      <Src><![CDATA[Setting_ManagerGroup.ascx]]></Src>
+      <Icon><![CDATA[fa fa-tags]]></Icon>
+      <Parent><![CDATA[DataList]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[ImportExport]]></Token>
+      <Title><![CDATA[Import&Export]]></Title>
+      <Src><![CDATA[Setting_ManagerImportExport.ascx]]></Src>
+      <Icon><![CDATA[fa fa-retweet]]></Icon>
+      <Parent><![CDATA[DataList]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+
+    <!--Media-->
+    <TabItem>
+      <Token><![CDATA[Library]]></Token>
+      <Title><![CDATA[Library]]></Title>
+      <Src><![CDATA[Setting_Library.ascx]]></Src>
+      <Icon><![CDATA[fa clip-image]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <!--Effects-->
+    <TabItem>
+      <Token><![CDATA[Effects]]></Token>
+      <Title><![CDATA[Effects]]></Title>
+      <Src><![CDATA[]]></Src>
+      <Icon><![CDATA[clip-stack-empty]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Effect_Options]]></Token>
+      <Title><![CDATA[Options]]></Title>
+      <Src><![CDATA[Setting_ManagerOptions.ascx]]></Src>
+      <Icon><![CDATA[fa clip-cogs]]></Icon>
+      <Parent><![CDATA[Effects]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Effect_List]]></Token>
+      <Title><![CDATA[Effect List]]></Title>
+      <Src><![CDATA[Setting_Effects.ascx]]></Src>
+      <Icon><![CDATA[fa clip-list-4]]></Icon>
+      <Parent><![CDATA[Effects]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Effect_Style]]></Token>
+      <Title><![CDATA[Style]]></Title>
+      <Src><![CDATA[Setting_Effect_Style.ascx]]></Src>
+      <Icon><![CDATA[fa fa-leaf]]></Icon>
+      <Parent><![CDATA[Effects]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+
+
+    <!--Settings-->
+    <TabItem>
+      <Token><![CDATA[Settings]]></Token>
+      <Title><![CDATA[Settings]]></Title>
+      <Src><![CDATA[Settings.ascx]]></Src>
+      <Icon><![CDATA[clip-cog]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Setting]]></Token>
+      <Title><![CDATA[General]]></Title>
+      <Src><![CDATA[Settings.ascx]]></Src>
+      <Icon><![CDATA[fa fa-wrench]]></Icon>
+      <Parent><![CDATA[Settings]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <!--<TabItem>
+      <Token><![CDATA[jQuerySettings]]></Token>
+      <Title><![CDATA[jQuery Settings]]></Title>
+      <Src><![CDATA[Setting_jQuery.ascx]]></Src>
+      <Icon><![CDATA[fa clip-code]]></Icon>
+      <Parent><![CDATA[Settings]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>-->
+
+
+    <!--License-->
+    <TabItem>
+      <Token><![CDATA[License]]></Token>
+      <Title><![CDATA[License]]></Title>
+      <Src><![CDATA[License.ascx]]></Src>
+      <Icon><![CDATA[clip-globe]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+
+
+
+    <!--Error-->
+    <TabItem>
+      <Token><![CDATA[Error]]></Token>
+      <Title><![CDATA[Error]]></Title>
+      <Src><![CDATA[Manager_ErrorCatch.ascx]]></Src>
+      <Icon><![CDATA[clip-globe]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    
+    <!--<TabItem>
+      <Token><![CDATA[Dashboard]]></Token>
+      <Title><![CDATA[Dashboard]]></Title>
+      --><!--<Src><![CDATA[Manager_Dashboard.ascx]]></Src>--><!--
+      <Src><![CDATA[]]></Src>
+      <Icon><![CDATA[fa fa-dashboard]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[]]></IsAdministrator>
+    </TabItem>-->
+
+    
+    
+    
+  </Tabs>
+</DNNGo_DNNGallery>

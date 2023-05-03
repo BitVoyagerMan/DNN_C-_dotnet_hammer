@@ -1,0 +1,40 @@
+﻿<div class="Controls_Urls" data-id="<%--ClientID--%>" data-name="<%--ClientName--%>" data-rtbox="true">
+    <div class="nav nav-tabs Urls_Pictures" id="Urls_Pictures">
+        <input type="hidden" id="hfUrlLink" />
+        <!--   <div class="urls_close"><a class="urls-close-a" href="javascript:;"><i class="clip-close"></i></a></div>-->
+        <ul id="myTab2" class="nav nav-tabs tab-purple">
+            <li class="active">
+                <a href="#panel_tab_list_<%--ClientID--%>" data-toggle="tab">
+                    <i class="green fa clip-list"></i> List
+                </a>
+            </li>
+            <li class="">
+                <a href="#panel_tab_add_<%--ClientID--%>" data-toggle="tab">
+                    <i class="green fa clip-plus-circle"></i> Uploads
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="panel_tab_list_<%--ClientID--%>">
+                <div class="dd handlelist" id="Urls_Pictures_div">
+                    <div class="listtitle">
+                        <div class="row">
+                            <div class="col-xs-1">ID</div>
+                            <div class="col-xs-3">Images</div>
+                            <div class="col-xs-4">Name</div>
+                            <div class="col-xs-2">Extension</div>
+
+                            <div class="col-xs-2 last"> </div>
+                        </div>
+                    </div>
+                    <ol class="dd-list listbox" id="Urls_Pictures_ol"></ol>
+                    <ul id="Urls_Pictures_page"></ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="panel_tab_add_<%--ClientID--%>">
+                <div id="dropzone<%--ClientID--%>" action="<%--ModulePath--%>Resource_jQueryFileUpload.ashx?<%--QueryString--%>" method="post" class="dropzone" enctype="multipart/form-data"></div>
+            </div>
+        </div>
+
+    </div>
+</div>

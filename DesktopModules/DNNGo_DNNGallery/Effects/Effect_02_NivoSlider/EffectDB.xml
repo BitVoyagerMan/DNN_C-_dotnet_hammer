@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    
+    <Name>
+      <![CDATA[Effect_02_NivoSlider]]>
+    </Name>
+    
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    
+    <Version>
+      <![CDATA[02.07.05]]>
+    </Version>
+    
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_02_NivoSlider/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.nivo.slider.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[ContentText,Picture,UrlLink]]>
+    </DisplayByNormal>
+    
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/NivoSlider.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+  </EffectDB>
+</DNNGo_DNNGallery>
+<!--http://nivo.dev7studios.com/-->

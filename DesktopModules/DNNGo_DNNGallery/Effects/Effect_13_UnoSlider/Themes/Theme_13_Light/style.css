@@ -1,0 +1,199 @@
+/* Unoslider container */
+.Theme_13_Light {
+  list-style: none;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px!important;
+}
+
+.Theme_13_Light img{
+  max-width: 100%;
+}
+
+.Theme_13_Light li {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Timebar */
+.Theme_13_Light .unoslider_timer {
+  background-color: white;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  -moz-box-shadow: 0px 2px 2px black;
+  -webkit-box-shadow: 0px 2px 2px black;
+  -o-box-shadow: 0px 2px 2px black;
+  box-shadow: 0px 2px 2px black;
+}
+
+/* Progress bar preloader container */
+.Theme_13_Light .unoslider_preloader {
+  background: rgba(255, 255, 255, 0.5);  
+}
+
+/* progress bar preloader */
+.Theme_13_Light .unoslider_preloader .unoslider_progress {
+  width: 30%;
+  height: 5px;
+  margin: 0 auto;
+  border-top: 1px solid #7c7c7c;
+  border-bottom: 1px solid #f1f1f1;
+  border-left: 1px solid #949494;
+  border-right: 1px solid #949494;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9a9a9a), color-stop(100%, #b3b3b3));
+  background: -webkit-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -moz-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -o-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -ms-linear-gradient(#9a9a9a, #b3b3b3);
+  background: linear-gradient(#9a9a9a, #b3b3b3);
+}
+
+/* progress bar fill */
+.Theme_13_Light .unoslider_preloader .unoslider_progress span {
+  display: block;
+  height: 100%;
+  background: #66cccc;
+}
+
+/* Spinner preloader */
+.Theme_13_Light .unoslider_spinner {
+  background: url('/images/spinner.gif') white center center no-repeat;
+}
+
+.Theme_13_Light .unoslider_layers{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Theme_13_Light .unoslider_caption a
+{
+  text-decoration:none;
+}
+
+
+
+/* Hand cursor over navigation elements */
+.Theme_13_Light .unoslider_navigation {
+  cursor: pointer;
+}
+
+/* container which contains navigation and indicator */
+.Theme_13_Light .unoslider_navigation_container {
+  background: white;
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+/* Tooltip panel */
+.Theme_13_Light .unoslider_caption {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  font-family: "Helvetica neue", Helvetica, Verdana, sans-serif;
+  line-height: 35px;
+  width: 80%;
+  text-align: center;
+  color: #707070;
+  font-size: 13px;
+}
+
+/* play, pause, previous and next elements */
+.Theme_13_Light .unoslider_pause, 
+.Theme_13_Light .unoslider_play, 
+.Theme_13_Light .unoslider_left, 
+.Theme_13_Light .unoslider_right {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  background: url("light.png") no-repeat;
+}
+
+/* play and pause elements */
+.Theme_13_Light .unoslider_pause, 
+.Theme_13_Light .unoslider_play {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  margin-left: -12.5px;
+  top: 50%;
+  left: 98%;
+}
+
+/* previous and next elements */
+.Theme_13_Light .unoslider_left, 
+.Theme_13_Light .unoslider_right {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  top: 50%;
+}
+
+/* previous */
+.Theme_13_Light .unoslider_left {
+  background-position: -3px -30px;
+  right: 70px;
+}
+
+/* next */
+.Theme_13_Light .unoslider_right {
+  background-position: -31px -30px;
+  right: 40px;
+}
+
+/* pause */
+.Theme_13_Light .unoslider_pause {
+  background-position: -31px -3px;
+}
+
+/* play */
+.Theme_13_Light .unoslider_play {
+  background-position: -3px -3px;
+}
+
+/* bullet indicator */
+.Theme_13_Light .unoslider_indicator {
+  position: absolute;
+  left: 15px;
+  bottom: 5px;
+  text-align: left;
+}
+.Theme_13_Light .unoslider_indicator a {
+  text-indent:-9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  -moz-box-orient: vertical;
+  float:left;
+  vertical-align: middle;
+  *vertical-align: auto;
+  cursor: pointer;
+  margin: 3px;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  background: url("light.png") no-repeat;
+  background-position: 0 -54px;
+}
+.Theme_13_Light .unoslider_indicator a {
+  
+}
+.Theme_13_Light .unoslider_indicator a.unoslider_indicator_active {
+  background-position: -19px -54px;
+}

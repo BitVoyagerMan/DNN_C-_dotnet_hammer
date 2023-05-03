@@ -1,0 +1,128 @@
+﻿@charset 'utf-8';
+/*************************************************!
+*
+*   project:    liteAccordion - a horizontal accordion plugin for jQuery
+*   author:     Nicola Hibbert
+*   url:        http://nicolahibbert.com/liteaccordion-v2/
+*   demo:       http://www.nicolahibbert.com/demo/liteAccordion/
+*
+*   Version:    2.1.1
+*   Copyright:  (c) 2010-2012 Nicola Hibbert
+*   Licence:    MIT
+*
+**************************************************/
+/****************************************** Core */
+.Theme_06_Light { text-align: left; font: 'Helvetica Neue', Verdana, Arial, sans-serif; -webkit-tap-highlight-color: transparent }
+.Theme_06_Light > ol { position: relative; overflow: hidden; height: 100%; margin: 0; padding: 0; list-style-type: none }
+.Theme_06_Light > ol > li { padding:0px; margin:0px; list-style:none;}
+.Theme_06_Light .slide > h2 { 
+    color: black;
+    font-size: 16px;     
+    font-weight: normal;
+    margin: 0; 
+    z-index: 100; 
+    position: absolute; 
+    top: 0; 
+    left: 0;    
+    -webkit-backface-visibility: hidden; /* fixes chrome bug */
+    -webkit-transform: translateX(-100%) rotate(-90deg); 
+    -webkit-transform-origin: right top; 
+    -moz-transform: translateX(-100%) rotate(-90deg);
+    -moz-transform-origin: right top; 
+    -o-transform: translateX(-100%) rotate(-90deg); 
+    -o-transform-origin: right top; 
+    transform: translateX(-100%) rotate(-90deg); 
+    transform-origin: right top; 
+	font-family:Arial;
+	line-height:20px;
+	padding:0px;
+}
+.Theme_06_Light .slide > h2 span { 
+    display: block; 
+    padding-right: 8%; 
+    text-align: right; 
+    height: 90%;
+    margin-top: 5px; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+.Theme_06_Light .slide > h2 b { 
+    display:none;
+}
+
+.Theme_06_Light .slide > h2:hover { cursor: pointer }
+.Theme_06_Light .slide > div { height: 100%; position: absolute; top: 0; z-index: 10; overflow: hidden; background: white }
+.Theme_06_Light .ap-caption { padding: 10px 15px; position: absolute; bottom: 20px; right: 30px; z-index: 3; background: black; 
+    background: rgba(0,0,0,0.7); color: white; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px }
+.Theme_06_Light noscript p { padding: 10px; margin: 0; background: white }
+
+
+/***************************************** Light */
+.Theme_06_Light { 
+    border: 9px solid white; 
+    border-bottom-width: 8px; 
+    padding: 5px 5px 6px 0; 
+    background: #a0a0a0; 
+    -webkit-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4); 
+    -moz-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);    
+    -o-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4); 
+    box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
+	margin:0px auto;
+	overflow:hidden;
+}
+.Theme_06_Light .slide > h2 { background: #a0a0a0; text-shadow: 0 -1px 0 white; line-height: 265% }
+.Theme_06_Light .slide > h2 span { 
+    background: #fcfcfc;
+    background: -moz-linear-gradient(left,  #fcfcfc 0%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fcfcfc), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(left,  #fcfcfc 0%,#ededed 100%);
+    background: -o-linear-gradient(left,  #fcfcfc 0%,#ededed 100%);
+    background: -ms-linear-gradient(left,  #fcfcfc 0%,#ededed 100%);
+    background: linear-gradient(left,  #fcfcfc 0%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=1 );
+    -webkit-box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset; 
+    -moz-box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
+    -o-box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
+    box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
+    color: #909090;
+}
+.Theme_06_Light .slide > h2 b { background: #ffffff; color: #909090; text-shadow: -1px 1px 0 white }
+.Theme_06_Light .slide > h2.selected span, 
+.Theme_06_Light .slide h2.selected span:hover,
+.Theme_06_Light .slide > h2.selected b { background: #ffffff }
+.Theme_06_Light .slide > div { background: #a0a0a0; margin-left: 5px }
+
+
+
+/*************************************** Rounded */
+.liteAccordion.rounded, .rounded > ol { -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; border-radius: 6px }
+.liteAccordion.rounded .slide > h2 span { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px }
+
+/******************************************** IE */
+.ie7.Theme_06_Light .slide > h2 span { height:999px; }
+.ie8.Theme_06_Light .slide > h2 span { height:999px; }
+/* transforms */
+.Theme_06_Light.ie7 .slide > h2 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3) }
+.Theme_06_Light.ie7 .slide > h2 b { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1) }
+.Theme_06_Light.ie8 .slide > h2 { filter: none; -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; -ms-transform: none }
+.Theme_06_Light.ie8 .slide > h2 b { filter: none; -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"; -ms-transform: none }
+.Theme_06_Light.ie9 .slide > h2 { filter: none; -ms-filter: none; -ms-transform: translateX(-100%) rotate(-90deg); -ms-transform-origin: right top }
+.Theme_06_Light.ie9 .slide > h2 b { filter: none; -ms-filter: none; -ms-transform: rotate(90deg) }
+
+/* misc */
+.Theme_06_Light.ie .slide > h2 b { top: 36%; left: 5% }
+.Theme_06_Light.ie .slide > h2 b { top: 44% }
+.Theme_06_Light .slide > h2 span { filter: none }
+.Theme_06_Light.ie9 .slide > h2 b { top: 0; left: 10% }
+
+
+
+
+.Theme_06_Light .figure { display: block; width: 100%; height: 100%; margin: 0 ; color:#fff; position:relative; }
+.Theme_06_Light .figure a{ color:#333;}
+.Theme_06_Light .AccordionDescription { padding: 10px 15px; position: absolute; bottom: 20px; right: 30px; z-index: 3; margin-left:30px; background: black; background: rgba(0,0,0,0.7); color: white;
+    -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px }

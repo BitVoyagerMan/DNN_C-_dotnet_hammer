@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <!--<Setting>
+      <Name><![CDATA[Categories]]></Name>
+      <Alias><![CDATA[Categories]]></Alias>
+      <Width><![CDATA[200]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Multiple categories are separated by comma.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+    </Setting>-->
+     
+    
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

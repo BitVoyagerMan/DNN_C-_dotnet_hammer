@@ -1,0 +1,73 @@
+﻿ 
+ 
+
+ <div id="jslidernews$ModuleID" class="$ThemeName" style="width:${xf.ViewXmlSetting("width","700")}px; height:${xf.ViewXmlSetting("height","300")}px;">
+	<div class="preload"><div></div></div>            
+            <div  class="button-previous">Previous</div>                
+    		 <!-- MAIN CONTENT --> 
+              <div class="main-slider-content ${xf.ViewXmlSetting("NavigatorPosition","left")}-description" style="width:${xf.ViewXmlSetting("width","700")}px; height:${xf.ViewXmlSetting("height","300")}px;">
+                <ul class="sliders-wrap-inner" style="width:${xf.ViewXmlSetting("width","700")}px; height:${xf.ViewXmlSetting("height","300")}px;">
+                    #if($DataList.Count > 0)
+                         #foreach($DataItem in $DataList)
+                             <li  style="width:${xf.ViewXmlSetting("width","700")}px; height:${xf.ViewXmlSetting("height","300")}px;">
+                                    #if($DataItem.UrlLink != "")
+                                    <a href="${xf.ViewLinkUrl($DataItem.UrlLink)}" class="main-slider-img" target="${xf.ViewLinkTarget($DataItem)}"><img class="main-slider-img" src="${xf.ViewLinkUrl($DataItem.Picture)}" title="$DataItem.Title" ></a>     
+                                    #else
+                                    <img src="${xf.ViewLinkUrl($DataItem.Picture)}" class="main-slider-img" title="$DataItem.Title" >
+                                    #end
+
+                                    #if($DataItem.ContentText != "")
+                                    <div class="slider-description">
+                                        $DataItem.ContentText
+                                    </div>
+                                    #end
+                            </li> 
+                         #end
+                    #end
+                  </ul>  	
+               </div>
+ 		   <!-- END MAIN CONTENT --> 
+           <!-- NAVIGATOR -->
+           <!--navigator -->
+           	<div class="navigator-content ${xf.ViewXmlSetting("NavigatorPosition","left")}-navigator">
+                  <div class="navigator-wrapper">
+                        <ul class="navigator-wrap-inner">
+                             #if($DataList.Count > 0)
+                                    #foreach($DataItem in $DataList)
+                                     <li>
+                                        <div class="navigator-wrap">
+                                            <img src="${xf.ViewLinkUrl($DataItem.Thumbnails)}" />
+                                            <h3> $DataItem.Title </h3>
+                                            $DataItem.Description
+                                        </div>    
+                                    </li>
+                                    #end
+                            #end
+                        </ul>
+                  </div>
+   
+             </div> 
+            <div class="button-next">Next</div>
+            <div class="button-control"><span></span></div>
+ </div> 
+
+ <script type="text/javascript">
+     jQuery(document).ready(function () {
+         var buttons1 = { previous: jQuery('#jslidernews$ModuleID .button-previous'),
+             next: jQuery('#jslidernews$ModuleID .button-next')
+         };
+         jQuery('#jslidernews$ModuleID').lofJSidernews({
+             direction: '${xf.ViewXmlSetting("direction","default")}', //opacity                        
+             easing: '${xf.ViewXmlSetting("easing","easeInOutExpo")}',
+             interval: ${xf.ViewXmlSetting("interval",5000)},
+             duration: ${xf.ViewXmlSetting("duration",1200)},
+             auto: ${xf.ViewXmlSetting("auto","true")}, //false
+             mainWidth: ${xf.ViewXmlSetting("width",700)},
+             mainHeight: ${xf.ViewXmlSetting("height",300)},
+             navigatorHeight: ${xf.ViewXmlSetting("height",300)}/${xf.ViewXmlSetting("maxItemDisplay",3)},
+             navigatorWidth: ${xf.ViewXmlSetting("navigatorWidth",220)},
+             maxItemDisplay: ${xf.ViewXmlSetting("maxItemDisplay",3)},
+             buttons: buttons1
+         });
+     });
+</script>

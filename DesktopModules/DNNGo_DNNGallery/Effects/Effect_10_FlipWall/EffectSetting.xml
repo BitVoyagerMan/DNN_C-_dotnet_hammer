@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <Setting>
+      <Name><![CDATA[PageSize]]></Name>
+      <Alias><![CDATA[Page Size]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[9999]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[items]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ width ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Width ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 180 ]]>
+      </DefaultValue>
+      <Description>
+        <![CDATA[  px ]]>
+      </Description>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ height ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ height ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 180 ]]>
+      </DefaultValue>
+      <Description>
+        <![CDATA[  px ]]>
+      </Description>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+    </Setting>
+
+    <Setting>
+      <Name>
+        <![CDATA[ speed ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ speed ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 350 ]]>
+      </DefaultValue>
+      <Description>
+        <![CDATA[  ms ]]>
+      </Description>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+    </Setting>
+   
+    <Setting>
+      <Name>
+        <![CDATA[ direction ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Direction ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ left ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ left,right,top,bottom ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+    </Setting>
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

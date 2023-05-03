@@ -1,0 +1,189 @@
+﻿/*
+
+	GalleryView Stylesheet
+	
+	Use the CSS rules below to modify the look of your gallery.
+	 
+	To create Add rules, use the markup below as a guide to GalleryView's architecture.
+*/
+
+/* GALLERY LIST */
+/* IMPORTANT - Change '#myGallery' to the ID of your gallery list to prevent a flash of unstyled content */
+.Theme_15_Dark  .GalleryView{ display: none; }
+
+.Theme_15_Dark .gv_galleryWrap { position: relative; background: #222; font-size: 10pt; }
+
+/* GALLERY DIV */
+.Theme_15_Dark .gv_gallery { overflow: hidden; position: relative;}
+
+.Theme_15_Dark .gv_imageStore { visibility: hidden; position: absolute; top: -10000px; left: -10000px; }
+
+
+/*************************************************/
+/**   PANEL STYLES								**/
+/*************************************************/
+
+.Theme_15_Dark .gv_panelWrap { filter: inherit; position: absolute; overflow: hidden; }
+
+.Theme_15_Dark .gv_panel-loading { background: url(images/img-loader.gif) 50% 50% no-repeat #aaa; }
+.Theme_15_Dark .gv_frame-loading { background: url(images/img-loader.gif) 50% 50% no-repeat #aaa; }
+
+/* GALLERY PANELS */
+.Theme_15_Dark .gv_panel { filter: inherit; position: absolute; top: 0; left: 0; overflow: hidden; z-index: 100; }
+.Theme_15_Dark .gv_panel img { position: absolute; }
+
+.Theme_15_Dark .gv_overlay { position: absolute; background: #222; color: white; z-index: 200; }
+.Theme_15_Dark .gv_showOverlay { 
+	position: absolute; 
+	width: 20px; 
+	height: 20px; 
+	background: url(images/info.png) #222; 
+	cursor: pointer;
+	z-index: 200;
+}
+.Theme_15_Dark .gv_overlay h4 { color: white; margin: 4px; font-weight: bold; }
+.Theme_15_Dark .gv_overlay p { color: white; margin: 4px; }
+
+.Theme_15_Dark .gv_infobar {
+	background: #222;
+	padding: 0 0.5em;
+	line-height: 1.5em;
+	height: 1.5em;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+	vertical-align: middle;
+	z-index: 2000;
+	
+}
+
+
+/*************************************************/
+/**   FILMSTRIP STYLES							**/
+/*************************************************/
+
+.Theme_15_Dark .gv_filmstripWrap { overflow: hidden; position: absolute; }
+
+
+/* FILMSTRIP */
+.Theme_15_Dark .gv_filmstrip { margin: 0; padding: 0; position: absolute; top: 0; left: 0; }
+
+/* FILMSTRIP FRAMES (contains both images and captions) */
+.Theme_15_Dark .gv_frame { 
+	cursor: pointer;
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+/* WRAPPER FOR FILMSTRIP IMAGES */
+.Theme_15_Dark .gv_frame .gv_thumbnail { position: relative;overflow: hidden !important; }
+
+/* WRAPPER FOR CURRENT FILMSTRIP IMAGE */
+.Theme_15_Dark .gv_frame.current .gv_thumbnail {}
+
+/* FRAME IMAGES */
+.Theme_15_Dark .gv_frame img { border: none; position: absolute; }
+
+/* FRAME CAPTION */
+.Theme_15_Dark .gv_frame .gv_caption { height: 14px; line-height: 14px; font-size: 10px; text-align: center; color:white; }
+
+/* CURRENT FRAME CAPTION */
+.Theme_15_Dark .gv_frame.current .gv_caption { }
+
+/* POINTER FOR CURRENT FRAME */
+.Theme_15_Dark .gv_pointer {
+	border-color: black;
+}
+
+/* NAVIGATION BUTTONS */
+.Theme_15_Dark .gv_navWrap {
+	text-align: center;
+	position: absolute;
+}
+.Theme_15_Dark .gv_navPlay,
+.Theme_15_Dark .gv_navPause,
+.Theme_15_Dark .gv_navNext,
+.Theme_15_Dark .gv_navPrev {
+	
+	opacity: 0.3;
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	filter:alpha(opacity=30);
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	vertical-align: middle;
+}
+.Theme_15_Dark .gv_navPlay:hover,
+.Theme_15_Dark .gv_navPause:hover,
+.Theme_15_Dark .gv_navNext:hover,
+.Theme_15_Dark .gv_navPrev:hover {
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+.Theme_15_Dark .gv_panelNavPrev,
+.Theme_15_Dark .gv_panelNavNext {
+	position: absolute;
+	display: none;
+	opacity: 0.50;
+	-moz-opacity: 0.50;
+	-khtml-opacity: 0.50;
+	filter:alpha(opacity=50);
+	z-index: 200;
+}
+
+.Theme_15_Dark .gv_panelNavPrev:hover,
+.Theme_15_Dark .gv_panelNavNext:hover {
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	-khtml-opacity: 0.9;
+	filter:alpha(opacity=90);
+}
+
+.Theme_15_Dark .gv_navPlay {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background: url(images/play-big.png) top left no-repeat;
+}
+.Theme_15_Dark .gv_navPause {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background: url(images/pause-big.png) top left no-repeat;
+}
+.Theme_15_Dark .gv_navNext {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(images/next.png) top left no-repeat;
+}
+.Theme_15_Dark .gv_navPrev {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(images/prev.png) top right no-repeat;
+}
+.Theme_15_Dark .gv_panelNavNext {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(images/panel-next.png) top left no-repeat;
+}
+.Theme_15_Dark .gv_panelNavPrev {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(images/panel-prev.png) top right no-repeat;
+}

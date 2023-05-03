@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_18_ImagesLoaded]]>
+    </Name>
+    <Description>
+      <![CDATA[This is a image displaying module based on grid layout.It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.00.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_18_ImagesLoaded/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.masonry.min.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.easing.js,jquery.fancybox.js,jquery.fancybox.css]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Picture,Description,UrlLink,Linktype]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/PhotoAlbums/Example1.aspx]]>
+    </DemoUrl>
+    <SettingName>
+      <![CDATA[Effect]]>
+    </SettingName>
+    <DisplayEffect>
+      <![CDATA[true]]>
+    </DisplayEffect>
+    <DataListOption>
+      <![CDATA[Effect]]>
+    </DataListOption>
+	<DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/ImagesLoaded.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+    <Pager><![CDATA[true]]></Pager>
+</EffectDB>
+
+</DNNGo_DNNGallery>

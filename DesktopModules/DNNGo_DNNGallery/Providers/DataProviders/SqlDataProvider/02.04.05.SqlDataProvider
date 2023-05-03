@@ -1,0 +1,30 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** ALTER Table **/
+
+ 
+/** DNNGo_DNNGallery_Content  **/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGallery_Content]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	if not exists (select * from dbo.syscolumns where id=object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGallery_Content]') and name='StartTime' )
+		BEGIN
+			ALTER TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGallery_Content] ADD
+			[StartTime] [datetime] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGallery_Content_StartTime DEFAULT getdate(),
+			[EndTime] [datetime] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGallery_Content_EndTime DEFAULT Dateadd(yyyy,10,getdate())
+		END
+END
+GO
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

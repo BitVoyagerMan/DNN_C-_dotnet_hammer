@@ -1,0 +1,100 @@
+﻿  #if($DataList.Count > 0)
+ <div class="wrapper_$ThemeName">
+  <!-- AnythingSlider #3 -->
+  <ul id="slider$ModuleID" style="width:${xf.ViewXmlSetting("width","700")}px; height:${xf.ViewXmlSetting("height","300")}px;" class="loading">
+        #foreach($DataItem in $DataList)
+             <li class="panel$velocityCount">
+                #if($DataItem.Description != "")
+                <!-- Note this caption is before the image, all others it is after -->
+                <div class="caption-${xf.ViewXmlSetting("position","left")}">
+
+                  <div class="cap-in">
+                        $DataItem.Description
+                  </div>
+
+                </div>
+                #end
+                <div class="slider-content">
+                    $DataItem.ContentText
+                </div>
+              </li>
+		#end
+  </ul>
+</div>
+
+  <!-- END AnythingSlider #3 -->
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('#slider$ModuleID').anythingSlider({
+            // Appearance 
+            theme: "$ThemeName", // Theme name
+            mode: "${xf.ViewXmlSetting("mode","horizontal")}", // Set mode to "horizontal", "vertical" or "fade" (only first letter needed); replaces vertical option 
+            expand:false,     // If true, the entire slider will expand to fit the parent element 
+            easing: "${xf.ViewXmlSetting("easing","swing")}",   // Anything other than "linear" or "swing" requires the easing plugin or jQuery UI 
+
+            buildArrows: ${xf.ViewXmlSetting("buildArrows","true")},      // If true, builds the forwards and backwards buttons 
+            buildNavigation: ${xf.ViewXmlSetting("buildNavigation","true")},      // If true, builds a list of anchor links to link to each panel 
+            buildStartStop: ${xf.ViewXmlSetting("buildStartStop","true")},      // If true, builds the start/stop button 
+
+            toggleArrows: ${xf.ViewXmlSetting("toggleArrows","false")},     // If true, side navigation arrows will slide out on hovering & hide @ other times 
+            toggleControls: ${xf.ViewXmlSetting("toggleControls","false")},     // if true, slide in controls (navigation + play/stop button) on hover and slide change, hide @ other times    
+
+            // Slideshow options 
+            autoPlay: ${xf.ViewXmlSetting("autoPlay","true")},     // If true, the slideshow will start running; replaces "startStopped" option 
+            playRtl: ${xf.ViewXmlSetting("playRtl","false")},     // If true, the slideshow will move right-to-left 
+
+            // Times 
+            delay: ${xf.ViewXmlSetting("delay",3000)},      // How long between slideshow transitions in AutoPlay mode (in milliseconds) 
+            animationTime: ${xf.ViewXmlSetting("animationTime",600)},       // How long the slideshow transition takes (in milliseconds) 
+
+            // Interactivity 
+            clickForwardArrow: "click swiperight",         // Event used to activate forward arrow functionality (e.g. add jQuery mobile's "swiperight") 
+            clickBackArrow: "click swipeleft",         // Event used to activate back arrow functionality (e.g. add jQuery mobile's "swipeleft") 
+
+            // Callbacks 
+            onInitialized: function (e, slider) { $('#slider$ModuleID').removeClass('loading'); }, // Callback when the plugin finished initializing 
+
+            navigationFormatter: function (i, panel) {
+                return [${xf.ViewTitleToJson($DataList)}][i - 1];
+            }
+        })
+          .anythingSliderFx({
+              '.caption-top': ['caption-Top', '50px'],
+              '.caption-right': ['caption-Right', '50px'],
+              '.caption-bottom': ['caption-Bottom', '50px'],
+              '.caption-left': ['caption-Left', '50px']
+          })
+        /* use this code to have the caption slide in and out from the bottom with each panel
+        */
+        // add a close button (x) to the caption
+  .find('div[class*=caption]')
+  .css({ position: 'absolute' })
+        /* use this code if you only want the caption to appear when you hover over the panel
+        .find('.panel')
+        .find('div[class*=caption]').css({ position: 'absolute' }).end()
+        .hover(function(){ showCaptions( jQuery(this) ) }, function(){ hideCaptions( jQuery(this) ); });
+
+        showCaptions = function(el){
+        var jQuerythis = el;
+        if (jQuerythis.find('.caption-top').length) { jQuerythis.find('.caption-top').show().animate({ top: 0, opacity: 1 }, 400); }
+        if (jQuerythis.find('.caption-right').length) { jQuerythis.find('.caption-right').show().animate({ right: 0, opacity: 1 }, 400); }
+        if (jQuerythis.find('.caption-bottom').length) { jQuerythis.find('.caption-bottom').show().animate({ bottom: 0, opacity: 1 }, 400); }
+        if (jQuerythis.find('.caption-left').length) { jQuerythis.find('.caption-left').show().animate({ left: 0, opacity: 1 }, 400); }
+        };
+        hideCaptions = function(el){
+        var jQuerythis = el;
+        if (jQuerythis.find('.caption-top').length) { jQuerythis.find('.caption-top').stop().animate({ top: -50, opacity: 0 }, 400); }
+        if (jQuerythis.find('.caption-right').length) { jQuerythis.find('.caption-right').stop().animate({ right: -150, opacity: 0 }, 400); }
+        if (jQuerythis.find('.caption-bottom').length) { jQuerythis.find('.caption-bottom').stop().animate({ bottom: -50, opacity: 0 }, 400); }
+        if (jQuerythis.find('.caption-left').length) { jQuerythis.find('.caption-left').stop().animate({ left: -150, opacity: 0 }, 400); }
+        };
+
+        // hide all captions initially
+        hideCaptions( jQuery('#slider3 .panel') );
+        */
+    });
+</script>
+
+#else
+   No data in the list.
+#end

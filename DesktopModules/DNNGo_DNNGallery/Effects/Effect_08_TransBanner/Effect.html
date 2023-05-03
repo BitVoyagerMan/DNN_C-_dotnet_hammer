@@ -1,0 +1,58 @@
+﻿<div class="$ThemeName" id="TB_Wrapper${ModuleID}" style="max-width: ${xf.ViewXmlSetting("max-width",700)}px; height: ${xf.ViewXmlSetting("height",300)}px;">
+	<div class="Slides">
+         #if($DataList.Count > 0)
+             #foreach($DataItem in $DataList)
+
+               <div class="Slide" 
+                    data-position="${xf.ViewItemSetting($DataItem,"data-position","150,250")}" 
+                    data-width="${xf.ViewItemSetting($DataItem,"data-width",300)}" 
+                    data-height="${xf.ViewItemSetting($DataItem,"data-height",100)}"
+                    data-caption_bg_color="${xf.ViewItemSetting($DataItem,"data-caption_bg_color","#000000")}" 
+                    data-caption_bg_opacity="${xf.ViewItemSetting($DataItem,"data-caption_bg_opacity","0.5")}"
+                    data-caption_bg_shadow = "${xf.ViewItemSetting($DataItem,"data-caption_bg_shadow","0.5")}"
+                    #if(${xf.ViewItemSetting($DataItem,"slide_enable","true")} == "true")
+                        data-delay="${xf.ViewItemSetting($DataItem,"slide_delaytime",5)}"
+                    #end
+               >
+			        <a href="${xf.ViewLinkUrl($DataItem.UrlLink)}" target="${xf.ViewLinkTarget($DataItem)}"><img src="${xf.ViewLinkUrl($DataItem.Picture)}" alt="img$DataItem.Title" /></a>
+			       
+                   #if(${xf.ViewItemSetting($DataItem,"view_tcaptions","true")} == "true")
+                    <div>
+                        #if($DataItem.Description != '')
+                           $DataItem.Description		
+                        #else
+                            $DataItem.Title
+                        #end
+			        </div>
+                   #end
+		        </div>
+            #end
+        #end
+	</div><!--End of Slides -->
+</div><!--End of TB_Wrapper -->
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#TB_Wrapper${ModuleID}').TransBanner({
+			responsive_screen_based_limits : true ,
+            slide_autoplay: ${xf.ViewXmlSetting("slide_autoplay","true")}, 
+            slide_delaytime: ${xf.ViewXmlSetting("slide_delaytime",5)}, 
+            slide_transition: ${xf.ViewXmlSetting("slide_transition",1)},
+            slide_transition_period: ${xf.ViewXmlSetting("slide_period",800)},
+            slide_preload_images: ${xf.ViewXmlSetting("slide_images",1)},
+            slide_random_order: ${xf.ViewXmlSetting("slide_random_order","false")},
+
+            button_show_next: ${xf.ViewXmlSetting("button_next","true")},
+	        button_show_back: ${xf.ViewXmlSetting("button_back","true")},
+	        button_show_timer: ${xf.ViewXmlSetting("button_timer","true")},
+	        button_show_numbers: ${xf.ViewXmlSetting("button_numbers","true")},
+	        button_numbers_autohide: ${xf.ViewXmlSetting("button_autohide","true")},
+	        button_numbers_horizontal: ${xf.ViewXmlSetting("button_horizontal","false")},
+	
+            navigation_type: ${xf.ViewXmlSetting("navigation_type",1)},
+            caption_float_mode: ${xf.ViewXmlSetting("caption_float_mode","true")}
+			
+        });
+        
+    });	
+</script>

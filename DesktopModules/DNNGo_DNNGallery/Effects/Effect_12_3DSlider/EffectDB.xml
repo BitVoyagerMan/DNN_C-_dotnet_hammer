@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_12_3DSlider]]>
+    </Name>
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    <Version>
+      <![CDATA[01.02.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.themepunch.plugins.min.js,jquery.themepunch.revolution.min.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Picture,UrlLink,ContentText]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/Slider3D.aspx]]>
+    </DemoUrl>
+    <Responsive><![CDATA[true]]></Responsive>
+  </EffectDB>
+</DNNGo_DNNGallery>

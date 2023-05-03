@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_25_ResponsiveSlide]]>
+    </Name>
+    <Description>
+      <![CDATA[ResponsiveSlide is a content scroll module, it is easy for you to create scrollable content effect and is fully customizable. It converts UL list to scrollable content list and can be auto played or controlled via navigation bar or keyboard.]]>
+    </Description>
+    <Version>
+      <![CDATA[02.05.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.flexslider.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[ContentText,Media]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/ResponsiveSlide.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+  </EffectDB>
+</DNNGo_DNNGallery>

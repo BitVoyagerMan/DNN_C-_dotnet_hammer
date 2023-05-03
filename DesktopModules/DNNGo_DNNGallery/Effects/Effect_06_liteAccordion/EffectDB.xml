@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_06_liteAccordion]]>
+    </Name>
+    <Description>
+      <![CDATA[a horizontal accordion Effect for jQuery ]]>
+    </Description>
+    <Version>
+      <![CDATA[01.01.02]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_06_liteAccordion/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[liteaccordion.jquery.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.easing.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Description,ContentText,Media]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/liteAccordion.aspx]]>
+    </DemoUrl>
+  </EffectDB>
+</DNNGo_DNNGallery>
+
+<!--http://nicolahibbert.com/demo/liteAccordion/-->

@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="License_Top.ascx.cs" Inherits="DNNGo.Modules.LayerGalleryPro.License_Top" %>
+<asp:HyperLink ID="hlVersion" resourcekey="hlVersion" runat="server" Target="_blank" CssClass="btn btn-teal" NavigateUrl="http://www.dnngo.net/MyAccount/OnlineAuthorization.aspx" Text="<i class='fa clip-key-2'></i> | Trial version" ToolTip="Trial version"></asp:HyperLink>

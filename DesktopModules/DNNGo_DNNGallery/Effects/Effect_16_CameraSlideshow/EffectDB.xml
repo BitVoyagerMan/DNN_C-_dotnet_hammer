@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_16_CameraSlideshow]]>
+    </Name>
+    <Description>
+      <![CDATA[Camera a Advanced jQuery slideshow with many effects,
+      transitions, adaptive layout, easy to customize,
+      using canvas and mobile ready.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.02.06]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_16_CameraSlideshow/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[camera.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.easing.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Picture,ContentText,UrlLink]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/CameraSlideshow.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+  </EffectDB>
+</DNNGo_DNNGallery>

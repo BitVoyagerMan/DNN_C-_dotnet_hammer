@@ -1,0 +1,51 @@
+﻿<!-- slider markup -->
+<ul id="unoslider${ModuleID}" class="$ThemeName">
+    #if($DataList.Count > 0) 
+        #foreach($DataItem in $DataList)
+		<li style="display:none;">
+            #if($DataItem.ContentText != "")
+            <div class='unoslider_caption'>
+                $DataItem.ContentText
+            </div>
+            #end
+			#if($DataItem.UrlLink != "")
+				<a target="${xf.ViewLinkTarget($DataItem)}" href="${xf.ViewLinkUrl($DataItem.UrlLink)}" title="$DataItem.Title"><img src="${xf.ViewLinkUrl($DataItem.Picture)}" alt="$DataItem.Title"/></a>	
+			#else
+				<img src="${xf.ViewLinkUrl($DataItem.Picture)}" alt="$DataItem.Title"/>
+			#end
+        </li>
+        #end 
+    #end
+</ul>
+
+<!-- slider initializer -->
+<script type='text/javascript'>
+    jQuery(function ($) {
+        $('#unoslider${ModuleID}').unoslider({
+            width: ${xf.ViewXmlSetting("width",650)}, //Slider width
+            height: ${xf.ViewXmlSetting("height",300)}, //Slider height
+            preset: [${xf.ViewXmlSetting("preset","'chess', 'flash', 'spiral_reversed', 'spiral', 'sq_appear', 'sq_flyoff', 'sq_drop', 'sq_squeeze', 'sq_random', 'sq_diagonal_rev', 'sq_diagonal', 'sq_fade_random', 'sq_fade_diagonal_rev', 'sq_fade_diagonal', 'explode', 'implode', 'fountain', 'blind_bottom', 'blind_top', 'blind_right', 'blind_left', 'shot_right', 'shot_left', 'alternate_vertical', 'alternate_horizontal', 'zipper_right', 'zipper_left', 'bar_slide_random', 'bar_slide_bottomright', 'bar_slide_bottomright', 'bar_slide_topright', 'bar_slide_topleft', 'bar_fade_bottom', 'bar_fade_top', 'bar_fade_right', 'bar_fade_left', 'bar_fade_random', 'v_slide_top', 'h_slide_right', 'v_slide_bottom', 'h_slide_left', 'stretch', 'squeez', 'fade', 'none'")}], // you can set as many presets as you want 
+            order: 'random', // order of presets 
+            scale: ${xf.ViewXmlSetting("scale","true")}, //should the images be resized in order to fit the slider or not
+            responsive: ${xf.ViewXmlSetting("responsive","true")}, //This option makes the slider responsive. This means that the slider adjusts the width of the parent element if it is wider then the slider.
+            mobile: ${xf.ViewXmlSetting("mobile","true")}, //simpler optimized transitions on mobile devices.Set to false if you want to use the same transitions on desktops and mobile devices
+            touch: ${xf.ViewXmlSetting("touch","true")}, //enable touch controls on the mobile devices
+            indicator: ${xf.ViewXmlSetting("indicator","true")}, //Set it to the false if you want to hide the indicator. 
+            navigation: { autohide: ${xf.ViewXmlSetting("navigation_autohide","false")} },
+            showtitle: ${xf.ViewXmlSetting("showtitle","false")},
+            slideshow: {
+                autostart:${xf.ViewXmlSetting("slideshow_autostart","true")},//slideshow starts running automatically after load
+                speed:${xf.ViewXmlSetting("slideshow_speed",2)},//in seconds, slides change interval
+                timer:${xf.ViewXmlSetting("slideshow_timer","true")},//display a small indicator of time remaining to the next slide change
+                hoverPause:${xf.ViewXmlSetting("slideshow_hoverPause","true")},//pause slideshow on mouse over
+                continuous: ${xf.ViewXmlSetting("slideshow_continuous","true")}, //Slideshow does not stop after a manual change of a slide.Set to false if you want to stop the slideshow after a manual change
+                infinite: ${xf.ViewXmlSetting("slideshow_infinite","true")} //Slideshow continues in an infinite loop
+            }
+        });
+    }); 
+</script>
+
+
+
+
+         

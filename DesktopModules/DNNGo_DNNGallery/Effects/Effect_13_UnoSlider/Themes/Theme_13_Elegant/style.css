@@ -1,0 +1,201 @@
+/* Unoslider container */
+.Theme_13_Elegant {
+  list-style: none;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px!important;
+}
+
+.Theme_13_Elegant img{
+  max-width: 100%;
+}
+
+.Theme_13_Elegant li {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Timebar */
+.Theme_13_Elegant .unoslider_timer {
+  background-color: white;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  -moz-box-shadow: 0px 2px 2px black;
+  -webkit-box-shadow: 0px 2px 2px black;
+  -o-box-shadow: 0px 2px 2px black;
+  box-shadow: 0px 2px 2px black;
+}
+
+/* Progress bar preloader container */
+.Theme_13_Elegant .unoslider_preloader {
+  background: rgba(255, 255, 255, 0.5);  
+}
+
+/* progress bar preloader */
+.Theme_13_Elegant .unoslider_preloader .unoslider_progress {
+  width: 30%;
+  height: 5px;
+  margin: 0 auto;
+  border-top: 1px solid #7c7c7c;
+  border-bottom: 1px solid #f1f1f1;
+  border-left: 1px solid #949494;
+  border-right: 1px solid #949494;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9a9a9a), color-stop(100%, #b3b3b3));
+  background: -webkit-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -moz-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -o-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -ms-linear-gradient(#9a9a9a, #b3b3b3);
+  background: linear-gradient(#9a9a9a, #b3b3b3);
+}
+
+/* progress bar fill */
+.Theme_13_Elegant .unoslider_preloader .unoslider_progress span {
+  display: block;
+  height: 100%;
+  background: #66cccc;
+}
+
+/* Spinner preloader */
+.Theme_13_Elegant .unoslider_spinner {
+  background: url('/images/spinner.gif') white center center no-repeat;
+}
+
+.Theme_13_Elegant .unoslider_layers{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Theme_13_Elegant .unoslider_caption a
+{
+  text-decoration:none;
+}
+
+
+/* Hand cursor over navigation elements */
+.Theme_13_Elegant .unoslider_navigation {
+  cursor: pointer;
+}
+
+/* Tooltip panel */
+.Theme_13_Elegant .unoslider_caption {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  padding: 10px 15px;
+  font-family: "Helvetica neue", Helvetica, Verdana, sans-serif;
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: normal;
+  color: black;
+}
+
+/* play, pause, previous and next elements */
+.Theme_13_Elegant .unoslider_pause, 
+.Theme_13_Elegant .unoslider_play, 
+.Theme_13_Elegant .unoslider_left, 
+.Theme_13_Elegant .unoslider_right {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  background: url("elegant.png") no-repeat;
+}
+
+/* play and pause elements */
+.Theme_13_Elegant .unoslider_pause, 
+.Theme_13_Elegant .unoslider_play {
+  height: 44px;
+  width: 44px;
+  margin-top: -22px;
+  margin-left: -22px;
+  top: 50%;
+  left: 50%;
+}
+
+/* previous and next elements */
+.Theme_13_Elegant .unoslider_left, 
+.Theme_13_Elegant .unoslider_right {
+  width: 25px;
+  height: 46px;
+  margin-top: -23px;
+  top: 50%;
+}
+
+/* previous */
+.Theme_13_Elegant .unoslider_left {
+  background-position: 0px -93px;
+  left: 0;
+}
+
+/* next */
+.Theme_13_Elegant .unoslider_right {
+  background-position: -26px -93px;
+  right: 0;
+}
+
+/* pause */
+.Theme_13_Elegant .unoslider_pause {
+  background-position: 0px -46px;
+}
+
+/* play */
+.Theme_13_Elegant .unoslider_play {
+  background-position: 0px 0px;
+}
+
+/* bullet indicator */
+.Theme_13_Elegant .unoslider_indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-align: left;
+  _width: 97%;
+  *width: 97%;
+  -webkit-box-shadow: 0px 0px 2px black;
+  -moz-box-shadow: 0px 0px 2px black;
+  box-shadow: 0px 0px 2px black;
+  height: 10px;
+  font-size: 0px;
+}
+.Theme_13_Elegant .unoslider_indicator a {
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  cursor: pointer;
+  background: white;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 10px;
+  text-align:left;
+}
+*+html .Theme_13_Elegant .unoslider_indicator a {
+  float:left;
+}
+.Theme_13_Elegant .unoslider_indicator a.unoslider_indicator_active {
+  background: black;
+}
+.Theme_13_Elegant .unoslider_indicator a:hover {
+  background: #cccccc;
+}

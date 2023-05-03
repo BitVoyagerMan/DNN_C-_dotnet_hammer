@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    
+    <Setting>
+      <Name>
+        <![CDATA[ containerWidth ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Container Width ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 800 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <Setting>
+      <Name>
+        <![CDATA[ containerHeight ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Container Height ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 320 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+     
+    <Setting>
+      <Name>
+        <![CDATA[ autoScaleImages ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ autoScaleImages ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ if a single image is placed within the slide, this will be automatically scaled to fit ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ autoPlay ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Auto play ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ automatically cycle through slides   ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ activateOn ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ activateOn ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ click ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ click,mouseover ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+   
+    <Setting>
+      <Name>
+        <![CDATA[ firstSlide ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ First Slide ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 1 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ displays slide (n) on page load   ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <Setting>
+      <Name>
+        <![CDATA[ slideSpeed ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Slide Speed ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 800 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ slide animation speed   ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <Setting>
+      <Name>
+        <![CDATA[ cycleSpeed ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Cycle Speed ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 6000 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ time between slide cycles     ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <Setting>
+      <Name>
+        <![CDATA[ pauseOnHover ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Pause On Hover ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[   ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <Setting>
+      <Name>
+        <![CDATA[ rounded ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ rounded ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ square or rounded corners ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <Setting>
+      <Name>
+        <![CDATA[ enumerateSlides ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Enumerate Slides ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ put numbers on slides     ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ easing ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Easing ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ swing ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[150]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ Anything other than "linear" or "swing" requires the easing plugin or jQuery UI ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ max-width ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Max Width ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 700 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ height ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Height ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 300 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ slide_autoplay ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Slide autoplay ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ To make the slideshow change images automatically from start. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name><![CDATA[slide_delaytime]]></Name>
+      <Alias><![CDATA[Slide delaytime]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[5]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The delay time between each slide when it plays. Delay time in seconds]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ slide_transition ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Slide transition ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 1 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ The type of Transition effect while changing slides. The available transitions are:1. Move,2. Fade,3. Slide In,4. Slide Out ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ slide_period ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Slide Transition Period ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 800 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ The time taken to complete image transition. The value in milliseconds. The transition speed can be reduced by increasing this value.]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ slide_images ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Slide Preload Images ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 1 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ How many number of images should be loaded before start showing the banner. The value 1 means the banner will start showing content once the 1st image loaded. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ slide_random_order ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Slide Random Order]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ To randomize the order of images on each time the page loads. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ button_next ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Button Show Next ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ To show or hide the Next Arrow Button ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ button_back ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Button Show Back ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ To show or hide the Back Arrow Button ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ button_timer ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Button Show Timer ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ To show or hide the Timer Clock / Play Pause Button ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ button_numbers ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Button Show Numbers ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ To show or hide the Number Buttons ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ button_autohide ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Button Numbers Autohide ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ The Number buttons appears when mouse pointer placed over the Next Button. Instead of that, the Number buttons can be permanently shown by setting this value as false. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ button_horizontal ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Button Numbers Horizontal ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ To make the Number Buttons to appear / align horizontally, make this value true. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ navigation_type ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Navigation Type ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 1 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ There are 3 different navigation styles available:
+1. Default - Arrow Buttons, Number Buttons, Timer Clock and Play/Pause Buttons
+2. Dot - Bullet type
+3. Arrow - Previous & Next Buttons only ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+  
+
+
+    <Setting>
+      <Name><![CDATA[caption_float_mode]]></Name>
+      <Alias><![CDATA[Caption float mode]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The default caption will always align to bottom of the banner. To make the caption to freely position over the image, set this value to true. And do the one of the following]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

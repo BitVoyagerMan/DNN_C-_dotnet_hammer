@@ -1,0 +1,2700 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OptionItems>
+	<OptionItem>
+		<Text><![CDATA[40 New Icons in 4.2]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angellist]]></Value>
+		<Text><![CDATA[ fa-angellist]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-area-chart]]></Value>
+		<Text><![CDATA[ fa-area-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-at]]></Value>
+		<Text><![CDATA[ fa-at]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bell-slash]]></Value>
+		<Text><![CDATA[ fa-bell-slash]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bell-slash-o]]></Value>
+		<Text><![CDATA[ fa-bell-slash-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bicycle]]></Value>
+		<Text><![CDATA[ fa-bicycle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-binoculars]]></Value>
+		<Text><![CDATA[ fa-binoculars]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-birthday-cake]]></Value>
+		<Text><![CDATA[ fa-birthday-cake]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bus]]></Value>
+		<Text><![CDATA[ fa-bus]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-calculator]]></Value>
+		<Text><![CDATA[ fa-calculator]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc]]></Value>
+		<Text><![CDATA[ fa-cc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-amex]]></Value>
+		<Text><![CDATA[ fa-cc-amex]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-discover]]></Value>
+		<Text><![CDATA[ fa-cc-discover]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-mastercard]]></Value>
+		<Text><![CDATA[ fa-cc-mastercard]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-paypal]]></Value>
+		<Text><![CDATA[ fa-cc-paypal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-stripe]]></Value>
+		<Text><![CDATA[ fa-cc-stripe]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-visa]]></Value>
+		<Text><![CDATA[ fa-cc-visa]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-copyright]]></Value>
+		<Text><![CDATA[ fa-copyright]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-eyedropper]]></Value>
+		<Text><![CDATA[ fa-eyedropper]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-futbol-o]]></Value>
+		<Text><![CDATA[ fa-futbol-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-google-wallet]]></Value>
+		<Text><![CDATA[ fa-google-wallet]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ils]]></Value>
+		<Text><![CDATA[ fa-ils]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ioxhost]]></Value>
+		<Text><![CDATA[ fa-ioxhost]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-lastfm]]></Value>
+		<Text><![CDATA[ fa-lastfm]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-lastfm-square]]></Value>
+		<Text><![CDATA[ fa-lastfm-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-line-chart]]></Value>
+		<Text><![CDATA[ fa-line-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-meanpath]]></Value>
+		<Text><![CDATA[ fa-meanpath]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-newspaper-o]]></Value>
+		<Text><![CDATA[ fa-newspaper-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paint-brush]]></Value>
+		<Text><![CDATA[ fa-paint-brush]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paypal]]></Value>
+		<Text><![CDATA[ fa-paypal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pie-chart]]></Value>
+		<Text><![CDATA[ fa-pie-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plug]]></Value>
+		<Text><![CDATA[ fa-plug]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-shekel]]></Value>
+		<Text><![CDATA[ fa-shekel ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sheqel]]></Value>
+		<Text><![CDATA[ fa-sheqel ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-slideshare]]></Value>
+		<Text><![CDATA[ fa-slideshare]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-soccer-ball-o]]></Value>
+		<Text><![CDATA[ fa-soccer-ball-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-off]]></Value>
+		<Text><![CDATA[ fa-toggle-off]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-on]]></Value>
+		<Text><![CDATA[ fa-toggle-on]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-trash]]></Value>
+		<Text><![CDATA[ fa-trash]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tty]]></Value>
+		<Text><![CDATA[ fa-tty]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-twitch]]></Value>
+		<Text><![CDATA[ fa-twitch]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-wifi]]></Value>
+		<Text><![CDATA[ fa-wifi]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-yelp]]></Value>
+		<Text><![CDATA[ fa-yelp]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Web Application Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-adjust]]></Value>
+		<Text><![CDATA[ fa-adjust]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-anchor]]></Value>
+		<Text><![CDATA[ fa-anchor]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-archive]]></Value>
+		<Text><![CDATA[ fa-archive]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-area-chart]]></Value>
+		<Text><![CDATA[ fa-area-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrows]]></Value>
+		<Text><![CDATA[ fa-arrows]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrows-h]]></Value>
+		<Text><![CDATA[ fa-arrows-h]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrows-v]]></Value>
+		<Text><![CDATA[ fa-arrows-v]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-asterisk]]></Value>
+		<Text><![CDATA[ fa-asterisk]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-at]]></Value>
+		<Text><![CDATA[ fa-at]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-automobile]]></Value>
+		<Text><![CDATA[ fa-automobile ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ban]]></Value>
+		<Text><![CDATA[ fa-ban]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bank]]></Value>
+		<Text><![CDATA[ fa-bank ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bar-chart]]></Value>
+		<Text><![CDATA[ fa-bar-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bar-chart-o]]></Value>
+		<Text><![CDATA[ fa-bar-chart-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-barcode]]></Value>
+		<Text><![CDATA[ fa-barcode]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bars]]></Value>
+		<Text><![CDATA[ fa-bars]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-beer]]></Value>
+		<Text><![CDATA[ fa-beer]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bell]]></Value>
+		<Text><![CDATA[ fa-bell]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bell-o]]></Value>
+		<Text><![CDATA[ fa-bell-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bell-slash]]></Value>
+		<Text><![CDATA[ fa-bell-slash]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bell-slash-o]]></Value>
+		<Text><![CDATA[ fa-bell-slash-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bicycle]]></Value>
+		<Text><![CDATA[ fa-bicycle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-binoculars]]></Value>
+		<Text><![CDATA[ fa-binoculars]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-birthday-cake]]></Value>
+		<Text><![CDATA[ fa-birthday-cake]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bolt]]></Value>
+		<Text><![CDATA[ fa-bolt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bomb]]></Value>
+		<Text><![CDATA[ fa-bomb]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-book]]></Value>
+		<Text><![CDATA[ fa-book]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bookmark]]></Value>
+		<Text><![CDATA[ fa-bookmark]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bookmark-o]]></Value>
+		<Text><![CDATA[ fa-bookmark-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-briefcase]]></Value>
+		<Text><![CDATA[ fa-briefcase]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bug]]></Value>
+		<Text><![CDATA[ fa-bug]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-building]]></Value>
+		<Text><![CDATA[ fa-building]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-building-o]]></Value>
+		<Text><![CDATA[ fa-building-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bullhorn]]></Value>
+		<Text><![CDATA[ fa-bullhorn]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bullseye]]></Value>
+		<Text><![CDATA[ fa-bullseye]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bus]]></Value>
+		<Text><![CDATA[ fa-bus]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cab]]></Value>
+		<Text><![CDATA[ fa-cab ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-calculator]]></Value>
+		<Text><![CDATA[ fa-calculator]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-calendar]]></Value>
+		<Text><![CDATA[ fa-calendar]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-calendar-o]]></Value>
+		<Text><![CDATA[ fa-calendar-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-camera]]></Value>
+		<Text><![CDATA[ fa-camera]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-camera-retro]]></Value>
+		<Text><![CDATA[ fa-camera-retro]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-car]]></Value>
+		<Text><![CDATA[ fa-car]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-square-o-down]]></Value>
+		<Text><![CDATA[ fa-caret-square-o-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-square-o-left]]></Value>
+		<Text><![CDATA[ fa-caret-square-o-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-square-o-right]]></Value>
+		<Text><![CDATA[ fa-caret-square-o-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-square-o-up]]></Value>
+		<Text><![CDATA[ fa-caret-square-o-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc]]></Value>
+		<Text><![CDATA[ fa-cc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-certificate]]></Value>
+		<Text><![CDATA[ fa-certificate]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-check]]></Value>
+		<Text><![CDATA[ fa-check]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-check-circle]]></Value>
+		<Text><![CDATA[ fa-check-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-check-circle-o]]></Value>
+		<Text><![CDATA[ fa-check-circle-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-check-square]]></Value>
+		<Text><![CDATA[ fa-check-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-check-square-o]]></Value>
+		<Text><![CDATA[ fa-check-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-child]]></Value>
+		<Text><![CDATA[ fa-child]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-circle]]></Value>
+		<Text><![CDATA[ fa-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-circle-o]]></Value>
+		<Text><![CDATA[ fa-circle-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-circle-o-notch]]></Value>
+		<Text><![CDATA[ fa-circle-o-notch]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-circle-thin]]></Value>
+		<Text><![CDATA[ fa-circle-thin]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-clock-o]]></Value>
+		<Text><![CDATA[ fa-clock-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-close]]></Value>
+		<Text><![CDATA[ fa-close ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cloud]]></Value>
+		<Text><![CDATA[ fa-cloud]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cloud-download]]></Value>
+		<Text><![CDATA[ fa-cloud-download]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cloud-upload]]></Value>
+		<Text><![CDATA[ fa-cloud-upload]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-code]]></Value>
+		<Text><![CDATA[ fa-code]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-code-fork]]></Value>
+		<Text><![CDATA[ fa-code-fork]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-coffee]]></Value>
+		<Text><![CDATA[ fa-coffee]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cog]]></Value>
+		<Text><![CDATA[ fa-cog]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cogs]]></Value>
+		<Text><![CDATA[ fa-cogs]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-comment]]></Value>
+		<Text><![CDATA[ fa-comment]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-comment-o]]></Value>
+		<Text><![CDATA[ fa-comment-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-comments]]></Value>
+		<Text><![CDATA[ fa-comments]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-comments-o]]></Value>
+		<Text><![CDATA[ fa-comments-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-compass]]></Value>
+		<Text><![CDATA[ fa-compass]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-copyright]]></Value>
+		<Text><![CDATA[ fa-copyright]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-credit-card]]></Value>
+		<Text><![CDATA[ fa-credit-card]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-crop]]></Value>
+		<Text><![CDATA[ fa-crop]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-crosshairs]]></Value>
+		<Text><![CDATA[ fa-crosshairs]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cube]]></Value>
+		<Text><![CDATA[ fa-cube]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cubes]]></Value>
+		<Text><![CDATA[ fa-cubes]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cutlery]]></Value>
+		<Text><![CDATA[ fa-cutlery]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-dashboard]]></Value>
+		<Text><![CDATA[ fa-dashboard ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-database]]></Value>
+		<Text><![CDATA[ fa-database]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-desktop]]></Value>
+		<Text><![CDATA[ fa-desktop]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-dot-circle-o]]></Value>
+		<Text><![CDATA[ fa-dot-circle-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-download]]></Value>
+		<Text><![CDATA[ fa-download]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-edit]]></Value>
+		<Text><![CDATA[ fa-edit ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ellipsis-h]]></Value>
+		<Text><![CDATA[ fa-ellipsis-h]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ellipsis-v]]></Value>
+		<Text><![CDATA[ fa-ellipsis-v]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-envelope]]></Value>
+		<Text><![CDATA[ fa-envelope]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-envelope-o]]></Value>
+		<Text><![CDATA[ fa-envelope-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-envelope-square]]></Value>
+		<Text><![CDATA[ fa-envelope-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-eraser]]></Value>
+		<Text><![CDATA[ fa-eraser]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-exchange]]></Value>
+		<Text><![CDATA[ fa-exchange]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-exclamation]]></Value>
+		<Text><![CDATA[ fa-exclamation]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-exclamation-circle]]></Value>
+		<Text><![CDATA[ fa-exclamation-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-exclamation-triangle]]></Value>
+		<Text><![CDATA[ fa-exclamation-triangle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-external-link]]></Value>
+		<Text><![CDATA[ fa-external-link]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-external-link-square]]></Value>
+		<Text><![CDATA[ fa-external-link-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-eye]]></Value>
+		<Text><![CDATA[ fa-eye]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-eye-slash]]></Value>
+		<Text><![CDATA[ fa-eye-slash]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-eyedropper]]></Value>
+		<Text><![CDATA[ fa-eyedropper]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-fax]]></Value>
+		<Text><![CDATA[ fa-fax]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-female]]></Value>
+		<Text><![CDATA[ fa-female]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-fighter-jet]]></Value>
+		<Text><![CDATA[ fa-fighter-jet]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-archive-o]]></Value>
+		<Text><![CDATA[ fa-file-archive-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-audio-o]]></Value>
+		<Text><![CDATA[ fa-file-audio-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-code-o]]></Value>
+		<Text><![CDATA[ fa-file-code-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-excel-o]]></Value>
+		<Text><![CDATA[ fa-file-excel-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-image-o]]></Value>
+		<Text><![CDATA[ fa-file-image-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-movie-o]]></Value>
+		<Text><![CDATA[ fa-file-movie-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-pdf-o]]></Value>
+		<Text><![CDATA[ fa-file-pdf-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-photo-o]]></Value>
+		<Text><![CDATA[ fa-file-photo-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-picture-o]]></Value>
+		<Text><![CDATA[ fa-file-picture-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-powerpoint-o]]></Value>
+		<Text><![CDATA[ fa-file-powerpoint-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-sound-o]]></Value>
+		<Text><![CDATA[ fa-file-sound-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-video-o]]></Value>
+		<Text><![CDATA[ fa-file-video-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-word-o]]></Value>
+		<Text><![CDATA[ fa-file-word-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-zip-o]]></Value>
+		<Text><![CDATA[ fa-file-zip-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-film]]></Value>
+		<Text><![CDATA[ fa-film]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-filter]]></Value>
+		<Text><![CDATA[ fa-filter]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-fire]]></Value>
+		<Text><![CDATA[ fa-fire]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-fire-extinguisher]]></Value>
+		<Text><![CDATA[ fa-fire-extinguisher]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-flag]]></Value>
+		<Text><![CDATA[ fa-flag]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-flag-checkered]]></Value>
+		<Text><![CDATA[ fa-flag-checkered]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-flag-o]]></Value>
+		<Text><![CDATA[ fa-flag-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-flash]]></Value>
+		<Text><![CDATA[ fa-flash ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-flask]]></Value>
+		<Text><![CDATA[ fa-flask]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-folder]]></Value>
+		<Text><![CDATA[ fa-folder]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-folder-o]]></Value>
+		<Text><![CDATA[ fa-folder-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-folder-open]]></Value>
+		<Text><![CDATA[ fa-folder-open]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-folder-open-o]]></Value>
+		<Text><![CDATA[ fa-folder-open-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-frown-o]]></Value>
+		<Text><![CDATA[ fa-frown-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-futbol-o]]></Value>
+		<Text><![CDATA[ fa-futbol-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-gamepad]]></Value>
+		<Text><![CDATA[ fa-gamepad]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-gavel]]></Value>
+		<Text><![CDATA[ fa-gavel]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-gear]]></Value>
+		<Text><![CDATA[ fa-gear ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-gears]]></Value>
+		<Text><![CDATA[ fa-gears ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-gift]]></Value>
+		<Text><![CDATA[ fa-gift]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-glass]]></Value>
+		<Text><![CDATA[ fa-glass]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-globe]]></Value>
+		<Text><![CDATA[ fa-globe]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-graduation-cap]]></Value>
+		<Text><![CDATA[ fa-graduation-cap]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-group]]></Value>
+		<Text><![CDATA[ fa-group ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-hdd-o]]></Value>
+		<Text><![CDATA[ fa-hdd-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-headphones]]></Value>
+		<Text><![CDATA[ fa-headphones]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-heart]]></Value>
+		<Text><![CDATA[ fa-heart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-heart-o]]></Value>
+		<Text><![CDATA[ fa-heart-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-history]]></Value>
+		<Text><![CDATA[ fa-history]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-home]]></Value>
+		<Text><![CDATA[ fa-home]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-image]]></Value>
+		<Text><![CDATA[ fa-image ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-inbox]]></Value>
+		<Text><![CDATA[ fa-inbox]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-info]]></Value>
+		<Text><![CDATA[ fa-info]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-info-circle]]></Value>
+		<Text><![CDATA[ fa-info-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-institution]]></Value>
+		<Text><![CDATA[ fa-institution ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-key]]></Value>
+		<Text><![CDATA[ fa-key]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-keyboard-o]]></Value>
+		<Text><![CDATA[ fa-keyboard-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-language]]></Value>
+		<Text><![CDATA[ fa-language]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-laptop]]></Value>
+		<Text><![CDATA[ fa-laptop]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-leaf]]></Value>
+		<Text><![CDATA[ fa-leaf]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-legal]]></Value>
+		<Text><![CDATA[ fa-legal ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-lemon-o]]></Value>
+		<Text><![CDATA[ fa-lemon-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-level-down]]></Value>
+		<Text><![CDATA[ fa-level-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-level-up]]></Value>
+		<Text><![CDATA[ fa-level-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-life-bouy]]></Value>
+		<Text><![CDATA[ fa-life-bouy ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-life-buoy]]></Value>
+		<Text><![CDATA[ fa-life-buoy ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-life-ring]]></Value>
+		<Text><![CDATA[ fa-life-ring]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-life-saver]]></Value>
+		<Text><![CDATA[ fa-life-saver ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-lightbulb-o]]></Value>
+		<Text><![CDATA[ fa-lightbulb-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-line-chart]]></Value>
+		<Text><![CDATA[ fa-line-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-location-arrow]]></Value>
+		<Text><![CDATA[ fa-location-arrow]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-lock]]></Value>
+		<Text><![CDATA[ fa-lock]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-magic]]></Value>
+		<Text><![CDATA[ fa-magic]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-magnet]]></Value>
+		<Text><![CDATA[ fa-magnet]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-mail-forward]]></Value>
+		<Text><![CDATA[ fa-mail-forward ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-mail-reply]]></Value>
+		<Text><![CDATA[ fa-mail-reply ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-mail-reply-all]]></Value>
+		<Text><![CDATA[ fa-mail-reply-all ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-male]]></Value>
+		<Text><![CDATA[ fa-male]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-map-marker]]></Value>
+		<Text><![CDATA[ fa-map-marker]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-meh-o]]></Value>
+		<Text><![CDATA[ fa-meh-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-microphone]]></Value>
+		<Text><![CDATA[ fa-microphone]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-microphone-slash]]></Value>
+		<Text><![CDATA[ fa-microphone-slash]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-minus]]></Value>
+		<Text><![CDATA[ fa-minus]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-minus-circle]]></Value>
+		<Text><![CDATA[ fa-minus-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-minus-square]]></Value>
+		<Text><![CDATA[ fa-minus-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-minus-square-o]]></Value>
+		<Text><![CDATA[ fa-minus-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-mobile]]></Value>
+		<Text><![CDATA[ fa-mobile]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-mobile-phone]]></Value>
+		<Text><![CDATA[ fa-mobile-phone ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-money]]></Value>
+		<Text><![CDATA[ fa-money]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-moon-o]]></Value>
+		<Text><![CDATA[ fa-moon-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-mortar-board]]></Value>
+		<Text><![CDATA[ fa-mortar-board ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-music]]></Value>
+		<Text><![CDATA[ fa-music]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-navicon]]></Value>
+		<Text><![CDATA[ fa-navicon ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-newspaper-o]]></Value>
+		<Text><![CDATA[ fa-newspaper-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paint-brush]]></Value>
+		<Text><![CDATA[ fa-paint-brush]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paper-plane]]></Value>
+		<Text><![CDATA[ fa-paper-plane]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paper-plane-o]]></Value>
+		<Text><![CDATA[ fa-paper-plane-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paw]]></Value>
+		<Text><![CDATA[ fa-paw]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pencil]]></Value>
+		<Text><![CDATA[ fa-pencil]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pencil-square]]></Value>
+		<Text><![CDATA[ fa-pencil-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pencil-square-o]]></Value>
+		<Text><![CDATA[ fa-pencil-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-phone]]></Value>
+		<Text><![CDATA[ fa-phone]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-phone-square]]></Value>
+		<Text><![CDATA[ fa-phone-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-photo]]></Value>
+		<Text><![CDATA[ fa-photo ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-picture-o]]></Value>
+		<Text><![CDATA[ fa-picture-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pie-chart]]></Value>
+		<Text><![CDATA[ fa-pie-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plane]]></Value>
+		<Text><![CDATA[ fa-plane]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plug]]></Value>
+		<Text><![CDATA[ fa-plug]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plus]]></Value>
+		<Text><![CDATA[ fa-plus]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plus-circle]]></Value>
+		<Text><![CDATA[ fa-plus-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plus-square]]></Value>
+		<Text><![CDATA[ fa-plus-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plus-square-o]]></Value>
+		<Text><![CDATA[ fa-plus-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-power-off]]></Value>
+		<Text><![CDATA[ fa-power-off]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-print]]></Value>
+		<Text><![CDATA[ fa-print]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-puzzle-piece]]></Value>
+		<Text><![CDATA[ fa-puzzle-piece]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-qrcode]]></Value>
+		<Text><![CDATA[ fa-qrcode]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-question]]></Value>
+		<Text><![CDATA[ fa-question]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-question-circle]]></Value>
+		<Text><![CDATA[ fa-question-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-quote-left]]></Value>
+		<Text><![CDATA[ fa-quote-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-quote-right]]></Value>
+		<Text><![CDATA[ fa-quote-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-random]]></Value>
+		<Text><![CDATA[ fa-random]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-recycle]]></Value>
+		<Text><![CDATA[ fa-recycle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-refresh]]></Value>
+		<Text><![CDATA[ fa-refresh]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-remove]]></Value>
+		<Text><![CDATA[ fa-remove ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-reorder]]></Value>
+		<Text><![CDATA[ fa-reorder ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-reply]]></Value>
+		<Text><![CDATA[ fa-reply]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-reply-all]]></Value>
+		<Text><![CDATA[ fa-reply-all]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-retweet]]></Value>
+		<Text><![CDATA[ fa-retweet]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-road]]></Value>
+		<Text><![CDATA[ fa-road]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rocket]]></Value>
+		<Text><![CDATA[ fa-rocket]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rss]]></Value>
+		<Text><![CDATA[ fa-rss]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rss-square]]></Value>
+		<Text><![CDATA[ fa-rss-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-search]]></Value>
+		<Text><![CDATA[ fa-search]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-search-minus]]></Value>
+		<Text><![CDATA[ fa-search-minus]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-search-plus]]></Value>
+		<Text><![CDATA[ fa-search-plus]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-send]]></Value>
+		<Text><![CDATA[ fa-send ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-send-o]]></Value>
+		<Text><![CDATA[ fa-send-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-share]]></Value>
+		<Text><![CDATA[ fa-share]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-share-alt]]></Value>
+		<Text><![CDATA[ fa-share-alt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-share-alt-square]]></Value>
+		<Text><![CDATA[ fa-share-alt-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-share-square]]></Value>
+		<Text><![CDATA[ fa-share-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-share-square-o]]></Value>
+		<Text><![CDATA[ fa-share-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-shield]]></Value>
+		<Text><![CDATA[ fa-shield]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-shopping-cart]]></Value>
+		<Text><![CDATA[ fa-shopping-cart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sign-in]]></Value>
+		<Text><![CDATA[ fa-sign-in]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sign-out]]></Value>
+		<Text><![CDATA[ fa-sign-out]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-signal]]></Value>
+		<Text><![CDATA[ fa-signal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sitemap]]></Value>
+		<Text><![CDATA[ fa-sitemap]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sliders]]></Value>
+		<Text><![CDATA[ fa-sliders]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-smile-o]]></Value>
+		<Text><![CDATA[ fa-smile-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-soccer-ball-o]]></Value>
+		<Text><![CDATA[ fa-soccer-ball-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort]]></Value>
+		<Text><![CDATA[ fa-sort]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-alpha-asc]]></Value>
+		<Text><![CDATA[ fa-sort-alpha-asc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-alpha-desc]]></Value>
+		<Text><![CDATA[ fa-sort-alpha-desc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-amount-asc]]></Value>
+		<Text><![CDATA[ fa-sort-amount-asc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-amount-desc]]></Value>
+		<Text><![CDATA[ fa-sort-amount-desc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-asc]]></Value>
+		<Text><![CDATA[ fa-sort-asc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-desc]]></Value>
+		<Text><![CDATA[ fa-sort-desc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-down]]></Value>
+		<Text><![CDATA[ fa-sort-down ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-numeric-asc]]></Value>
+		<Text><![CDATA[ fa-sort-numeric-asc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-numeric-desc]]></Value>
+		<Text><![CDATA[ fa-sort-numeric-desc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sort-up]]></Value>
+		<Text><![CDATA[ fa-sort-up ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-space-shuttle]]></Value>
+		<Text><![CDATA[ fa-space-shuttle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-spinner]]></Value>
+		<Text><![CDATA[ fa-spinner]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-spoon]]></Value>
+		<Text><![CDATA[ fa-spoon]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-square]]></Value>
+		<Text><![CDATA[ fa-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-square-o]]></Value>
+		<Text><![CDATA[ fa-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-star]]></Value>
+		<Text><![CDATA[ fa-star]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-star-half]]></Value>
+		<Text><![CDATA[ fa-star-half]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-star-half-empty]]></Value>
+		<Text><![CDATA[ fa-star-half-empty ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-star-half-full]]></Value>
+		<Text><![CDATA[ fa-star-half-full ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-star-half-o]]></Value>
+		<Text><![CDATA[ fa-star-half-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-star-o]]></Value>
+		<Text><![CDATA[ fa-star-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-suitcase]]></Value>
+		<Text><![CDATA[ fa-suitcase]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sun-o]]></Value>
+		<Text><![CDATA[ fa-sun-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-support]]></Value>
+		<Text><![CDATA[ fa-support ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tablet]]></Value>
+		<Text><![CDATA[ fa-tablet]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tachometer]]></Value>
+		<Text><![CDATA[ fa-tachometer]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tag]]></Value>
+		<Text><![CDATA[ fa-tag]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tags]]></Value>
+		<Text><![CDATA[ fa-tags]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tasks]]></Value>
+		<Text><![CDATA[ fa-tasks]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-taxi]]></Value>
+		<Text><![CDATA[ fa-taxi]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-terminal]]></Value>
+		<Text><![CDATA[ fa-terminal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-thumb-tack]]></Value>
+		<Text><![CDATA[ fa-thumb-tack]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-thumbs-down]]></Value>
+		<Text><![CDATA[ fa-thumbs-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-thumbs-o-down]]></Value>
+		<Text><![CDATA[ fa-thumbs-o-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-thumbs-o-up]]></Value>
+		<Text><![CDATA[ fa-thumbs-o-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-thumbs-up]]></Value>
+		<Text><![CDATA[ fa-thumbs-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ticket]]></Value>
+		<Text><![CDATA[ fa-ticket]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-times]]></Value>
+		<Text><![CDATA[ fa-times]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-times-circle]]></Value>
+		<Text><![CDATA[ fa-times-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-times-circle-o]]></Value>
+		<Text><![CDATA[ fa-times-circle-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tint]]></Value>
+		<Text><![CDATA[ fa-tint]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-down]]></Value>
+		<Text><![CDATA[ fa-toggle-down ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-left]]></Value>
+		<Text><![CDATA[ fa-toggle-left ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-off]]></Value>
+		<Text><![CDATA[ fa-toggle-off]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-on]]></Value>
+		<Text><![CDATA[ fa-toggle-on]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-right]]></Value>
+		<Text><![CDATA[ fa-toggle-right ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-up]]></Value>
+		<Text><![CDATA[ fa-toggle-up ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-trash]]></Value>
+		<Text><![CDATA[ fa-trash]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-trash-o]]></Value>
+		<Text><![CDATA[ fa-trash-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tree]]></Value>
+		<Text><![CDATA[ fa-tree]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-trophy]]></Value>
+		<Text><![CDATA[ fa-trophy]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-truck]]></Value>
+		<Text><![CDATA[ fa-truck]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tty]]></Value>
+		<Text><![CDATA[ fa-tty]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-umbrella]]></Value>
+		<Text><![CDATA[ fa-umbrella]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-university]]></Value>
+		<Text><![CDATA[ fa-university]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-unlock]]></Value>
+		<Text><![CDATA[ fa-unlock]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-unlock-alt]]></Value>
+		<Text><![CDATA[ fa-unlock-alt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-unsorted]]></Value>
+		<Text><![CDATA[ fa-unsorted ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-upload]]></Value>
+		<Text><![CDATA[ fa-upload]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-user]]></Value>
+		<Text><![CDATA[ fa-user]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-users]]></Value>
+		<Text><![CDATA[ fa-users]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-video-camera]]></Value>
+		<Text><![CDATA[ fa-video-camera]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-volume-down]]></Value>
+		<Text><![CDATA[ fa-volume-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-volume-off]]></Value>
+		<Text><![CDATA[ fa-volume-off]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-volume-up]]></Value>
+		<Text><![CDATA[ fa-volume-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-warning]]></Value>
+		<Text><![CDATA[ fa-warning ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-wheelchair]]></Value>
+		<Text><![CDATA[ fa-wheelchair]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-wifi]]></Value>
+		<Text><![CDATA[ fa-wifi]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-wrench]]></Value>
+		<Text><![CDATA[ fa-wrench]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[File Type Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file]]></Value>
+		<Text><![CDATA[ fa-file]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-archive-o]]></Value>
+		<Text><![CDATA[ fa-file-archive-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-audio-o]]></Value>
+		<Text><![CDATA[ fa-file-audio-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-code-o]]></Value>
+		<Text><![CDATA[ fa-file-code-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-excel-o]]></Value>
+		<Text><![CDATA[ fa-file-excel-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-image-o]]></Value>
+		<Text><![CDATA[ fa-file-image-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-movie-o]]></Value>
+		<Text><![CDATA[ fa-file-movie-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-o]]></Value>
+		<Text><![CDATA[ fa-file-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-pdf-o]]></Value>
+		<Text><![CDATA[ fa-file-pdf-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-photo-o]]></Value>
+		<Text><![CDATA[ fa-file-photo-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-picture-o]]></Value>
+		<Text><![CDATA[ fa-file-picture-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-powerpoint-o]]></Value>
+		<Text><![CDATA[ fa-file-powerpoint-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-sound-o]]></Value>
+		<Text><![CDATA[ fa-file-sound-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-text]]></Value>
+		<Text><![CDATA[ fa-file-text]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-text-o]]></Value>
+		<Text><![CDATA[ fa-file-text-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-video-o]]></Value>
+		<Text><![CDATA[ fa-file-video-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-word-o]]></Value>
+		<Text><![CDATA[ fa-file-word-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-zip-o]]></Value>
+		<Text><![CDATA[ fa-file-zip-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Spinner Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-circle-o-notch]]></Value>
+		<Text><![CDATA[ fa-circle-o-notch]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cog]]></Value>
+		<Text><![CDATA[ fa-cog]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-gear]]></Value>
+		<Text><![CDATA[ fa-gear ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-refresh]]></Value>
+		<Text><![CDATA[ fa-refresh]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-spinner]]></Value>
+		<Text><![CDATA[ fa-spinner]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Form Control Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-check-square]]></Value>
+		<Text><![CDATA[ fa-check-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-check-square-o]]></Value>
+		<Text><![CDATA[ fa-check-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-circle]]></Value>
+		<Text><![CDATA[ fa-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-circle-o]]></Value>
+		<Text><![CDATA[ fa-circle-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-dot-circle-o]]></Value>
+		<Text><![CDATA[ fa-dot-circle-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-minus-square]]></Value>
+		<Text><![CDATA[ fa-minus-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-minus-square-o]]></Value>
+		<Text><![CDATA[ fa-minus-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plus-square]]></Value>
+		<Text><![CDATA[ fa-plus-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plus-square-o]]></Value>
+		<Text><![CDATA[ fa-plus-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-square]]></Value>
+		<Text><![CDATA[ fa-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-square-o]]></Value>
+		<Text><![CDATA[ fa-square-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Payment Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-amex]]></Value>
+		<Text><![CDATA[ fa-cc-amex]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-discover]]></Value>
+		<Text><![CDATA[ fa-cc-discover]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-mastercard]]></Value>
+		<Text><![CDATA[ fa-cc-mastercard]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-paypal]]></Value>
+		<Text><![CDATA[ fa-cc-paypal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-stripe]]></Value>
+		<Text><![CDATA[ fa-cc-stripe]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-visa]]></Value>
+		<Text><![CDATA[ fa-cc-visa]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-credit-card]]></Value>
+		<Text><![CDATA[ fa-credit-card]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-google-wallet]]></Value>
+		<Text><![CDATA[ fa-google-wallet]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paypal]]></Value>
+		<Text><![CDATA[ fa-paypal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Chart Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-area-chart]]></Value>
+		<Text><![CDATA[ fa-area-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bar-chart]]></Value>
+		<Text><![CDATA[ fa-bar-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bar-chart-o]]></Value>
+		<Text><![CDATA[ fa-bar-chart-o ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-line-chart]]></Value>
+		<Text><![CDATA[ fa-line-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pie-chart]]></Value>
+		<Text><![CDATA[ fa-pie-chart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Currency Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bitcoin]]></Value>
+		<Text><![CDATA[ fa-bitcoin ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-btc]]></Value>
+		<Text><![CDATA[ fa-btc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cny]]></Value>
+		<Text><![CDATA[ fa-cny ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-dollar]]></Value>
+		<Text><![CDATA[ fa-dollar ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-eur]]></Value>
+		<Text><![CDATA[ fa-eur]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-euro]]></Value>
+		<Text><![CDATA[ fa-euro ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-gbp]]></Value>
+		<Text><![CDATA[ fa-gbp]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ils]]></Value>
+		<Text><![CDATA[ fa-ils]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-inr]]></Value>
+		<Text><![CDATA[ fa-inr]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-jpy]]></Value>
+		<Text><![CDATA[ fa-jpy]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-krw]]></Value>
+		<Text><![CDATA[ fa-krw]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-money]]></Value>
+		<Text><![CDATA[ fa-money]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rmb]]></Value>
+		<Text><![CDATA[ fa-rmb ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rouble]]></Value>
+		<Text><![CDATA[ fa-rouble ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rub]]></Value>
+		<Text><![CDATA[ fa-rub]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ruble]]></Value>
+		<Text><![CDATA[ fa-ruble ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rupee]]></Value>
+		<Text><![CDATA[ fa-rupee ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-shekel]]></Value>
+		<Text><![CDATA[ fa-shekel ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-sheqel]]></Value>
+		<Text><![CDATA[ fa-sheqel ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-try]]></Value>
+		<Text><![CDATA[ fa-try]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-turkish-lira]]></Value>
+		<Text><![CDATA[ fa-turkish-lira ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-usd]]></Value>
+		<Text><![CDATA[ fa-usd]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-won]]></Value>
+		<Text><![CDATA[ fa-won ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-yen]]></Value>
+		<Text><![CDATA[ fa-yen ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Text Editor Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-align-center]]></Value>
+		<Text><![CDATA[ fa-align-center]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-align-justify]]></Value>
+		<Text><![CDATA[ fa-align-justify]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-align-left]]></Value>
+		<Text><![CDATA[ fa-align-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-align-right]]></Value>
+		<Text><![CDATA[ fa-align-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bold]]></Value>
+		<Text><![CDATA[ fa-bold]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chain]]></Value>
+		<Text><![CDATA[ fa-chain ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chain-broken]]></Value>
+		<Text><![CDATA[ fa-chain-broken]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-clipboard]]></Value>
+		<Text><![CDATA[ fa-clipboard]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-columns]]></Value>
+		<Text><![CDATA[ fa-columns]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-copy]]></Value>
+		<Text><![CDATA[ fa-copy ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cut]]></Value>
+		<Text><![CDATA[ fa-cut ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-dedent]]></Value>
+		<Text><![CDATA[ fa-dedent ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-eraser]]></Value>
+		<Text><![CDATA[ fa-eraser]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file]]></Value>
+		<Text><![CDATA[ fa-file]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-o]]></Value>
+		<Text><![CDATA[ fa-file-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-text]]></Value>
+		<Text><![CDATA[ fa-file-text]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-file-text-o]]></Value>
+		<Text><![CDATA[ fa-file-text-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-files-o]]></Value>
+		<Text><![CDATA[ fa-files-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-floppy-o]]></Value>
+		<Text><![CDATA[ fa-floppy-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-font]]></Value>
+		<Text><![CDATA[ fa-font]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-header]]></Value>
+		<Text><![CDATA[ fa-header]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-indent]]></Value>
+		<Text><![CDATA[ fa-indent]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-italic]]></Value>
+		<Text><![CDATA[ fa-italic]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-link]]></Value>
+		<Text><![CDATA[ fa-link]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-list]]></Value>
+		<Text><![CDATA[ fa-list]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-list-alt]]></Value>
+		<Text><![CDATA[ fa-list-alt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-list-ol]]></Value>
+		<Text><![CDATA[ fa-list-ol]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-list-ul]]></Value>
+		<Text><![CDATA[ fa-list-ul]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-outdent]]></Value>
+		<Text><![CDATA[ fa-outdent]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paperclip]]></Value>
+		<Text><![CDATA[ fa-paperclip]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paragraph]]></Value>
+		<Text><![CDATA[ fa-paragraph]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paste]]></Value>
+		<Text><![CDATA[ fa-paste ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-repeat]]></Value>
+		<Text><![CDATA[ fa-repeat]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rotate-left]]></Value>
+		<Text><![CDATA[ fa-rotate-left ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rotate-right]]></Value>
+		<Text><![CDATA[ fa-rotate-right ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-save]]></Value>
+		<Text><![CDATA[ fa-save ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-scissors]]></Value>
+		<Text><![CDATA[ fa-scissors]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-strikethrough]]></Value>
+		<Text><![CDATA[ fa-strikethrough]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-subscript]]></Value>
+		<Text><![CDATA[ fa-subscript]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-superscript]]></Value>
+		<Text><![CDATA[ fa-superscript]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-table]]></Value>
+		<Text><![CDATA[ fa-table]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-text-height]]></Value>
+		<Text><![CDATA[ fa-text-height]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-text-width]]></Value>
+		<Text><![CDATA[ fa-text-width]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-th]]></Value>
+		<Text><![CDATA[ fa-th]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-th-large]]></Value>
+		<Text><![CDATA[ fa-th-large]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-th-list]]></Value>
+		<Text><![CDATA[ fa-th-list]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-underline]]></Value>
+		<Text><![CDATA[ fa-underline]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-undo]]></Value>
+		<Text><![CDATA[ fa-undo]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-unlink]]></Value>
+		<Text><![CDATA[ fa-unlink ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Directional Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angle-double-down]]></Value>
+		<Text><![CDATA[ fa-angle-double-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angle-double-left]]></Value>
+		<Text><![CDATA[ fa-angle-double-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angle-double-right]]></Value>
+		<Text><![CDATA[ fa-angle-double-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angle-double-up]]></Value>
+		<Text><![CDATA[ fa-angle-double-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angle-down]]></Value>
+		<Text><![CDATA[ fa-angle-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angle-left]]></Value>
+		<Text><![CDATA[ fa-angle-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angle-right]]></Value>
+		<Text><![CDATA[ fa-angle-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angle-up]]></Value>
+		<Text><![CDATA[ fa-angle-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-circle-down]]></Value>
+		<Text><![CDATA[ fa-arrow-circle-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-circle-left]]></Value>
+		<Text><![CDATA[ fa-arrow-circle-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-circle-o-down]]></Value>
+		<Text><![CDATA[ fa-arrow-circle-o-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-circle-o-left]]></Value>
+		<Text><![CDATA[ fa-arrow-circle-o-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-circle-o-right]]></Value>
+		<Text><![CDATA[ fa-arrow-circle-o-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-circle-o-up]]></Value>
+		<Text><![CDATA[ fa-arrow-circle-o-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-circle-right]]></Value>
+		<Text><![CDATA[ fa-arrow-circle-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-circle-up]]></Value>
+		<Text><![CDATA[ fa-arrow-circle-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-down]]></Value>
+		<Text><![CDATA[ fa-arrow-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-left]]></Value>
+		<Text><![CDATA[ fa-arrow-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-right]]></Value>
+		<Text><![CDATA[ fa-arrow-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrow-up]]></Value>
+		<Text><![CDATA[ fa-arrow-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrows]]></Value>
+		<Text><![CDATA[ fa-arrows]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrows-alt]]></Value>
+		<Text><![CDATA[ fa-arrows-alt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrows-h]]></Value>
+		<Text><![CDATA[ fa-arrows-h]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrows-v]]></Value>
+		<Text><![CDATA[ fa-arrows-v]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-down]]></Value>
+		<Text><![CDATA[ fa-caret-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-left]]></Value>
+		<Text><![CDATA[ fa-caret-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-right]]></Value>
+		<Text><![CDATA[ fa-caret-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-square-o-down]]></Value>
+		<Text><![CDATA[ fa-caret-square-o-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-square-o-left]]></Value>
+		<Text><![CDATA[ fa-caret-square-o-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-square-o-right]]></Value>
+		<Text><![CDATA[ fa-caret-square-o-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-square-o-up]]></Value>
+		<Text><![CDATA[ fa-caret-square-o-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-caret-up]]></Value>
+		<Text><![CDATA[ fa-caret-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chevron-circle-down]]></Value>
+		<Text><![CDATA[ fa-chevron-circle-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chevron-circle-left]]></Value>
+		<Text><![CDATA[ fa-chevron-circle-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chevron-circle-right]]></Value>
+		<Text><![CDATA[ fa-chevron-circle-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chevron-circle-up]]></Value>
+		<Text><![CDATA[ fa-chevron-circle-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chevron-down]]></Value>
+		<Text><![CDATA[ fa-chevron-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chevron-left]]></Value>
+		<Text><![CDATA[ fa-chevron-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chevron-right]]></Value>
+		<Text><![CDATA[ fa-chevron-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-chevron-up]]></Value>
+		<Text><![CDATA[ fa-chevron-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-hand-o-down]]></Value>
+		<Text><![CDATA[ fa-hand-o-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-hand-o-left]]></Value>
+		<Text><![CDATA[ fa-hand-o-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-hand-o-right]]></Value>
+		<Text><![CDATA[ fa-hand-o-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-hand-o-up]]></Value>
+		<Text><![CDATA[ fa-hand-o-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-long-arrow-down]]></Value>
+		<Text><![CDATA[ fa-long-arrow-down]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-long-arrow-left]]></Value>
+		<Text><![CDATA[ fa-long-arrow-left]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-long-arrow-right]]></Value>
+		<Text><![CDATA[ fa-long-arrow-right]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-long-arrow-up]]></Value>
+		<Text><![CDATA[ fa-long-arrow-up]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-down]]></Value>
+		<Text><![CDATA[ fa-toggle-down ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-left]]></Value>
+		<Text><![CDATA[ fa-toggle-left ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-right]]></Value>
+		<Text><![CDATA[ fa-toggle-right ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-toggle-up]]></Value>
+		<Text><![CDATA[ fa-toggle-up ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Video Player Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-arrows-alt]]></Value>
+		<Text><![CDATA[ fa-arrows-alt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-backward]]></Value>
+		<Text><![CDATA[ fa-backward]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-compress]]></Value>
+		<Text><![CDATA[ fa-compress]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-eject]]></Value>
+		<Text><![CDATA[ fa-eject]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-expand]]></Value>
+		<Text><![CDATA[ fa-expand]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-fast-backward]]></Value>
+		<Text><![CDATA[ fa-fast-backward]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-fast-forward]]></Value>
+		<Text><![CDATA[ fa-fast-forward]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-forward]]></Value>
+		<Text><![CDATA[ fa-forward]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pause]]></Value>
+		<Text><![CDATA[ fa-pause]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-play]]></Value>
+		<Text><![CDATA[ fa-play]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-play-circle]]></Value>
+		<Text><![CDATA[ fa-play-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-play-circle-o]]></Value>
+		<Text><![CDATA[ fa-play-circle-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-step-backward]]></Value>
+		<Text><![CDATA[ fa-step-backward]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-step-forward]]></Value>
+		<Text><![CDATA[ fa-step-forward]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-stop]]></Value>
+		<Text><![CDATA[ fa-stop]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-youtube-play]]></Value>
+		<Text><![CDATA[ fa-youtube-play]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Brand Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-adn]]></Value>
+		<Text><![CDATA[ fa-adn]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-android]]></Value>
+		<Text><![CDATA[ fa-android]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-angellist]]></Value>
+		<Text><![CDATA[ fa-angellist]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-apple]]></Value>
+		<Text><![CDATA[ fa-apple]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-behance]]></Value>
+		<Text><![CDATA[ fa-behance]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-behance-square]]></Value>
+		<Text><![CDATA[ fa-behance-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bitbucket]]></Value>
+		<Text><![CDATA[ fa-bitbucket]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bitbucket-square]]></Value>
+		<Text><![CDATA[ fa-bitbucket-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-bitcoin]]></Value>
+		<Text><![CDATA[ fa-bitcoin ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-btc]]></Value>
+		<Text><![CDATA[ fa-btc]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-amex]]></Value>
+		<Text><![CDATA[ fa-cc-amex]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-discover]]></Value>
+		<Text><![CDATA[ fa-cc-discover]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-mastercard]]></Value>
+		<Text><![CDATA[ fa-cc-mastercard]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-paypal]]></Value>
+		<Text><![CDATA[ fa-cc-paypal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-stripe]]></Value>
+		<Text><![CDATA[ fa-cc-stripe]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-cc-visa]]></Value>
+		<Text><![CDATA[ fa-cc-visa]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-codepen]]></Value>
+		<Text><![CDATA[ fa-codepen]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-css3]]></Value>
+		<Text><![CDATA[ fa-css3]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-delicious]]></Value>
+		<Text><![CDATA[ fa-delicious]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-deviantart]]></Value>
+		<Text><![CDATA[ fa-deviantart]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-digg]]></Value>
+		<Text><![CDATA[ fa-digg]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-dribbble]]></Value>
+		<Text><![CDATA[ fa-dribbble]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-dropbox]]></Value>
+		<Text><![CDATA[ fa-dropbox]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-drupal]]></Value>
+		<Text><![CDATA[ fa-drupal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-empire]]></Value>
+		<Text><![CDATA[ fa-empire]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-facebook]]></Value>
+		<Text><![CDATA[ fa-facebook]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-facebook-square]]></Value>
+		<Text><![CDATA[ fa-facebook-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-flickr]]></Value>
+		<Text><![CDATA[ fa-flickr]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-foursquare]]></Value>
+		<Text><![CDATA[ fa-foursquare]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ge]]></Value>
+		<Text><![CDATA[ fa-ge ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-git]]></Value>
+		<Text><![CDATA[ fa-git]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-git-square]]></Value>
+		<Text><![CDATA[ fa-git-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-github]]></Value>
+		<Text><![CDATA[ fa-github]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-github-alt]]></Value>
+		<Text><![CDATA[ fa-github-alt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-github-square]]></Value>
+		<Text><![CDATA[ fa-github-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-gittip]]></Value>
+		<Text><![CDATA[ fa-gittip]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-google]]></Value>
+		<Text><![CDATA[ fa-google]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-google-plus]]></Value>
+		<Text><![CDATA[ fa-google-plus]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-google-plus-square]]></Value>
+		<Text><![CDATA[ fa-google-plus-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-google-wallet]]></Value>
+		<Text><![CDATA[ fa-google-wallet]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-hacker-news]]></Value>
+		<Text><![CDATA[ fa-hacker-news]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-html5]]></Value>
+		<Text><![CDATA[ fa-html5]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-instagram]]></Value>
+		<Text><![CDATA[ fa-instagram]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ioxhost]]></Value>
+		<Text><![CDATA[ fa-ioxhost]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-joomla]]></Value>
+		<Text><![CDATA[ fa-joomla]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-jsfiddle]]></Value>
+		<Text><![CDATA[ fa-jsfiddle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-lastfm]]></Value>
+		<Text><![CDATA[ fa-lastfm]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-lastfm-square]]></Value>
+		<Text><![CDATA[ fa-lastfm-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-linkedin]]></Value>
+		<Text><![CDATA[ fa-linkedin]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-linkedin-square]]></Value>
+		<Text><![CDATA[ fa-linkedin-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-linux]]></Value>
+		<Text><![CDATA[ fa-linux]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-maxcdn]]></Value>
+		<Text><![CDATA[ fa-maxcdn]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-meanpath]]></Value>
+		<Text><![CDATA[ fa-meanpath]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-openid]]></Value>
+		<Text><![CDATA[ fa-openid]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pagelines]]></Value>
+		<Text><![CDATA[ fa-pagelines]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-paypal]]></Value>
+		<Text><![CDATA[ fa-paypal]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pied-piper]]></Value>
+		<Text><![CDATA[ fa-pied-piper]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pied-piper-alt]]></Value>
+		<Text><![CDATA[ fa-pied-piper-alt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pinterest]]></Value>
+		<Text><![CDATA[ fa-pinterest]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-pinterest-square]]></Value>
+		<Text><![CDATA[ fa-pinterest-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-qq]]></Value>
+		<Text><![CDATA[ fa-qq]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ra]]></Value>
+		<Text><![CDATA[ fa-ra ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-rebel]]></Value>
+		<Text><![CDATA[ fa-rebel]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-reddit]]></Value>
+		<Text><![CDATA[ fa-reddit]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-reddit-square]]></Value>
+		<Text><![CDATA[ fa-reddit-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-renren]]></Value>
+		<Text><![CDATA[ fa-renren]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-share-alt]]></Value>
+		<Text><![CDATA[ fa-share-alt]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-share-alt-square]]></Value>
+		<Text><![CDATA[ fa-share-alt-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-skype]]></Value>
+		<Text><![CDATA[ fa-skype]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-slack]]></Value>
+		<Text><![CDATA[ fa-slack]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-slideshare]]></Value>
+		<Text><![CDATA[ fa-slideshare]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-soundcloud]]></Value>
+		<Text><![CDATA[ fa-soundcloud]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-spotify]]></Value>
+		<Text><![CDATA[ fa-spotify]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-stack-exchange]]></Value>
+		<Text><![CDATA[ fa-stack-exchange]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-stack-overflow]]></Value>
+		<Text><![CDATA[ fa-stack-overflow]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-steam]]></Value>
+		<Text><![CDATA[ fa-steam]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-steam-square]]></Value>
+		<Text><![CDATA[ fa-steam-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-stumbleupon]]></Value>
+		<Text><![CDATA[ fa-stumbleupon]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-stumbleupon-circle]]></Value>
+		<Text><![CDATA[ fa-stumbleupon-circle]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tencent-weibo]]></Value>
+		<Text><![CDATA[ fa-tencent-weibo]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-trello]]></Value>
+		<Text><![CDATA[ fa-trello]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tumblr]]></Value>
+		<Text><![CDATA[ fa-tumblr]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-tumblr-square]]></Value>
+		<Text><![CDATA[ fa-tumblr-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-twitch]]></Value>
+		<Text><![CDATA[ fa-twitch]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-twitter]]></Value>
+		<Text><![CDATA[ fa-twitter]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-twitter-square]]></Value>
+		<Text><![CDATA[ fa-twitter-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-vimeo-square]]></Value>
+		<Text><![CDATA[ fa-vimeo-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-vine]]></Value>
+		<Text><![CDATA[ fa-vine]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-vk]]></Value>
+		<Text><![CDATA[ fa-vk]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-wechat]]></Value>
+		<Text><![CDATA[ fa-wechat ]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-weibo]]></Value>
+		<Text><![CDATA[ fa-weibo]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-weixin]]></Value>
+		<Text><![CDATA[ fa-weixin]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-windows]]></Value>
+		<Text><![CDATA[ fa-windows]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-wordpress]]></Value>
+		<Text><![CDATA[ fa-wordpress]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-xing]]></Value>
+		<Text><![CDATA[ fa-xing]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-xing-square]]></Value>
+		<Text><![CDATA[ fa-xing-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-yahoo]]></Value>
+		<Text><![CDATA[ fa-yahoo]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-yelp]]></Value>
+		<Text><![CDATA[ fa-yelp]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-youtube]]></Value>
+		<Text><![CDATA[ fa-youtube]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-youtube-play]]></Value>
+		<Text><![CDATA[ fa-youtube-play]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-youtube-square]]></Value>
+		<Text><![CDATA[ fa-youtube-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Text><![CDATA[Medical Icons]]></Text>
+		<Value><![CDATA[]]></Value>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-ambulance]]></Value>
+		<Text><![CDATA[ fa-ambulance]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-h-square]]></Value>
+		<Text><![CDATA[ fa-h-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-hospital-o]]></Value>
+		<Text><![CDATA[ fa-hospital-o]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-medkit]]></Value>
+		<Text><![CDATA[ fa-medkit]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-plus-square]]></Value>
+		<Text><![CDATA[ fa-plus-square]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-stethoscope]]></Value>
+		<Text><![CDATA[ fa-stethoscope]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-user-md]]></Value>
+		<Text><![CDATA[ fa-user-md]]></Text>
+	</OptionItem>
+	<OptionItem>
+		<Value><![CDATA[fa fa-wheelchair]]></Value>
+		<Text><![CDATA[ fa-wheelchair]]></Text>
+	</OptionItem>
+
+</OptionItems>

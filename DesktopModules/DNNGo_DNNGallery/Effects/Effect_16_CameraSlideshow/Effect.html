@@ -1,0 +1,78 @@
+﻿<div class="$ThemeName" id="camera_wrap_${ModuleID}">
+     #if($DataList.Count > 0) 
+        #foreach($DataItem in $DataList)
+        <div data-thumb="${xf.ViewLinkUrl($DataItem.Picture)}" data-src="${xf.ViewLinkUrl($DataItem.Picture)}"  data-link="${xf.ViewLinkUrl($DataItem.UrlLink)}" data-target="${xf.ViewLinkTarget($DataItem)}">
+            
+                #if( $DataItem.ContentText != "")
+                    <div class="camera_caption fadeFromBottom">
+                        $DataItem.ContentText
+                    </div>
+                #end
+            
+        </div>
+        #end 
+    #end
+</div>
+
+
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery('#camera_wrap_${ModuleID}').camera({
+            imagePath: '${Module.ModulePath}Effects/${EffectName}/Themes/${ThemeName}/images/',//he path to the image folder (it serves for the blank.gif, when you want to display videos)
+ 
+		    height				: '${xf.ViewXmlSetting("height","300px")}',	//here you can type pixels (for instance '300px'), a percentage (relative to the width of the slideshow, for instance '50%') or 'auto'
+		    minHeight			: '${xf.ViewXmlSetting("minHeight",300)}px',	//you can also leave it blank
+            gridDifference		: ${xf.ViewXmlSetting("gridDifference",250)},	//to make the grid blocks slower than the slices, this value must be smaller than transPeriod
+            time				: ${xf.ViewXmlSetting("time",5000)},	//milliseconds between the end of the sliding effect and the start of the nex one
+		    transPeriod			: ${xf.ViewXmlSetting("transPeriod",1500)},	//lenght of the sliding effect in milliseconds
+            pieDiameter			: ${xf.ViewXmlSetting("pieDiameter",38)},
+		    rows				: ${xf.ViewXmlSetting("rows",4)},
+		    slicedCols			: ${xf.ViewXmlSetting("slicedCols",12)},	//if 0 the same value of cols
+		    slicedRows			: ${xf.ViewXmlSetting("slicedRows",8)},	//if 0 the same value of rows
+            cols				: ${xf.ViewXmlSetting("cols",6)},
+
+
+            alignment			: '${xf.ViewXmlSetting("alignment","center")}', //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
+		    barDirection		: '${xf.ViewXmlSetting("barDirection","leftToRight")}',	//'leftToRight', 'rightToLeft', 'topToBottom', 'bottomToTop'
+		    barPosition			: '${xf.ViewXmlSetting("barPosition","bottom")}',	//'bottom', 'left', 'top', 'right'
+		  
+		    easing				: '${xf.ViewXmlSetting("easing","easeInOutExpo")}',	//for the complete list http://jqueryui.com/demos/effect/easing.html
+		    //mobileEasing		: '',	//leave empty if you want to display the same easing on mobile devices and on desktop etc.
+		    fx					: '${xf.ViewXmlSetting("fx","random")}',	//'random','simpleFade', 'curtainTopLeft', 'curtainTopRight', 'curtainBottomLeft', 'curtainBottomRight', 'curtainSliceLeft', 'curtainSliceRight', 'blindCurtainTopLeft', 'blindCurtainTopRight', 'blindCurtainBottomLeft', 'blindCurtainBottomRight', 'blindCurtainSliceBottom', 'blindCurtainSliceTop', 'stampede', 'mosaic', 'mosaicReverse', 'mosaicRandom', 'mosaicSpiral', 'mosaicSpiralReverse', 'topLeftBottomRight', 'bottomRightTopLeft', 'bottomLeftTopRight', 'bottomLeftTopRight'
+										    //you can also use more than one effect, just separate them with commas: 'simpleFade, scrollRight, scrollBottom'
+		    //mobileFx			: '',	//leave empty if you want to display the same effect on mobile devices and on desktop etc.
+		   
+            slideOn				: '${xf.ViewXmlSetting("slideOn","random")}',	//next, prev, random: decide if the transition effect will be applied to the current (prev) or the next slide
+		    piePosition         : '${xf.ViewXmlSetting("piePosition","rightTop")}', //'rightTop', 'leftTop', 'leftBottom', 'rightBottom'
+
+		    loader				: '${xf.ViewXmlSetting("loader","pie")}',//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
+		    loaderColor			: '#eeeeee', 
+		    loaderBgColor		: '#222222', 
+		    loaderOpacity		: ${xf.ViewXmlSetting("loaderOpacity","0.8")},	//0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
+		    loaderPadding		: ${xf.ViewXmlSetting("loaderPadding",2)},	//how many empty pixels you want to display between the loader and its background
+		    loaderStroke		: ${xf.ViewXmlSetting("loaderStroke",7)},	//the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter
+		  
+
+		    autoAdvance         : ${xf.ViewXmlSetting("autoAdvance","true")}, //true, false
+		    mobileAutoAdvance   : ${xf.ViewXmlSetting("mobileAutoAdvance","true")}, //true, false. Auto-advancing for mobile devices
+		    hover               : ${xf.ViewXmlSetting("hover","true")}, //true, false. Puase on state hover. Not available for mobile devices
+		    navigation			: ${xf.ViewXmlSetting("navigation","true")},	//true or false, to display or not the navigation buttons
+		    navigationHover		: ${xf.ViewXmlSetting("navigationHover","false")},	//if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be visible always
+		    mobileNavHover		: ${xf.ViewXmlSetting("mobileNavHover","true")},	//same as above, but only for mobile devices
+		    opacityOnGrid		: ${xf.ViewXmlSetting("opacityOnGrid","true")},//true, false. Decide to apply a fade effect to blocks and slices: if your slideshow is fullscreen or simply big, I recommend to set it false to have a smoother effect 
+		    overlayer			: ${xf.ViewXmlSetting("overlayer","true")},	//a layer on the images to prevent the users grab them simply by clicking the right button of their mouse (.camera_overlayer)
+		    pagination			: ${xf.ViewXmlSetting("pagination","true")},
+		    playPause			: ${xf.ViewXmlSetting("playPause","true")},	//true or false, to display or not the play/pause buttons
+		    pauseOnClick		: ${xf.ViewXmlSetting("pauseOnClick","false")},	//true, false. It stops the slideshow when you click the sliders.
+		    portrait            : ${xf.ViewXmlSetting("portrait","false")}, //true, false. Select true if you don't want that your images are cropped
+		    thumbnails          : ${xf.ViewXmlSetting("thumbnails","true")}
+            
+        });
+    });
+</script>
+
+
+
+
+
+ 

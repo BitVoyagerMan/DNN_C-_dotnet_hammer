@@ -1,0 +1,111 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+ 
+/** DNNGo_LayerGalleryPro_Content  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_LayerGalleryPro_Content]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_LayerGalleryPro_Content](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[Title] [nvarchar](200) NOT NULL,
+		[Options] [ntext] NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL,
+		[StartTime] [datetime] NOT NULL,
+		[EndTime] [datetime] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [nvarchar](50) NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_LayerGalleryPro_Content] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+
+ /** DNNGo_LayerGalleryPro_Item  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_LayerGalleryPro_Item]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_LayerGalleryPro_Item](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[ContentID] [int] NOT NULL,
+		[Title] [nvarchar](512) NOT NULL,
+		[ItemType] [tinyint] NOT NULL,
+		[Options] [ntext] NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [nvarchar](50) NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_LayerGalleryPro_Item] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+/** DNNGo_LayerGalleryPro_Files  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_LayerGalleryPro_Files]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_LayerGalleryPro_Files](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[Name] [nvarchar](256) NOT NULL,
+		[FileName] [nvarchar](128) NOT NULL,
+		[FileMate] [nvarchar](32) NOT NULL,
+		[FilePath] [nvarchar](256) NOT NULL,
+		[FileExtension] [nvarchar](32) NOT NULL,
+		[FileSize] [int] NOT NULL,
+		[ImageWidth] [int] NOT NULL,
+		[ImageHeight] [int] NOT NULL,
+		[Exif] [ntext] NULL,
+		[Sort] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [varchar](32) NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Extension1] [tinyint] NOT NULL,
+		[Extension2] [int] NOT NULL,
+		[Extension3] [nvarchar](512) NULL,
+		[Extension4] [ntext] NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_LayerGalleryPro_Files] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

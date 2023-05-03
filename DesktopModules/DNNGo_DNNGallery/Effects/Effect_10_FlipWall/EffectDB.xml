@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_10_FlipWall]]>
+    </Name>
+    <Description>
+      <![CDATA[used the jQuery Flip plug-in to build a sponsor wall for your site. You can use this example to bring interactivity to your site’s pages. ]]>
+    </Description>
+    <Version>
+      <![CDATA[01.01.02]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_10_FlipWall/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.flip.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Picture,ContentText]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/FlipWall.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+    <Pager><![CDATA[true]]></Pager>
+  </EffectDB>
+</DNNGo_DNNGallery>

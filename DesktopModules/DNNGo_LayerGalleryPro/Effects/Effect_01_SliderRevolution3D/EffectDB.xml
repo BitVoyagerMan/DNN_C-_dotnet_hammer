@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_LayerGalleryPro>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_01_SliderRevolution3D]]>
+    </Name>
+    <Description>
+      <![CDATA[This is a dnn module content slider using the parallax-effect. You can create as many layers and sublayers as you want. You can use images or any other HTML elements, including Flash movies as layers. The script is very user-friendly, you can add global settings or local (per slide) settings to each layer or sublayer. You can change delay times, easing types, durations and much more.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.00.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[settings.css,layers.css,navigation.css,themepunch.html.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.themepunch.tools.min.js,jquery.themepunch.revolution.min.js,layers.css,settings-source.css,navigation.css]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Subtitle,Thumbnails,Picture,Description,UrlLink,Options]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/SliderRevolution3D.aspx]]>
+    </DemoUrl>
+  </EffectDB>
+</DNNGo_LayerGalleryPro>

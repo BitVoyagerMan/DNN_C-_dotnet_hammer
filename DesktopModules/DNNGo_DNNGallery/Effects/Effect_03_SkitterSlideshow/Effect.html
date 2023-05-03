@@ -1,0 +1,34 @@
+﻿ 
+			<div id="box_skitter$ModuleID" class="$ThemeName" style="width:${xf.ViewXmlSetting("width","700")}px; height:${xf.ViewXmlSetting("height","300")}px;">
+				<ul>
+                    #if($DataList.Count > 0)
+                         #foreach($DataItem in $DataList)
+                            <li>
+                                #if($DataItem.UrlLink != "")
+                                <a href="${xf.ViewLinkUrl($DataItem.UrlLink)}" target="${xf.ViewLinkTarget($DataItem)}"><img src="${xf.ViewLinkUrl($DataItem.Picture)}" /></a>
+                                #else
+                                <img src="${xf.ViewLinkUrl($DataItem.Picture)}" />
+                                #end
+                                #if($DataItem.Description != "")
+                                <div class="label_text"><p>$DataItem.Description</p></div>
+                                #end
+                            </li>
+                         #end
+                    #end
+				</ul>
+			</div>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                jQuery('#box_skitter$ModuleID').skitter({
+                    animation: '${xf.ViewXmlSetting("animation","random")}',
+                    interval: ${xf.ViewXmlSetting("interval",2500)},
+                    numbers: ${xf.ViewXmlSetting("numbers","true")},
+                    navigation: ${xf.ViewXmlSetting("navigation","true")},
+                    thumbs: ${xf.ViewXmlSetting("thumbs","false")},
+                    hideTools: ${xf.ViewXmlSetting("hideTools","true")},
+                    auto_play: ${xf.ViewXmlSetting("auto_play","true")},
+                    dots: ${xf.ViewXmlSetting("dots","false")},
+                    progressbar:${xf.ViewXmlSetting("progressbar","false")}
+                });
+            });
+	</script>

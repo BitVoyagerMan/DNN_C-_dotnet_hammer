@@ -1,0 +1,978 @@
+<div id="slide_tab1_example<SlideID>" class="tab-pane">
+<div id="Loading2"></div>
+<div class="slide-title"><i class="clip-images-3"></i> Slide Editor </div>
+<div class="tab-content slidetype_content">
+  <ul class="slidetype_nav conditional" data-condition="#StaticLayersItem !='on'" id="slidetype_nav<SlideID>" >
+    <li class="active"> <a data-toggle="tab" href="#slidetype_tab<SlideID>_example1"> <i class="clip-image"></i> Main Background</a> </li>
+    <li> <a data-toggle="tab" href="#slidetype_tab<SlideID>_example2"> <i class="fa fa-gear"></i> General Settings</a> </li>
+    <li> <a data-toggle="tab" href="#slidetype_tab<SlideID>_example3"> <i class="fa fa-random"></i> Slide Animation</a> </li>
+    <li> <a data-toggle="tab" href="#slidetype_tab<SlideID>_example4"> <i class="fa fa-link"></i> Link & Seo</a> </li>
+    <li class="tooltips" data-original-title="Copy"> <span class="slidecopy" id="slidecopy<SlideID>" data-slidecopy="<SlideID>"><span class="clip-copy-2"></span> Copy</span> </li>
+  </ul>
+  <div class="tab-content slidetype_content">
+    
+    <div id="slidetype_tab<SlideID>_example1" class="tab-pane active">
+        <div class="conditional"  data-condition="#StaticLayersItem !='on'">  <div class="slide_table1_list">
+        <dl>
+          <dt>Background Type</dt>
+          <dd>
+            <select class="form-control dnn-option" id="bgtype<SlideID>">
+              <option value="image">Background Image</option>
+              <option value="transparent">Transparent</option>
+              <option value="color">Color</option>
+              <option value="youtube">YouTube Video</option>
+              <option value="vimeo">Vimeo Video</option>
+              <option value="html5">HTML5 Video</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='image'">
+          <dt>Background Image URL</dt>
+          <dd>
+            <div class="fileupimg fileupimg_style2">
+              <div class="imgbox"> <a  href="#AddMedia_Modal" class="slideimgs imgdemo"  data-toggle="modal" data-href="Resource/templates/modal.html"> <img src="Resource/images/thumbnail.jpg" id="imgs<SlideID>" /> </a>
+                <input type="text" value="" id="bgimg<SlideID>" class="imgtext dnn-option form-validation" data-validation="string"  data-original-title="Slide Image Background"  >
+              </div>
+              <div class="upimg"> <a href="#AddMedia_Modal" class="btn btn-primary btn-xs imgdemo"  data-href="Resource/templates/modal.html" data-toggle="modal">Add Image</a> <a href="#" class="btn btn-bricky btn-xs removeimg">Remove</a> </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='image'">
+          <dt>Alt</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option " id="bgalt<SlideID>">
+          </dd>
+          <dt>Title</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option " id="bgtitle<SlideID>">
+          </dd>
+        </dl>
+        <dl  class="conditional" data-condition="(#bgtype<SlideID> =='image') && (#kenburn_effect<SlideID> !='on')">
+          <dt>Background Fit</dt>
+          <dd class="input-line"> <span>
+            <select class="form-control dnn-option " id="slide_bg_fit<SlideID>">
+              <option value="cover" selected="selected">cover</option>
+              <option value="contain">contain</option>
+              <option value="percentage">(%, %)</option>
+              <option value="normal">normal</option>
+            </select>
+            </span> <span class="conditional" data-condition="#slide_bg_fit<SlideID> =='percentage'" >
+            <input type="text" class="form-control dnn-option" value="100" style="width: 50px" id="bg_fit_x<SlideID>">
+            </span> <span class="conditional" data-condition="#slide_bg_fit<SlideID> =='percentage'">
+            <input type="text" class="form-control dnn-option" value="100" style="width: 50px" id="bg_fit_y<SlideID>">
+            </span> </dd>
+          <dt>Background Position</dt>
+          <dd class="input-line"> <span>
+            <select class="form-control dnn-option " id="slide_bg_position<SlideID>">
+              <option value="center top">center top</option>
+              <option value="center right">center right</option>
+              <option value="center bottom">center bottom</option>
+              <option value="center center" selected="selected">center center</option>
+              <option value="left top">left top</option>
+              <option value="left center">left center</option>
+              <option value="left bottom">left bottom</option>
+              <option value="right top">right top</option>
+              <option value="right center">right center</option>
+              <option value="right bottom">right bottom</option>
+              <option value="percentage">(x%, y%)</option>
+            </select>
+            </span> <span class="conditional" data-condition="#slide_bg_position<SlideID> =='percentage'" >
+            <input type="text" class="form-control dnn-option" value="0" style="width: 50px" id="bg_position_x<SlideID>">
+            </span> <span class="conditional" data-condition="#slide_bg_position<SlideID> =='percentage'">
+            <input type="text" class="form-control dnn-option" value="0" style="width: 50px" id="bg_position_y<SlideID>">
+            </span> </dd>
+        </dl>
+        <dl  class="conditional" data-condition="(#bgtype<SlideID> =='image') && (#kenburn_effect<SlideID> !='on')">
+          <dt>Background Repeat</dt>
+          <dd>
+            <select class="form-control dnn-option" id="slide_bg_repeat<SlideID>">
+              <option value="no-repeat" selected="selected">no-repeat</option>
+              <option value="repeat">repeat</option>
+              <option value="repeat-x">repeat-x</option>
+              <option value="repeat-y">repeat-y</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='color'">
+          <dt>Background Color</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option color-picker form-validation" value="#E7E7E7" data-colorpicker-guid="1" style="width:100px;" id="bgcolor<SlideID>"   >
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='youtube'">
+          <dt>YouTube ID</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option " id="youtubeid<SlideID>"> Example: AkcUoA2f-jU</dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='youtube'">
+          <dt>Cover Image</dt>
+          <dd>
+            <div class="fileupimg"> <a  href="#AddMedia_Modal" class="slideimgs imgdemo"  data-toggle="modal" data-href="Resource/templates/modal.html"> </a>
+              <input type="text" value="" id="youtubecover<SlideID>" class="imgtext dnn-option  form-validation" data-validation="string"  data-original-title="Slide Image Background"  >
+              <span class="upimg"> <a href="#AddMedia_Modal" class="btn btn-primary btn-xs imgdemo"  data-href="Resource/templates/modal.html" data-toggle="modal">Add Image</a> <a href="#" class="btn btn-bricky btn-xs removeimg">Remove</a> </span> </div>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='vimeo'">
+          <dt>Vimeo ID</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option " id="vimeoid<SlideID>"> Example: 106249100</dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='vimeo'">
+          <dt>Cover Image</dt>
+          <dd>
+            <div class="fileupimg"> <a  href="#AddMedia_Modal" class="slideimgs imgdemo"  data-toggle="modal" data-href="Resource/templates/modal.html"> </a>
+              <input type="text" value="" id="vimeocover<SlideID>" class="imgtext dnn-option  form-validation" data-validation="string"  data-original-title="Slide Image Background"  >
+              <span class="upimg"> <a href="#AddMedia_Modal" class="btn btn-primary btn-xs imgdemo"  data-href="Resource/templates/modal.html" data-toggle="modal">Add Image</a> <a href="#" class="btn btn-bricky btn-xs removeimg">Remove</a> </span> </div>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='html5'">
+          <dt>MP4</dt>
+          <dd>
+            <input type="text" placeholder="http://" class="form-control dnn-option width-100" id="html5mp4<SlideID>">
+          </dd>
+           <dd>&nbsp; Example: http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4</dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='html5'">
+          <dt>WEBM</dt>
+          <dd>
+            <input type="text" placeholder="http://" class="form-control dnn-option width-100" id="html5webm<SlideID>">
+          </dd>
+          <dd>&nbsp; Example: http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm</dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='html5'">
+          <dt>OGV</dt>
+          <dd>
+            <input type="text" placeholder="http://" class="form-control dnn-option width-100" id="html5ovg<SlideID>">
+          </dd>
+          <dd>&nbsp; Example: http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv</dd>
+        </dl>
+        <dl class="conditional" data-condition="#bgtype<SlideID> =='html5'">
+          <dt>Cover Image</dt>
+          <dd>
+            <div class="fileupimg"> <a  href="#AddMedia_Modal" class="slideimgs imgdemo"  data-toggle="modal" data-href="Resource/templates/modal.html"> </a>
+              <input type="text" value="" id="html5cover<SlideID>" class="imgtext dnn-option  form-validation" data-validation="string"  data-original-title="Slide Image Background"  >
+              <span class="upimg"> <a href="#AddMedia_Modal" class="btn btn-primary btn-xs imgdemo"  data-href="Resource/templates/modal.html" data-toggle="modal">Add Image</a> <a href="#" class="btn btn-bricky btn-xs removeimg">Remove</a> </span> </div>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="(#bgtype<SlideID> =='youtube') || (#bgtype<SlideID> =='vimeo') || (#bgtype<SlideID> =='html5')">
+          <dt>Force Cover</dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" checked="checked" value="on" class="dnn-option" id="video_force_cover<SlideID>"  >
+            </div>
+          </dd>
+          <dt class="conditional" data-condition="#video_force_cover<SlideID> =='on'">Dotted Overlay</dt>
+          <dd class="conditional" data-condition="#video_force_cover<SlideID> =='on'">
+            <select class="form-control dnn-option" id="video_dotted_overlay<SlideID>">
+              <option selected="selected" value="none">none</option>
+              <option value="twoxtwo">2 x 2 Black</option>
+              <option value="twoxtwowhite">2 x 2 White</option>
+              <option value="threexthree">3 x 3 Black</option>
+              <option value="threexthreewhite">3 x 3 White</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="(#bgtype<SlideID> =='youtube') || (#bgtype<SlideID> =='vimeo') || (#bgtype<SlideID> =='html5')">
+          <dt>Aspect Ratio</dt>
+          <dd>
+            <select class="form-control dnn-option" id="video_ratio<SlideID>">
+              <option selected="selected" value="16:9">16:9</option>
+              <option value="4:3">4:3</option>
+            </select>
+          </dd>
+          <dt>Loop Video</dt>
+          <dd>
+            <select class="form-control dnn-option" id="video_loop<SlideID>">
+              <option selected="selected" value="none">Disable</option>
+              <option value="loop">Loop, Slide is paused</option>
+              <option value="loopandnoslidestop">Loop, Slide does not stop</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="(#bgtype<SlideID> =='youtube') || (#bgtype<SlideID> =='vimeo') || (#bgtype<SlideID> =='html5')">
+          <dt>Start At</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option " id="video_start_at<SlideID>"> For Example: 00:17 
+          </dd>
+          <dt class="conditional" data-condition="#bgtype<SlideID> !='youtube'">End At</dt>
+          <dd class="conditional" data-condition="#bgtype<SlideID> !='youtube'">
+            <input type="text" class="form-control dnn-option " id="video_end_at<SlideID>"> For Example: 02:17 
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="(#bgtype<SlideID> =='youtube') || (#bgtype<SlideID> =='vimeo') || (#bgtype<SlideID> =='html5')">
+          <dt>Next Slide On End</dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" class="dnn-option" value="off" id="video_nextslide<SlideID>"  >
+            </div>
+          </dd>
+          <dt>Rewind at Slide Start</dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" checked="checked" value="on" class="dnn-option" id="video_force_rewind<SlideID>"  >
+            </div>
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="(#bgtype<SlideID> =='youtube') || (#bgtype<SlideID> =='vimeo') || (#bgtype<SlideID> =='html5') ">
+          <dt>Mute Video</dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" checked="checked" value="on" class="dnn-option" id="video_mute<SlideID>"  >
+            </div>
+          </dd>
+          <dt class="conditional" data-condition="(#bgtype<SlideID> =='youtube') || (#bgtype<SlideID> =='vimeo') ">Video Volume</dt>
+          <dd class="conditional" data-condition="(#bgtype<SlideID> =='youtube') || (#bgtype<SlideID> =='vimeo') ">
+            <input type="text" class="form-control dnn-option " value="100" id="video_volume<SlideID>">
+          </dd>
+        </dl>
+        <dl class="conditional" data-condition="(#bgtype<SlideID> =='youtube') || (#bgtype<SlideID> =='vimeo')">
+          <dt class="conditional" data-condition="(#bgtype<SlideID> =='youtube')">Video Speed</dt>
+          <dd class="conditional" data-condition="(#bgtype<SlideID> =='youtube')">
+            <select class="form-control dnn-option" id="video_speed<SlideID>">
+              <option value="0.25">0.25</option>
+              <option value="0.50">0.50</option>
+              <option selected="selected" value="1">1</option>
+              <option value="1.5">1.5</option>
+              <option value="2">2</option>
+            </select>
+          </dd>
+          <dt class="conditional" data-condition="#bgtype<SlideID> =='youtube'">Arguments YouTube</dt>
+          <dd class="conditional" data-condition="#bgtype<SlideID> =='youtube'">
+            <input type="text" class="form-control dnn-option width-100" value="hd=1&wmode=opaque&showinfo=0&rel=0;" id="video_arguments<SlideID>">
+          </dd>
+          <dt class="conditional" data-condition="#bgtype<SlideID> =='vimeo'">Arguments Vimeo</dt>
+          <dd class="conditional" data-condition="#bgtype<SlideID> =='vimeo'">
+            <input type="text" class="form-control dnn-option  width-100" value="title=0&byline=0&portrait=0&api=1" id="video_arguments_vim<SlideID>">
+          </dd>
+        </dl>
+        <dl>
+          <dt>Filters</dt>
+          <dd>
+            <select class="form-control dnn-option" id="filters<SlideID>">
+              <option value="none">None</option>
+              <option value="_1977">1977</option>
+              <option value="aden">Aden</option>
+              <option value="brooklyn">Brooklyn</option>
+              <option value="clarendon">Clarendon</option>
+              <option value="earlybird">Earlybird</option>
+              <option value="gingham">Gingham</option>
+              <option value="hudson">Hudson</option>
+              <option value="inkwell">Inkwell</option>
+              <option value="lark">Lark</option>
+              <option value="lofi">Lo-Fi</option>
+              <option value="mayfair">Mayfair</option>
+              <option value="moon">Moon</option>
+              <option value="nashville">Nashville</option>
+              <option value="perpetua">Perpetua</option>
+              <option value="reyes">Reyes</option>
+              <option value="rise">Rise</option>
+              <option value="slumber">Slumber</option>
+              <option value="toaster">Toaster</option>
+              <option value="walden">Walden</option>
+              <option value="willow">Willow</option>
+              <option value="xpro2">X-pro II</option>
+            </select>
+          </dd>
+          <dt class="conditional" data-condition="#bgtype<SlideID> !='transparent' && #bgtype<SlideID> !='color' ">Parallax / 3D </dt>
+          <dd class="conditional" data-condition="#bgtype<SlideID> !='transparent' && #bgtype<SlideID> !='color' ">
+            <select class="form-control dnn-option" id="slide_parallax_level<SlideID>">
+              <option value="-" selected="selected">No Parallax</option>
+              <option value="1">Level Depth 1</option>
+              <option value="2">Level Depth 2</option>
+              <option value="3">Level Depth 3</option>
+              <option value="4">Level Depth 4</option>
+              <option value="5">Level Depth 5</option>
+              <option value="6">Level Depth 6</option>
+              <option value="7">Level Depth 7</option>
+              <option value="8">Level Depth 8</option>
+              <option value="9">Level Depth 9</option>
+              <option value="10">Level Depth 10</option>
+              <option value="11">Level Depth 11</option>
+              <option value="12">Level Depth 12</option>
+              <option value="13">Level Depth 13</option>
+              <option value="14">Level Depth 14</option>
+              <option value="15">Level Depth 15</option>
+            </select>
+          </dd>
+        </dl>
+        <div class="conditional" data-condition="#bgtype<SlideID> =='image'">
+          <div class="slide-title"> Ken Burns </div>
+          <dl>
+            <dt>Ken Burns / Pan Zoom</dt>
+            <dd>
+              <div class="make-switch" data-on="primary" data-off="info">
+                <input type="checkbox" value="off" class="dnn-option" id="kenburn_effect<SlideID>"  >
+              </div>
+            </dd>
+            <dt class="conditional" data-condition="#kenburn_effect<SlideID> =='on' ">Background Position</dt>
+            <dd class="conditional input-line" data-condition="#kenburn_effect<SlideID> =='on' "> <span>
+              <select class="form-control dnn-option" id="kenburn_bg_position<SlideID>">
+                <option value="center top">center top</option>
+                <option value="center right">center right</option>
+                <option value="center bottom">center bottom</option>
+                <option value="center center" selected="selected">center center</option>
+                <option value="left top">left top</option>
+                <option value="left center">left center</option>
+                <option value="left bottom">left bottom</option>
+                <option value="right top">right top</option>
+                <option value="right center">right center</option>
+                <option value="right bottom">right bottom</option>
+                <option value="percentage">(x%, y%)</option>
+              </select>
+              </span> <span class="conditional" data-condition="#kenburn_bg_position<SlideID> =='percentage'" >
+              <input type="text" class="form-control dnn-option" value="0" style="width: 50px" id="kenburn_position_x<SlideID>">
+              </span> <span class="conditional" data-condition="#kenburn_bg_position<SlideID> =='percentage'">
+              <input type="text" class="form-control dnn-option" value="0" style="width: 50px" id="kenburn_position_y<SlideID>">
+              </span> </dd>
+          </dl>
+          <dl class="conditional" data-condition="#kenburn_effect<SlideID> =='on'">
+            <dt>Scale: (in %)</dt>
+            <dd class="input-line"> <span>
+              <input type="text" class="form-control dnn-option form-validation" value="100" style="width: 50px" data-validation="plusint"  id="kb_start_fit<SlideID>">
+              </span> <span style="padding: 0 8px"> To </span> <span>
+              <input type="text" class="form-control dnn-option form-validation" value="120" style="width: 50px" data-validation="plusint" id="kb_end_fit<SlideID>">
+              </span> </dd>
+            <dt>Horizontal Offsets (+/-)</dt>
+            <dd class="input-line"> <span>
+              <input type="text" class="form-control dnn-option" value="0"  style="width: 50px"   id="kb_start_offset_x<SlideID>">
+              </span> <span style="padding: 0 8px"> To </span> <span>
+              <input type="text" class="form-control dnn-option" value="0"  style="width: 50px"  id="kb_end_offset_x<SlideID>">
+              </span> </dd>
+          </dl>
+          <dl class="conditional" data-condition="#kenburn_effect<SlideID> =='on'">
+            <dt>Vertical Offsets (+/-)</dt>
+            <dd class="input-line"> <span>
+              <input type="text" class="form-control dnn-option" value="0"  style="width: 50px"   id="kb_start_offset_y<SlideID>">
+              </span> <span style="padding: 0 8px"> To </span> <span>
+              <input type="text" class="form-control dnn-option" value="0"  style="width: 50px"  id="kb_end_offset_y<SlideID>">
+              </span> </dd>
+            <dt>Rotation</dt>
+            <dd class="input-line"> <span>
+              <input type="text" class="form-control dnn-option" value="0"  style="width: 50px"   id="kb_start_rotate<SlideID>">
+              </span> <span style="padding: 0 8px"> To </span> <span>
+              <input type="text" class="form-control dnn-option" value="0"  style="width: 50px"  id="kb_end_rotate<SlideID>">
+              </span> </dd>
+          </dl>
+          <dl class="conditional" data-condition="#kenburn_effect<SlideID> =='on'">
+            <dt>Blur Filter</dt>
+            <dd class="input-line"> <span>
+              <input type="text" class="form-control dnn-option" value="0"  style="width: 50px"   id="kb_blur_start<SlideID>">
+              </span> <span style="padding: 0 8px"> To </span> <span>
+              <input type="text" class="form-control dnn-option" value="0"  style="width: 50px"  id="kb_blur_end<SlideID>">
+              </span> </dd>
+            <dt>Easing</dt>
+            <dd class="input-line">
+              <select  class="form-control dnn-option" id="kb_easing<SlideID>">
+                <option selected="selected" value="Linear.easeNone">Linear.easeNone</option>
+                <option value="Power0.easeIn">Power0.easeIn  (linear)</option>
+                <option value="Power0.easeInOut">Power0.easeInOut  (linear)</option>
+                <option value="Power0.easeOut">Power0.easeOut  (linear)</option>
+                <option value="Power1.easeIn">Power1.easeIn</option>
+                <option value="Power1.easeInOut">Power1.easeInOut</option>
+                <option value="Power1.easeOut">Power1.easeOut</option>
+                <option value="Power2.easeIn">Power2.easeIn</option>
+                <option value="Power2.easeInOut">Power2.easeInOut</option>
+                <option value="Power2.easeOut">Power2.easeOut</option>
+                <option value="Power3.easeIn">Power3.easeIn</option>
+                <option value="Power3.easeInOut">Power3.easeInOut</option>
+                <option value="Power3.easeOut">Power3.easeOut</option>
+                <option value="Power4.easeIn">Power4.easeIn</option>
+                <option value="Power4.easeInOut">Power4.easeInOut</option>
+                <option value="Power4.easeOut">Power4.easeOut</option>
+                <option value="Back.easeIn">Back.easeIn</option>
+                <option value="Back.easeInOut">Back.easeInOut</option>
+                <option value="Back.easeOut">Back.easeOut</option>
+                <option value="Bounce.easeIn">Bounce.easeIn</option>
+                <option value="Bounce.easeInOut">Bounce.easeInOut</option>
+                <option value="Bounce.easeOut">Bounce.easeOut</option>
+                <option value="Circ.easeIn">Circ.easeIn</option>
+                <option value="Circ.easeInOut">Circ.easeInOut</option>
+                <option value="Circ.easeOut">Circ.easeOut</option>
+                <option value="Elastic.easeIn">Elastic.easeIn</option>
+                <option value="Elastic.easeInOut">Elastic.easeInOut</option>
+                <option value="Elastic.easeOut">Elastic.easeOut</option>
+                <option value="Expo.easeIn">Expo.easeIn</option>
+                <option value="Expo.easeInOut">Expo.easeInOut</option>
+                <option value="Expo.easeOut">Expo.easeOut</option>
+                <option value="Sine.easeIn">Sine.easeIn</option>
+                <option value="Sine.easeInOut">Sine.easeInOut</option>
+                <option value="Sine.easeOut">Sine.easeOut</option>
+                <option value="SlowMo.ease">SlowMo.ease</option>
+              </select>
+            </dd>
+          </dl>
+          <dl class="conditional" data-condition="#kenburn_effect<SlideID> =='on'">
+            <dt>Duration (in ms)</dt>
+            <dd>
+              <input type="text" value="9000" class="form-control dnn-option " id="kb_duration<SlideID>">
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div> </div>
+    <div id="slidetype_tab<SlideID>_example2" class="tab-pane">
+        <div class="conditional"  data-condition="#StaticLayersItem !='on'"> <div class="slide_table1_list2">
+        <dl>
+          <dt>Slide Title</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option" id="slidetitle<SlideID>" value="">
+          </dd>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>Slide "Delay"</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option form-validation" data-validation="plusint" id="delay<SlideID>" value="">
+          </dd>
+          <dd>A new delay value for the Slide. If no delay defined per slide, the delay defined via Options (9000ms) will be used. </dd>
+        </dl>
+        
+        <dl>
+          <dt>Pause Slider</dt>
+          <dd>
+            <select class="form-control dnn-option" id="stoponpurpose<SlideID>">
+              <option value="false" selected="selected">Default</option>
+              <option value="true">Stop Slider Progress</option>
+            </select>
+          </dd>
+          <dd>Stop Slider Progress on this slider or use Slider Settings Defaults</dd>
+        </dl>
+        <dl>
+          <dt>Slide in Navigation (invisible)</dt>
+          <dd>
+            <select class="form-control dnn-option" id="invisibleslide<SlideID>">
+              <option value="false" selected="selected">Show Always</option>
+              <option value="true">Only Via Actions</option>
+            </select>
+          </dd>
+          <dd>Show Slide always or only on Action calls. Invisible slides are not available due Navigation Elements.</dd>
+        </dl>
+        <dl>
+          <dt>Slide State</dt>
+          <dd>
+            <select class="form-control dnn-option" id="state<SlideID>">
+              <option value="published" selected="selected">Published</option>
+              <option value="unpublished">Unpublished</option>
+            </select>
+          </dd>
+          <dd>The state of the slide. The unpublished slide will be excluded from the slider.</dd>
+        </dl>
+        <dl >
+          <dt>Hide Slide After Loop</dt>
+          <dd>
+            <input type="text" value="0" data-validation="plusint"  class="form-control dnn-option form-validation" id="hideslideafter<SlideID>">
+          </dd>
+          <dd>After how many Loops should the Slide be hidden ? 0 = Slide is never hidden.</dd>
+        </dl>
+        <dl>
+          <dt>Hide Slide On Desktop </dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" value="off" class="dnn-option" id="hideslidedesktop<SlideID>"  >
+            </div>
+          </dd>
+          <dd>Show/Hide this Slide if Slider loaded on Desktop Device.</dd>
+        </dl>
+        <dl>
+          <dt>Hide Slide On Notebook</dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" value="off" class="dnn-option" id="hideslidenotebook<SlideID>"  >
+            </div>
+          </dd>
+          <dd>Show/Hide this Slide if Slider loaded on Notebook Device.</dd>
+        </dl>
+        <dl>
+          <dt>Hide Slide On Tablet</dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" value="off" class="dnn-option" id="hideslidetablet<SlideID>"  >
+            </div>
+          </dd>
+          <dd>Show/Hide this Slide if Slider loaded on Tablet Device.</dd>
+        </dl>       
+        <dl>
+          <dt>Hide Slide On Mobile</dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" value="off" class="dnn-option" id="hideslideonmobile<SlideID>"  >
+            </div>
+          </dd>
+          <dd>Show/Hide this Slide if Slider loaded on Mobile Device.</dd>
+        </dl>
+
+
+        <dl >
+          <dt>Visible from</dt>
+          <dd class="time-input-line">
+            <input type="text" id="display_starttime<SlideID>" class="date-picker form-control" data-date-format="mm/dd/yyyy" data-date-viewmode="years" value="<starttime>">
+			<input type="text" id="display_starttimehh<SlideID>" class="date-time-picker form-control" value="<starttimehh>">
+          </dd>
+          <dd>If set, slide will be visible after the date is reached.</dd>
+        </dl>
+        <dl >
+          <dt>Visible until</dt>
+          <dd class="time-input-line">
+            <input type="text" id="display_endtime<SlideID>" class="date-picker form-control" data-date-format="mm/dd/yyyy" data-date-viewmode="years"  value="<endtime>">
+      	 	<input type="text" id="display_endtimehh<SlideID>" class="date-time-picker form-control" value="<endtimehh>">
+
+          </dd>
+          <dd>If set, slide will be visible till the date is reached.</dd>
+        </dl>
+        <dl >
+          <dt>Thumbnail</dt>
+          <dd>
+            <div class="fileupimg fileupimg_style2">
+              <div class="imgbox"> <a  href="#AddMedia_Modal" class="slideimgs imgdemo"  data-toggle="modal" data-href="Resource/templates/modal.html"> <img src="Resource/images/thumbnail.jpg" id="imgs44<SlideID>" /> </a>
+                <input type="text" value="" id="thumb_img<SlideID>" class="imgtext dnn-option form-validation" data-validation="string"  data-original-title="Slide Image Background"  >
+              </div>
+              <div class="upimg"> <a href="#AddMedia_Modal" class="btn btn-primary btn-xs imgdemo"  data-href="Resource/templates/modal.html" data-toggle="modal">Add Image</a> <a href="#" class="btn btn-bricky btn-xs removeimg">Remove</a> </div>
+            </div>
+          </dd>
+          <dd>Slide Thumbnail.</dd>
+        </dl>
+        <dl>
+          <dt>Parameter 1</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option" id="slideparam1<SlideID>" value="">
+          </dd>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>Parameter 2</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option" id="slideparam2<SlideID>" value="">
+          </dd>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>Parameter 3</dt>
+          <dd>
+            <input type="text" class="form-control dnn-option" id="slideparam3<SlideID>" value="">
+          </dd>
+          <dd></dd>
+        </dl>
+
+      </div>
+    </div> </div>
+    <div id="slidetype_tab<SlideID>_example3" class="tab-pane">
+        <div class="conditional"  data-condition="#StaticLayersItem !='on'">  <div class="slide_table1_list2">
+        <div class="slide-animation-left">
+          <select class="form-control dnn-option tooltips" multiple="multiple" id="transition<SlideID>" style="height: 300px;">
+            <optgroup label="Basics">
+            <option value="notransition"> No Transition</option>
+            <option value="fade" selected> Fade</option>
+            <option value="crossfade"> Fade Cross</option>
+            <option value="fadethroughdark"> Fade Through Black</option>
+            <option value="fadethroughlight"> Fade Through Light</option>
+            <option value="fadethroughtransparent"> Fade Through Transparent</option>
+            </optgroup>
+            <optgroup label="Slide Simple">
+            <option value="slideup"> Slide To Top</option>
+            <option value="slidedown"> Slide To Bottom</option>
+            <option value="slideright"> Slide To Right</option>
+            <option value="slideleft"> Slide To Left</option>
+            <option value="slidehorizontal"> Slide Horizontal (Next/Previous)</option>
+            <option value="slidevertical"> Slide Vertical (Next/Previous)</option>
+            </optgroup>
+            <optgroup label="Slide Over">
+            <option value="slideoverup"> Slide Over To Top</option>
+            <option value="slideoverdown"> Slide Over To Bottom</option>
+            <option value="slideoverright"> Slide Over To Right</option>
+            <option value="slideoverleft"> Slide Over To Left</option>
+            <option value="slideoverhorizontal"> Slide Over Horizontal (Next/Previous)</option>
+            <option value="slideoververtical"> Slide Over Vertical (Next/Previous)</option>
+            </optgroup>
+            <optgroup label="disabled">
+            <option value="slideremoveup"> Slide Remove To Top</option>
+            <option value="slideremovedown"> Slide Remove To Bottom</option>
+            <option value="slideremoveright"> Slide Remove To Right</option>
+            <option value="slideremoveleft"> Slide Remove To Left</option>
+            <option value="slideremovehorizontal"> Slide Remove Horizontal (Next/Previous)</option>
+            <option value="slideremovevertical"> Slide Remove Vertical (Next/Previous)</option>
+            </optgroup>
+            <optgroup label="Sliding Overlays">
+            <option value="slidingoverlayup"> Sliding Overlays To Top</option>
+            <option value="slidingoverlaydown"> Sliding Overlays To Bottom</option>
+            <option value="slidingoverlayright"> Sliding Overlays To Right</option>
+            <option value="slidingoverlayleft"> Sliding Overlays To Left</option>
+            <option value="slidingoverlayhorizontal"> Sliding Overlays Horizontal (Next/Previous)</option>
+            <option value="slidingoverlayvertical"> Sliding Overlays Vertical (Next/Previous)</option>
+            </optgroup>
+            <
+            <optgroup label="Slots And Boxes">
+            <option value="boxslide"> Slide Boxes</option>
+            <option value="slotslide-horizontal"> Slide Slots Horizontal</option>
+            <option value="slotslide-vertical"> Slide Slots Vertical</option>
+            <option value="boxfade"> Fade Boxes</option>
+            <option value="slotfade-horizontal"> Fade Slots Horizontal</option>
+            <option value="slotfade-vertical"> Fade Slots Vertical</option>
+            </optgroup>
+            <optgroup label="Fade &amp; Slide">
+            <option value="fadefromright"> Fade and Slide from Right</option>
+            <option value="fadefromleft"> Fade and Slide from Left</option>
+            <option value="fadefromtop"> Fade and Slide from Top</option>
+            <option value="fadefrombottom"> Fade and Slide from Bottom</option>
+            <option value="fadetoleftfadefromright"> To Left From Right</option>
+            <option value="fadetorightfadefromleft"> To Right From Left</option>
+            <option value="fadetotopfadefrombottom"> To Top From Bottom</option>
+            <option value="fadetobottomfadefromtop"> To Bottom From Top</option>
+            </optgroup>
+            <optgroup label="Parallax">
+            <option value="parallaxtoright"> Parallax to Right</option>
+            <option value="parallaxtoleft"> Parallax to Left</option>
+            <option value="parallaxtotop"> Parallax to Top</option>
+            <option value="parallaxtobottom"> Parallax to Bottom</option>
+            <option value="parallaxhorizontal"> Parallax Horizontal</option>
+            <option value="parallaxvertical"> Parallax Vertical</option>
+            </optgroup>
+            <optgroup label="Zoom Transitions">
+            <option value="scaledownfromright"> Zoom Out and Fade From Right</option>
+            <option value="scaledownfromleft"> Zoom Out and Fade From Left</option>
+            <option value="scaledownfromtop"> Zoom Out and Fade From Top</option>
+            <option value="scaledownfrombottom"> Zoom Out and Fade From Bottom</option>
+            <option value="zoomout"> Zoom Out</option>
+            <option value="zoomin"> Zoom In</option>
+            <option value="slotzoom-horizontal"> Zoom Slots Horizontal</option>
+            <option value="slotzoom-vertical"> Zoom Slots Vertical</option>
+            </optgroup>
+            <optgroup label="Curtain Transitions">
+            <option value="curtain-1"> Curtain from Left</option>
+            <option value="curtain-2"> Curtain from Right</option>
+            <option value="curtain-3"> Curtain from Middle</option>
+            <option disabled="disabled">Filter Transitions</option>
+            <option value="grayscale"> Grayscale Transition</option>
+            <option value="grayscalecross"> Grayscale Cross Transition</option>
+            <option value="brightness"> Brightness Transition</option>
+            <option value="brightnesscross"> Brightness Cross Transition</option>
+            <option value="blurlight"> Blur Light Transition</option>
+            <option value="blurlightcross"> Blur Light Cross Transition</option>
+            <option value="blurstrong"> Blur Strong Transition</option>
+            <option value="blurstrongcross"> Blur Strong Cross Transition</option>
+            </optgroup>
+            <optgroup label="Premium Transitions">
+            <option value="3dcurtain-horizontal"> 3D Curtain Horizontal</option>
+            <option value="3dcurtain-vertical"> 3D Curtain Vertical</option>
+            <option value="cube"> Cube Vertical</option>
+            <option value="cube-horizontal"> Cube Horizontal</option>
+            <option value="incube"> In Cube Vertical</option>
+            <option value="incube-horizontal"> In Cube Horizontal</option>
+            <option value="turnoff"> TurnOff Horizontal</option>
+            <option value="turnoff-vertical"> TurnOff Vertical</option>
+            <option value="papercut"> Paper Cut</option>
+            <option value="flyin"> Fly In</option>
+            </optgroup>
+            <optgroup label="Random">
+            <option value="random-selected"> Random of Selected</option>
+            <option value="random-static"> Random Flat</option>
+            <option value="random-premium"> Random Premium</option>
+            <option value="random"> Random Flat and Premium</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="slide-animation-right">
+          <dl >
+            <dt>Slot / Box Amount</dt>
+            <dd>
+              <select class="form-control dnn-option" id="slot_amount<SlideID>">
+                <option value="default" selected>Default</option>
+                <option value="random">Random</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </dd>
+            <dd># of slots/boxes the slide is divided into or divided by.</dd>
+          </dl>
+          <dl >
+            <dt>Slot Rotation</dt>
+            <dd>
+              <select class="form-control dnn-option" id="transition_rotation<SlideID>">
+                <option value="default" selected>Default</option>
+                <option value="random">Random</option>
+                <option value="0">0</option>
+                <option value="45">45</option>
+                <option value="90">90</option>
+                <option value="180">180</option>
+                <option value="270">270</option>
+                <option value="360">360</option>
+              </select>
+            </dd>
+            <dd>Start Rotation of Transition (deg).</dd>
+          </dl>
+          <dl >
+            <dt>Animation Duration</dt>
+            <dd>
+              <select class="form-control dnn-option" id="transition_duration<SlideID>">
+                <option value="default" selected>Default</option>
+                <option value="random">Random</option>
+                <option value="300">300</option>
+                <option value="350">350</option>
+                <option value="400">400</option>
+                <option value="450">450</option>
+                <option value="500">500</option>
+                <option value="550">550</option>
+                <option value="600">600</option>
+                <option value="650">650</option>
+                <option value="700">700</option>
+                <option value="750">750</option>
+                <option value="800">800</option>
+                <option value="850">850</option>
+                <option value="900">900</option>
+                <option value="950">950</option>
+                <option value="1000">1000</option>
+                <option value="1050">1050</option>
+                <option value="1100">1100</option>
+                <option value="1150">1150</option>
+                <option value="1200">1200</option>
+                <option value="1250">1250</option>
+                <option value="1300">1300</option>
+                <option value="1350">1350</option>
+                <option value="1400">1400</option>
+                <option value="1450">1450</option>
+                <option value="1500">1500</option>
+                <option value="1550">1550</option>
+                <option value="1600">1600</option>
+                <option value="1650">1650</option>
+                <option value="1700">1700</option>
+                <option value="1750">1750</option>
+                <option value="1800">1800</option>
+                <option value="1850">1850</option>
+                <option value="1900">1900</option>
+                <option value="1950">1950</option>
+                <option value="2000">2000</option>
+                
+              </select>
+            </dd>
+            <dd>The duration of the transition.</dd>
+          </dl>
+          <dl>
+            <dt>Easing In</dt>
+            <dd>
+              <select class="form-control dnn-option" id="transition_ease_in<SlideID>">
+                <option value="default" selected="selected">Default</option>
+                <option value="Linear.easeNone">Linear.easeNone</option>
+                <option value="Power0.easeIn">Power0.easeIn  (linear)</option>
+                <option value="Power0.easeInOut">Power0.easeInOut  (linear)</option>
+                <option value="Power0.easeOut">Power0.easeOut  (linear)</option>
+                <option value="Power1.easeIn">Power1.easeIn</option>
+                <option value="Power1.easeInOut">Power1.easeInOut</option>
+                <option value="Power1.easeOut">Power1.easeOut</option>
+                <option value="Power2.easeIn">Power2.easeIn</option>
+                <option value="Power2.easeInOut">Power2.easeInOut</option>
+                <option value="Power2.easeOut" selected="selected">Power2.easeOut</option>
+                <option value="Power3.easeIn">Power3.easeIn</option>
+                <option value="Power3.easeInOut">Power3.easeInOut</option>
+                <option value="Power3.easeOut">Power3.easeOut</option>
+                <option value="Power4.easeIn">Power4.easeIn</option>
+                <option value="Power4.easeInOut">Power4.easeInOut</option>
+                <option value="Power4.easeOut">Power4.easeOut</option>
+                <option value="Back.easeIn">Back.easeIn</option>
+                <option value="Back.easeInOut">Back.easeInOut</option>
+                <option value="Back.easeOut">Back.easeOut</option>
+                <option value="Bounce.easeIn">Bounce.easeIn</option>
+                <option value="Bounce.easeInOut">Bounce.easeInOut</option>
+                <option value="Bounce.easeOut">Bounce.easeOut</option>
+                <option value="Circ.easeIn">Circ.easeIn</option>
+                <option value="Circ.easeInOut">Circ.easeInOut</option>
+                <option value="Circ.easeOut">Circ.easeOut</option>
+                <option value="Elastic.easeIn">Elastic.easeIn</option>
+                <option value="Elastic.easeInOut">Elastic.easeInOut</option>
+                <option value="Elastic.easeOut">Elastic.easeOut</option>
+                <option value="Expo.easeIn">Expo.easeIn</option>
+                <option value="Expo.easeInOut">Expo.easeInOut</option>
+                <option value="Expo.easeOut">Expo.easeOut</option>
+                <option value="Sine.easeIn">Sine.easeIn</option>
+                <option value="Sine.easeInOut">Sine.easeInOut</option>
+                <option value="Sine.easeOut">Sine.easeOut</option>
+                <option value="SlowMo.ease">SlowMo.ease</option>
+              </select>
+            </dd>
+            <dd>The easing of Appearing transition.</dd>
+          </dl>
+          <dl>
+            <dt>Easing Out</dt>
+            <dd>
+              <select class="form-control dnn-option" id="transition_ease_out<SlideID>">
+                <option value="default" selected="selected">Default</option>
+                <option value="Linear.easeNone">Linear.easeNone</option>
+                <option value="Power0.easeIn">Power0.easeIn  (linear)</option>
+                <option value="Power0.easeInOut">Power0.easeInOut  (linear)</option>
+                <option value="Power0.easeOut">Power0.easeOut  (linear)</option>
+                <option value="Power1.easeIn">Power1.easeIn</option>
+                <option value="Power1.easeInOut">Power1.easeInOut</option>
+                <option value="Power1.easeOut">Power1.easeOut</option>
+                <option value="Power2.easeIn">Power2.easeIn</option>
+                <option value="Power2.easeInOut">Power2.easeInOut</option>
+                <option value="Power2.easeOut">Power2.easeOut</option>
+                <option value="Power3.easeIn">Power3.easeIn</option>
+                <option value="Power3.easeInOut">Power3.easeInOut</option>
+                <option value="Power3.easeOut">Power3.easeOut</option>
+                <option value="Power4.easeIn">Power4.easeIn</option>
+                <option value="Power4.easeInOut">Power4.easeInOut</option>
+                <option value="Power4.easeOut">Power4.easeOut</option>
+                <option value="Back.easeIn">Back.easeIn</option>
+                <option value="Back.easeInOut">Back.easeInOut</option>
+                <option value="Back.easeOut">Back.easeOut</option>
+                <option value="Bounce.easeIn">Bounce.easeIn</option>
+                <option value="Bounce.easeInOut">Bounce.easeInOut</option>
+                <option value="Bounce.easeOut">Bounce.easeOut</option>
+                <option value="Circ.easeIn">Circ.easeIn</option>
+                <option value="Circ.easeInOut">Circ.easeInOut</option>
+                <option value="Circ.easeOut">Circ.easeOut</option>
+                <option value="Elastic.easeIn">Elastic.easeIn</option>
+                <option value="Elastic.easeInOut">Elastic.easeInOut</option>
+                <option value="Elastic.easeOut">Elastic.easeOut</option>
+                <option value="Expo.easeIn">Expo.easeIn</option>
+                <option value="Expo.easeInOut">Expo.easeInOut</option>
+                <option value="Expo.easeOut">Expo.easeOut</option>
+                <option value="Sine.easeIn">Sine.easeIn</option>
+                <option value="Sine.easeInOut">Sine.easeInOut</option>
+                <option value="Sine.easeOut">Sine.easeOut</option>
+                <option value="SlowMo.ease">SlowMo.ease</option>
+              </select>
+            </dd>
+            <dd>The easing of Disappearing transition.</dd>
+          </dl>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div> </div>
+    <div id="slidetype_tab<SlideID>_example4" class="tab-pane">
+        <div class="conditional"  data-condition="#StaticLayersItem !='on'">  <div class="slide_table1_list2">
+        <dl >
+          <dt>Class</dt>
+          <dd>
+            <input type="text" value="" class="form-control dnn-option " id="class_attr<SlideID>">
+          </dd>
+          <dd>Adds a unique class to the li of the Slide like class="rev_special_class" (add only the classnames, seperated by space)</dd>
+        </dl>
+        <dl >
+          <dt>ID</dt>
+          <dd>
+            <input type="text" value="" class="form-control dnn-option " id="id_attr<SlideID>">
+          </dd>
+          <dd>Adds a unique ID to the li of the Slide like id="rev_special_id" (add only the id)</dd>
+        </dl>
+        <dl >
+          <dt>Custom Fields</dt>
+          <dd>
+            <input type="text" value="" class="form-control dnn-option " id="data_attr<SlideID>">
+          </dd>
+          <dd>Add as many attributes as you wish here. </dd>
+        </dl>
+        <dl>
+          <dt>Enable Link</dt>
+          <dd>
+            <div class="make-switch" data-on="primary" data-off="info">
+              <input type="checkbox" value="off" class="dnn-option" id="enable_link<SlideID>"  >
+            </div>
+          </dd>
+          <dd>Link the Full Slide to an URL or Action.</dd>
+        </dl>
+        <dl class="conditional" data-condition="#enable_link<SlideID> =='on'">
+          <dt>Link Type</dt>
+          <dd>
+            <select class="form-control dnn-option" id="link_type<SlideID>">
+              <option value="regular">Regular</option>
+              <option value="slide">To Slide</option>
+            </select>
+          </dd>
+          <dd>Regular - Link to URL,  To Slide - Call a Slide Action</dd>
+        </dl>
+        <dl class="conditional" data-condition="(#enable_link<SlideID> =='on') && (#link_type<SlideID> == 'regular')">
+          <dt>Slide Link</dt>
+          <dd>
+            <input type="text" value="http://www.google.com" class="form-control dnn-option " id="rev_link<SlideID>">
+          </dd>
+          <dd>A link on the whole slide pic (use {{link}} or {{meta:somemegatag}} in template sliders to link to a post or some other meta)</dd>
+        </dl>
+        <dl class="conditional" data-condition="(#enable_link<SlideID> =='on') && (#link_type<SlideID> == 'regular')">
+          <dt>Link Target</dt>
+          <dd>
+            <select class="form-control dnn-option" id="link_open_in<SlideID>">
+              <option value="_self" selected="selected">Same Window</option>
+              <option value="new">New Window</option>
+            </select>
+          </dd>
+          <dd>The target of the slide link.</dd>
+        </dl>
+        <dl class="conditional" data-condition="(#enable_link<SlideID> =='on') && (#link_type<SlideID> == 'slide')"s>
+          <dt>Link To Slide</dt>
+          <dd>
+            <select class="form-control dnn-option" id="slide_link<SlideID>">
+              <option value="nothing" selected="selected">-- Not Chosen --</option>
+              <option value="next">-- Next Slide --</option>
+              <option value="prev">-- Previous Slide --</option>
+              <option value="scroll_under">-- Scroll Below Slider --</option>
+            </select>
+          </dd>
+          <dd>Call Slide Action</dd>
+        </dl>
+		<dl class="conditional" data-condition="#enable_link<SlideID> =='on'">
+          <dt>Link Sensibility</dt>
+          <dd>
+            <select class="form-control dnn-option" id="link_pos<SlideID>">
+              <option value="front" selected="selected">Front</option>
+              <option value="back">Back</option>
+            </select>
+          </dd>
+          <dd>The z-index position of the link related to layers</dd>
+        </dl>      
+        
+         
+        
+      </div>
+    </div>
+    </div> 
+    <div id="slidetype_tab<SlideID>_example1000" data-condition="#StaticLayersItem =='on'" class="conditional tab-pane">
+          <div class="slide_table1_list">
+              <dl>
+                <dt>Static Layers Overflow</dt>
+                <dd>
+                  <select class="form-control dnn-option" id="StaticOverflow<SlideID>">
+                      <option value="visible" selected="selected">Visible</option>
+                      <option value="hidden">Hidden</option>	
+                  </select>
+                </dd>
+                <dd>Set the Overflow of Static Layers to Visible or Hidden.</dd>
+              </dl>
+              <dl>
+                <dt>Static Layers Position</dt>
+                <dd>
+                  <select class="form-control dnn-option" id="StaticPosition<SlideID>">
+                      <option value="front" selected="selected">Front</option>
+                      <option value="back">Back</option>	
+                  </select>
+                </dd>
+                <dd>Choose if Static Layers should appear above or behind Slide content.</dd>
+              </dl>
+              <input type='text' id='staticSlide<SlideID>' class="form-control dnn-option hide" value='off' />
+          </div>
+    </div>
+  </div>
+
+
+
+  <div class="slide-title"><i class="clip-stack "></i> Layers
+  
+  <div class="right responsive_icon conditional" id="responsive_icon<SlideID>" data-condition="(#custom_size_notebook =='on')||(#custom_size_tablet =='on')||(#custom_size_mobile =='on')" >
+  	<a href="#desktop" class="active" data-index="0"><span class="fa fa-desktop"></span></a>
+  	<a href="#notebook" class="conditional" data-index="1" data-condition="#custom_size_notebook =='on'"><span class="fa fa-laptop"></span></a>
+  	<a href="#tablet" class="conditional" data-index="2" data-condition="#custom_size_tablet =='on'"><span class="fa fa-tablet"></span></a>
+ 	<a href="#mobile" class="conditional" data-index="3" data-condition="#custom_size_mobile =='on'"><span class="fa fa-mobile"></span></a>
+  </div>
+  
+  
+  </div>
+  <ul id="layers-accordion<SlideID>" class="panel-group slide-accordion">
+  </ul>
+  <div class="add-layer" > <span id="add-layer<SlideID>"> <i class="clip-plus-circle-2 ico-add"></i> Add new layer</span> </div>
+</div>

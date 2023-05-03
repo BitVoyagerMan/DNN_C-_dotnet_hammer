@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+
+    <Setting>
+      <Name><![CDATA[automatically]]></Name>
+      <Alias><![CDATA[Auto play]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Animate slider automatically]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ width ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ width ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 720 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ itemWidth ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Item Width ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 130 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ px. Box-model width of individual carousel items, including horizontal borders and padding. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+  <Setting> 
+    <Name>
+      <![CDATA[ SlideshowSpeed ]]>
+    </Name>
+    <ControlType>
+      <![CDATA[ text ]]>
+    </ControlType>
+    <DefaultValue>
+      <![CDATA[ 3000 ]]>
+    </DefaultValue>
+    <Description>
+      <![CDATA[ ms ]]>
+    </Description>    
+    <Width>
+      <![CDATA[100]]>
+     </Width>
+    <Required>
+        <![CDATA[ true ]]>
+    </Required>
+    <Verification>
+      <![CDATA[ number ]]>
+    </Verification>    
+  </Setting> 
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ controlNav ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Control Nav ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ Create navigation for paging control of each clide? Note: Leave true for manualControls usage ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ directionNav ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Direction Nav ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ Create navigation for previous/next navigation? (true/false) ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ maxItems ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Max Items ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 4 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ move ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ move ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 1 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ Number of carousel items that should move on animation. If 0, slider will move all visible items. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ itemMargin ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Item Margin ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 10 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ Margin between carousel items. ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+    <Setting>
+      <Name><![CDATA[fancybox_modal]]></Name>
+      <Alias><![CDATA[Fancybox Modal]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[false]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[If set to true, will disable navigation and closing]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[fancybox_scrollOutside]]></Name>
+      <Alias><![CDATA[Fancybox ScrollOutside]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[If true, the script will try to avoid horizontal scrolling for iframes and html content]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[fancybox_openEffect]]></Name>
+      <Alias><![CDATA[Fancybox OpenEffect]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[fade]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[elastic,fade,none]]></ListContent>
+      <Description><![CDATA[Animation effect ('elastic', 'fade' or 'none') for each transition type]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[fancybox_openSpeed]]></Name>
+      <Alias><![CDATA[Fancybox OpenSpeed]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[250]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The time it takes to complete transition]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[fancybox_openEasing]]></Name>
+      <Alias><![CDATA[Fancybox OpenEasing]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[swing]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent>
+        <![CDATA[ linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce ]]>
+      </ListContent>
+      <Description><![CDATA[Easing method for each transition type. You have numerous choices if easing plugin is included]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[fancybox_openOpacity]]></Name>
+      <Alias><![CDATA[Fancybox OpenOpacity]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[If set to true, transparency is changed for elastic transitions]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+
+
+    <Setting>
+      <Name><![CDATA[fancybox_closeEffect]]></Name>
+      <Alias><![CDATA[Fancybox CloseEffect]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[fade]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[elastic,fade,none]]></ListContent>
+      <Description><![CDATA[Animation effect ('elastic', 'fade' or 'none') for each transition type]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[fancybox_closeSpeed]]></Name>
+      <Alias><![CDATA[Fancybox CloseSpeed]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[250]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The time it takes to complete transition]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[fancybox_closeEasing]]></Name>
+      <Alias><![CDATA[Fancybox CloseEasing]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[swing]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent>
+        <![CDATA[ linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce ]]>
+      </ListContent>
+      <Description><![CDATA[Easing method for each transition type. You have numerous choices if easing plugin is included]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[fancybox_closeOpacity]]></Name>
+      <Alias><![CDATA[Fancybox CloseOpacity]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[If set to true, transparency is changed for elastic transitions]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+
+
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

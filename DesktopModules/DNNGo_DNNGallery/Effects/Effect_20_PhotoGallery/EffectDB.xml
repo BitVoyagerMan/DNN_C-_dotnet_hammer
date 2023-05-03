@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_20_PhotoGallery]]>
+    </Name>
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    <Version>
+      <![CDATA[01.03.02]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_20_PhotoGallery/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.mousewheel.min.js,jquery.easing.js,jquery.fancybox.js,jquery.fancybox-media.js,jquery.fancybox.css]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[UrlLink,Linktype,Thumbnails]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/PhotoGallery.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+    <Pager><![CDATA[true]]></Pager>
+  </EffectDB>
+</DNNGo_DNNGallery>

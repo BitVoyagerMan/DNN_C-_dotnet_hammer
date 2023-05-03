@@ -1,0 +1,66 @@
+﻿<div class="wrapper_$ThemeName">
+<ul id="fancybox-ul-${ModuleID}" class="$ThemeName clearfix"> 
+#if($DataList.Count > 0) 
+    #foreach($DataItem in $DataList)
+      <li class="item_${velocityCount}">
+        <a ${xf.ViewFancyBox($DataItem)} href="${xf.ViewLinkUrl($DataItem.UrlLink)}" data-fancybox-group="gallery-${ModuleID}" title="$DataItem.Title"><img src="${xf.ViewLinkUrl($DataItem.Thumbnails)}" alt="" style=" width:${xf.ViewXmlSetting("width",200)}px; height:${xf.ViewXmlSetting("height",200)}px;" /></a>
+         #if( ${xf.ViewXmlSetting("show_Title","false")} == "true")
+         <h3 class="item_title"><a ${xf.ViewFancyBox($DataItem,"fancybox-link-{0}")} href="${xf.ViewLinkUrl($DataItem.UrlLink)}" data-fancybox-group="gallery-${ModuleID}" title="$DataItem.Title">$DataItem.Title</a></h3>
+         #end
+      </li>
+    #end 
+#end 
+</ul>
+        ${Pager}
+</div>
+        
+ 
+<script type="text/javascript" charset="utf-8">
+    jQuery(function ($) {
+        jQuery('.fancybox-${ModuleID}')
+		  		.attr('rel', 'media-gallery')
+		  		.fancybox({
+                 modal: ${xf.ViewXmlSetting("fancybox_modal","false")},
+                scrollOutside: ${xf.ViewXmlSetting("fancybox_scrollOutside","true")},
+                 // Properties for each animation type
+                // Opening fancyBox
+                openEffect: '${xf.ViewXmlSetting("fancybox_openEffect","fade")}', // 'elastic', 'fade' or 'none'
+                openSpeed: ${xf.ViewXmlSetting("fancybox_openSpeed",250)},
+                openEasing: '${xf.ViewXmlSetting("fancybox_openEasing","swing")}',
+                openOpacity: ${xf.ViewXmlSetting("fancybox_openOpacity","true")},
+
+                //Closing fancyBox
+                closeEffect: '${xf.ViewXmlSetting("fancybox_closeEffect","fade")}', // 'elastic', 'fade' or 'none'
+                closeSpeed: ${xf.ViewXmlSetting("fancybox_closeSpeed",250)},
+                closeEasing: '${xf.ViewXmlSetting("fancybox_closeEasing","swing")}',
+                closeOpacity: ${xf.ViewXmlSetting("fancybox_closeOpacity","true")},
+				helpers : {
+						media : {}
+					}
+        });
+
+        jQuery('.fancybox-link-${ModuleID}')
+		  		.attr('rel', 'media-gallery')
+		  		.fancybox({
+                 modal: ${xf.ViewXmlSetting("fancybox_modal","false")},
+                scrollOutside: ${xf.ViewXmlSetting("fancybox_scrollOutside","true")},
+                 // Properties for each animation type
+                // Opening fancyBox
+                openEffect: '${xf.ViewXmlSetting("fancybox_openEffect","fade")}', // 'elastic', 'fade' or 'none'
+                openSpeed: ${xf.ViewXmlSetting("fancybox_openSpeed",250)},
+                openEasing: '${xf.ViewXmlSetting("fancybox_openEasing","swing")}',
+                openOpacity: ${xf.ViewXmlSetting("fancybox_openOpacity","true")},
+
+                //Closing fancyBox
+                closeEffect: '${xf.ViewXmlSetting("fancybox_closeEffect","fade")}', // 'elastic', 'fade' or 'none'
+                closeSpeed: ${xf.ViewXmlSetting("fancybox_closeSpeed",250)},
+                closeEasing: '${xf.ViewXmlSetting("fancybox_closeEasing","swing")}',
+                closeOpacity: ${xf.ViewXmlSetting("fancybox_closeOpacity","true")},
+				helpers : {
+						media : {}
+					}
+        });
+    });
+</script>
+
+ 

@@ -1,0 +1,27 @@
+﻿
+
+.Effect_18_Default .box {
+    display: block;
+    margin: 0 15px 15px 0;
+	float:left;
+}
+.Effect_18_Default .box img{
+	transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-webkit-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+}
+.Effect_18_Default .box img:hover{
+	opacity: 0.6;
+}
+
+.Effect_18_Default .pager{
+	padding:10px 0px;	
+}
+
+.Effect_18_Default .pager span{
+	padding:0px 4px;	
+}
+.Effect_18_Default .pager a{
+	padding:0px 4px;	
+}

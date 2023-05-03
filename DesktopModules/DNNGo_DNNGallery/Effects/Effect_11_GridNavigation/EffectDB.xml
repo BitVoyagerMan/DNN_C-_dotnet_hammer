@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_11_GridNavigation]]>
+    </Name>
+    <Description>
+      <![CDATA[Grid Navigation Effects with jQuery]]>
+    </Description>
+    <Version>
+      <![CDATA[01.01.02]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_11_GridNavigation/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.gridnav.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.easing.js,jquery.fancybox.js,jquery.fancybox-media.js,jquery.fancybox.css,jquery.mousewheel.min.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Description,Thumbnails,UrlLink,UrlLinkType]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/GridNavigation.aspx]]>
+    </DemoUrl>
+  </EffectDB>
+</DNNGo_DNNGallery>

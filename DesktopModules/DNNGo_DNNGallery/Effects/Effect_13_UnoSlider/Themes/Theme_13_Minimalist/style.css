@@ -1,0 +1,195 @@
+/* Unoslider container */
+.Theme_13_Minimalist {
+  list-style: none;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px!important;
+}
+
+.Theme_13_Minimalist img{
+  max-width: 100%;
+}
+
+.Theme_13_Minimalist li {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Timebar */
+.Theme_13_Minimalist .unoslider_timer {
+  background-color: white;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  -moz-box-shadow: 0px 2px 2px black;
+  -webkit-box-shadow: 0px 2px 2px black;
+  -o-box-shadow: 0px 2px 2px black;
+  box-shadow: 0px 2px 2px black;
+}
+
+/* Progress bar preloader container */
+.Theme_13_Minimalist .unoslider_preloader {
+  background: rgba(255, 255, 255, 0.5);  
+}
+
+/* progress bar preloader */
+.Theme_13_Minimalist .unoslider_preloader .unoslider_progress {
+  width: 30%;
+  height: 5px;
+  margin: 0 auto;
+  border-top: 1px solid #7c7c7c;
+  border-bottom: 1px solid #f1f1f1;
+  border-left: 1px solid #949494;
+  border-right: 1px solid #949494;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9a9a9a), color-stop(100%, #b3b3b3));
+  background: -webkit-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -moz-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -o-linear-gradient(#9a9a9a, #b3b3b3);
+  background: -ms-linear-gradient(#9a9a9a, #b3b3b3);
+  background: linear-gradient(#9a9a9a, #b3b3b3);
+}
+
+/* progress bar fill */
+.Theme_13_Minimalist .unoslider_preloader .unoslider_progress span {
+  display: block;
+  height: 100%;
+  background: #66cccc;
+}
+
+/* Spinner preloader */
+.Theme_13_Minimalist .unoslider_spinner {
+  background: url('/images/spinner.gif') white center center no-repeat;
+}
+
+.Theme_13_Minimalist .unoslider_layers{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Theme_13_Minimalist .unoslider_caption a
+{
+  text-decoration:none;
+}
+
+
+
+/* Hand cursor over navigation elements */
+.Theme_13_Minimalist .unoslider_navigation {
+  cursor: pointer;
+}
+
+/* Tooltip panel */
+.Theme_13_Minimalist .unoslider_caption {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  font-family: "Helvetica neue", Helvetica, Verdana, sans-serif;
+  padding: 10px 15px;
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  color: #c10941;
+  font-size: 15px;
+  text-shadow: white 0 1px 0;
+}
+
+/* play, pause, previous and next elements */
+.Theme_13_Minimalist .unoslider_pause, 
+.Theme_13_Minimalist .unoslider_play, 
+.Theme_13_Minimalist .unoslider_left, 
+.Theme_13_Minimalist .unoslider_right {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  background: url("minimalist.png") no-repeat;
+}
+
+/* play and pause elements */
+.Theme_13_Minimalist .unoslider_pause, 
+.Theme_13_Minimalist .unoslider_play {
+  height: 42px;
+  width: 42px;
+  margin-top: -21px;
+  margin-left: -21px;
+  top: 50%;
+  left: 50%;
+}
+
+/* previous and next elements */
+.Theme_13_Minimalist .unoslider_left, 
+.Theme_13_Minimalist .unoslider_right {
+  width: 25px;
+  height: 25px;
+  margin-top: -12.5px;
+  top: 50%;
+}
+
+/* previous */
+.Theme_13_Minimalist .unoslider_left {
+  background-position: 0px -89px;
+  left: -12.5px;
+}
+
+/* next */
+.Theme_13_Minimalist .unoslider_right {
+  background-position: -28px -89px;
+  right: -12.5px;
+}
+
+/* pause */
+.Theme_13_Minimalist .unoslider_pause {
+  background-position: 0px -43px;
+}
+
+/* play */
+.Theme_13_Minimalist .unoslider_play {
+  background-position: 0px 0px;
+}
+
+/* bullet indicator */
+.Theme_13_Minimalist .unoslider_indicator {
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  text-align: right;
+}
+.Theme_13_Minimalist .unoslider_indicator a {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  cursor: pointer;
+  background: #c10941;
+  margin: 3px;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+*+html .Theme_13_Minimalist .unoslider_indicator a {
+   float:left;
+}
+.Theme_13_Minimalist .unoslider_indicator a.unoslider_indicator_active {
+  width: 13px;
+  height: 13px;
+}

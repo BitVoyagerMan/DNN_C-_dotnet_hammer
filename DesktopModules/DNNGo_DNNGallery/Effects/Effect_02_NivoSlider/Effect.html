@@ -1,0 +1,45 @@
+﻿
+ 
+
+<div class="slider-wrapper $ThemeName" >
+#if($DataList.Count > 0)
+    <div id="slider$ModuleID" class="nivoSlider" >
+         #foreach($DataItem in $DataList)
+            #if($DataItem.UrlLink != "")
+             <a href="${xf.ViewLinkUrl($DataItem.UrlLink)}" target="${xf.ViewLinkTarget($DataItem)}"><img src="${xf.ViewLinkUrl($DataItem.Picture)}" data-thumb="${xf.ViewLinkUrl($DataItem.Picture)}" alt="$DataItem.Title" title="#htmlcaption$DataItem.ID" /></a>
+            #else
+                <img src="${xf.ViewLinkUrl($DataItem.Picture)}" data-thumb="${xf.ViewLinkUrl($DataItem.Picture)}" alt="$DataItem.Title" title="#htmlcaption$DataItem.ID" />
+            #end
+        #end
+    </div>
+     #foreach($DataItem in $DataList)
+        <div id="htmlcaption$DataItem.ID" class="nivo-html-caption">
+            $DataItem.ContentText
+        </div>
+     #end
+
+#else
+   No data in the list.
+#end
+</div>
+<script type="text/javascript">
+    jQuery(window).load(function () {
+        jQuery('#slider$ModuleID').nivoSlider({
+            effect: '${xf.ViewXmlSetting("effect","random")}', //  sliceDownRight','sliceDownLeft','sliceUpRight','sliceUpLeft','sliceUpDown','sliceUpDownLeft','fold','fade','boxRandom','boxRain','boxRainReverse','boxRainGrow','boxRainGrowReverse'
+            animSpeed: ${xf.ViewXmlSetting("animSpeed",500)},
+            pauseTime: ${xf.ViewXmlSetting("pauseTime",3000)},
+            directionNav: ${xf.ViewXmlSetting("directionNav","true")},
+            controlNav: ${xf.ViewXmlSetting("controlNav","true")},
+            beforeChange:function(){
+              jQuery('#slider$ModuleID .nivo-caption').animate({ 
+                opacity: 0
+              });
+            },    
+            afterChange:function(){
+              jQuery('#slider$ModuleID .nivo-caption').animate({ 
+                opacity: 0.8
+               });
+            }
+        });
+    });
+</script>

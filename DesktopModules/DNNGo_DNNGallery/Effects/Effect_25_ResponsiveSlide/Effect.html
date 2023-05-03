@@ -1,0 +1,55 @@
+﻿<div class="${ThemeName}"  id="slides${ModuleID}" style="display:none;">
+  <div class="flexslider">
+    <div class="flex-viewport">
+      <ul class="slides" >
+       #if($DataList.Count > 0) 
+            #foreach($DataItem in $DataList)
+            <li>
+                <div class="slide_content"> 
+                    $DataItem.ContentText
+                 </div>
+             </li>
+             #end 
+       #end
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    // Set up Sliders
+    // **************
+    jQuery(window).load(function () {
+        jQuery('#slides${ModuleID}').fadeIn("slow");
+        jQuery('#slides${ModuleID}').flexslider({
+            animation: "fade",
+            animationLoop: ${xf.ViewXmlSetting("animationLoop","true")},           //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+            smoothHeight: ${xf.ViewXmlSetting("smoothHeight","true")},            //Boolean: Allows a high degree of automatic
+            slideshow: ${xf.ViewXmlSetting("slideshow","true")},      //option          //Boolean: Animate slider automatically
+            slideshowSpeed: ${xf.ViewXmlSetting("slideshowSpeed",3000)},  //option         //Integer: Set the speed of the slideshow cycling, in milliseconds
+            animationSpeed: ${xf.ViewXmlSetting("animationSpeed",600)},   //option         //Integer: Set the speed of animations, in milliseconds           
+            randomize: ${xf.ViewXmlSetting("randomize","false")},               //Boolean: Randomize slide order
+
+            // Usability features
+            pauseOnHover: ${xf.ViewXmlSetting("pauseOnHover","false")},    //option        //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+            touch: ${xf.ViewXmlSetting("touch","true")},        //option            //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
+
+            // Primary Controls
+            controlNav: ${xf.ViewXmlSetting("controlNav","true")},    //option           //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+            directionNav: ${xf.ViewXmlSetting("directionNav","true")},   //option          //Boolean: Create navigation for previous/next navigation? (true/false)
+
+            // Secondary Navigation
+            keyboard: ${xf.ViewXmlSetting("keyboard","true")},                 //Boolean: Allow slider navigating via keyboard left/right keys
+            pausePlay: ${xf.ViewXmlSetting("pausePlay","true")}    //option   	//Boolean: Create pause/play dynamic element
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+ 

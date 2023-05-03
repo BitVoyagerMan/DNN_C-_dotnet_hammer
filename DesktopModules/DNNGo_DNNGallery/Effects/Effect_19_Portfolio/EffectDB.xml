@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_19_Portfolio]]>
+    </Name>
+    <Description>
+      <![CDATA[This is a dynamically intelligent layout module developed by jquery isotope. It is able to support responisiveness and data filtering.]]>
+    </Description>
+    <Version>
+      <![CDATA[02.04.01]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.isotope.js,jquery.portfolio.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.mousewheel.min.js,jquery.fancybox.css,jquery.fancybox.js,jquery.cookie.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Picture,Description,UrlLink,Options]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/Portfolio.aspx]]>
+    </DemoUrl>
+    <Groups>
+      <![CDATA[true]]>
+    </Groups>
+	  <Responsive><![CDATA[true]]></Responsive>
+    <Pager><![CDATA[true]]></Pager>
+  </EffectDB>
+</DNNGo_DNNGallery>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_24_OurTeam]]>
+    </Name>
+    <Description>
+      <![CDATA[OurTeam is a simple team members list module. It lists each member and his/her fundamental info, profiles will display when clicking the avatars. We use fancybox to show these profiles.]]>
+    </Description>
+    <Version>
+      <![CDATA[02.00.01]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_24_OurTeam/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.mousewheel.min.js,jquery.fancybox.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Subtitle,Picture,ContentText,Options,Media]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/OurTeam.aspx]]>
+    </DemoUrl>
+	  <Responsive><![CDATA[true]]></Responsive>
+   
+  </EffectDB>
+</DNNGo_DNNGallery>

@@ -1,0 +1,185 @@
+﻿.Theme_21_LinkAndZoom_Line{
+	margin:0px;	
+	padding:0px;
+	position:relative;
+	clear:both;
+}
+.Theme_21_LinkAndZoom_Line ul {
+	margin:0;
+	padding:0; 
+	list-style:none;
+	display:block;
+}
+.Theme_21_LinkAndZoom_Line li{
+		float:left;
+		margin:0px 6px;
+		list-style:none;
+}
+.Theme_21_LinkAndZoom_Line h3{
+	margin:8px 0px 5px 0px;
+}
+.Theme_21_LinkAndZoom_Line li .carousel_title,
+.Theme_21_LinkAndZoom_Line li .carousel_title{
+	padding:10px 0;
+	text-align:center;
+	margin:0;
+	border-left:1px solid #dedbdb;
+	border-right:1px solid #dedbdb;
+	background:#f9f9f9;
+}
+.Theme_21_LinkAndZoom_Line li .carousel_cap,
+.Theme_21_LinkAndZoom_Line li .carousel_cap{
+	padding:0px 20px 10px;
+	text-align:center;
+	background:#f9f9f9;
+	border:1px solid #dedbdb;
+	border-top:none;
+	}
+.Theme_21_LinkAndZoom_Line .prev{
+	text-indent:-9999px;
+	white-space:nowrap;
+	overflow:hidden;
+	width:23px;
+	height:23px;
+	background:url(images/arrow_l.png) 50% 50% no-repeat ;
+	display:block;
+	cursor: pointer;
+	top:-39px;
+	position:absolute;
+	left:auto;
+	right:33px;
+	outline:none;
+	transition: 		background-color ease-in 200ms;
+	-moz-transition: 	background-color ease-in 200ms; /* Firefox 4 */
+	-webkit-transition: background-color ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 		background-color ease-in 200ms; /* Opera */
+	-ms-transition: 	background-color ease-in 200ms; /* IE9? */
+}
+.Theme_21_LinkAndZoom_Line .prev:hover{
+}
+.Theme_21_LinkAndZoom_Line .next{
+	text-indent:-9999px;
+	white-space:nowrap;
+	overflow:hidden;
+	width:23px;
+	height:23px;
+	background:url(images/arrow_r.png) 50% 50% no-repeat ;
+	display:block;
+	cursor:pointer;
+	top:-39px;
+	position:absolute;
+	right:8px;
+	outline:none;
+	transition: 		background-color ease-in 200ms;
+	-moz-transition: 	background-color ease-in 200ms; /* Firefox 4 */
+	-webkit-transition: background-color ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 		background-color ease-in 200ms; /* Opera */
+	-ms-transition: 	background-color ease-in 200ms; /* IE9? */
+}
+.Theme_21_LinkAndZoom_Line .next:hover{
+}
+.Theme_21_LinkAndZoom_Line .pager {
+	text-align:center;
+	height:15px;
+	line-height:15px;
+	padding:15px 0 10px 0;
+}
+
+.Theme_21_LinkAndZoom_Line .pager a {
+ 	text-decoration:none;
+	display:inline-block;
+	width:15px;
+	height:15px;
+ 	text-decoration: none;
+	background:#d7d7d7;
+	text-indent:-100px;
+	overflow:hidden;
+	margin-right:10px;
+	border-radius:11px;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	background:#a3a3a3;
+}
+.Theme_21_LinkAndZoom_Line .pager a span { 
+}
+*+html .Theme_21_LinkAndZoom_Line .pager a{
+	display:inline;	
+}
+.Theme_21_LinkAndZoom_Line .pager a.selected,
+.Theme_21_LinkAndZoom_Line .prev:hover,
+.Theme_21_LinkAndZoom_Line .next:hover  {
+	background-color:#f64737;	
+}
+.Theme_21_LinkAndZoom_Line .timer {
+	background-color: #999;
+	height: 6px;
+	width: 0px;
+}
+.Theme_21_LinkAndZoom_Line .carousel_image a{
+	display: block;	
+}
+.Theme_21_LinkAndZoom_Line .carousel_image{ 
+	position:relative;
+	border-bottom-style:solid;
+	border-bottom-width:7px;
+	border-bottom-color:#d3d3d3;
+	transition: 		border-bottom-color ease-in 200ms;
+	-moz-transition: 	border-bottom-color ease-in 200ms; /* Firefox 4 */
+	-webkit-transition: border-bottom-color ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 		border-bottom-color ease-in 200ms; /* Opera */
+	-ms-transition: 	border-bottom-color ease-in 200ms; /* IE9? */
+}
+.Theme_21_LinkAndZoom_Line li:hover .carousel_image,
+.Theme_21_LinkAndZoom_Line li:hover .carousel_image{
+	border-bottom-color:#f64737;
+	}
+.Theme_21_LinkAndZoom_Line .Icon_list { 
+	position:absolute;
+	top:50%; 
+	left:50%;
+	height:61px; width:100%; 
+	transition:all ease 400ms;
+	-moz-transition:all ease 400ms; /* Firefox 4 */
+	-webkit-transition:all ease 400ms; /* Safari and Chrome */
+	-o-transition:all ease 400ms; /* Opera */
+	-ms-transition:all ease 400ms; /* IE9? */
+	z-index:-1;
+	opacity:0;
+ }
+.Theme_21_LinkAndZoom_Line .carousel_image:hover .Icon_list {
+	transition:all ease 1000ms;
+	-moz-transition:all ease 1000ms; /* Firefox 4 */
+	-webkit-transition:all ease 1000ms; /* Safari and Chrome */
+	-o-transition:all ease 1000ms; /* Opera */
+	-ms-transition:all ease 1000ms; /* IE9? */
+	z-index:1000;
+	opacity:1;
+} 
+	
+.Theme_21_LinkAndZoom_Line .Icon_zoom {
+	background: url(images/Icon.png) no-repeat 0px 0px ;
+	width:61px ; 
+	height:61px; 
+	position:absolute ; 
+	bottom:50%; 
+	left:-61px;    
+}
+.Theme_21_LinkAndZoom_Line .Icon_link {
+	background: url(images/Icon.png) no-repeat -62px 0px ;
+	width:61px ; 
+	height:61px;
+	position:absolute ; 
+	bottom:50%; 
+	left:0px; 
+}
+.Theme_21_LinkAndZoom_Line .Icon_list_2 .Icon_zoom  {
+	left:-30px;
+
+ }
+.Theme_21_LinkAndZoom_Line .Icon_list_3 .Icon_link  {
+	left:-30px;
+
+ }
+
+
+

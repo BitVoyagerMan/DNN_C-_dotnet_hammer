@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <Setting>
+      <Name>
+        <![CDATA[ width ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Width]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 700 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ height ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Height ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 300 ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[ px ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ delay ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Delay ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ 3000 ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ How long between slideshow transitions in AutoPlay mode (in milliseconds)  ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+
+      <Name>
+        <![CDATA[ animationTime ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ AnimationTime ]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ 600 ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[100]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ text ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ How long the slideshow transition takes (in milliseconds)  ]]>
+      </Description>
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+    <Setting>
+
+      <Name>
+        <![CDATA[ position ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Description Position ]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ left ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[left,right,top,bottom]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+    <Setting>
+
+      <Name>
+        <![CDATA[ mode ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Mode ]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ horizontal ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[horizontal,vertical,fade]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ Set mode to "horizontal", "vertical" or "fade"  ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+    <Setting>
+
+      <Name>
+        <![CDATA[ easing ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Easing ]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ swing ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[150]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[ linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ Anything other than "linear" or "swing" requires the easing plugin or jQuery UI ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+
+
+    <Setting>
+
+      <Name>
+        <![CDATA[ buildArrows ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Display Arrows ]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ If true, builds the forwards and backwards buttons   ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+
+
+
+
+    <Setting>
+
+      <Name>
+        <![CDATA[ buildNavigation ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Display Navigation]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ If true, builds a list of anchor links to link to each panel  ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+
+
+    <Setting>
+
+      <Name>
+        <![CDATA[ buildStartStop ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Display StartStop ]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ If true, builds the start/stop button ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+
+
+
+
+    <Setting>
+
+      <Name>
+        <![CDATA[ toggleArrows ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Toggle Arrows ]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ If true, side navigation arrows will slide out on hovering & hide @ other times  ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+
+    <Setting>
+
+      <Name>
+        <![CDATA[ toggleControls ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Toggle Controls]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ if true, slide in controls  on hover and slide change, hide @ other times]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+
+    <Setting>
+
+      <Name>
+        <![CDATA[ autoPlay ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Auto Play ]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ true ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ If true, the slideshow will start running; replaces "startStopped" option  ]]>
+      </Description>
+
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+
+    <Setting>
+
+      <Name>
+        <![CDATA[ playRtl ]]>
+      </Name>
+
+      <Alias>
+        <![CDATA[ Play Rtl]]>
+      </Alias>
+
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+
+      <Width>
+        <![CDATA[80]]>
+      </Width>
+
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+
+      <Description>
+        <![CDATA[ If true, the slideshow will move right-to-left   ]]>
+      </Description>
+
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+
+    </Setting>
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

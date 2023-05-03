@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_21_LinkAndZoom]]>
+    </Name>
+    <Description>
+      <![CDATA[carouFredSel is a DNN Module that turns any kind of HTML element into a carousel. It can scroll one or multiple items simultaneously, horizontal or vertical, infinite and circular, automatically or by user interaction. Oh, and it's responsive too.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.03.03]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_21_LinkAndZoom/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.carouFredSel-6.2.1.js,jquery.touchSwipe.min.js,jquery.hoverIntent.min.js,jquery.ba-throttle-debounce.min.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.mousewheel.min.js,jquery.fancybox.css,jquery.fancybox.js,jquery.cookie.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Picture,Thumbnails,UrlLink,ContentText,Options]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/CarouFredSel.aspx]]>
+    </DemoUrl>
+	<Responsive><![CDATA[true]]></Responsive>
+  </EffectDB>
+</DNNGo_DNNGallery>

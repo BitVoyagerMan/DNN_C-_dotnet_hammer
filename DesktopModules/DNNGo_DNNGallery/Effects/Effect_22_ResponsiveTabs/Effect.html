@@ -1,0 +1,57 @@
+﻿
+
+<div class="$ThemeName" id="ResponsiveTabs_${ModuleID}">
+  <ul class="resp-tabs-list">
+    #if($DataList.Count > 0)
+      #foreach($DataItem in $DataList)
+      <li><span>$DataItem.Title</span></li>
+      #end
+      #end
+  </ul>
+  <div class="resp-tabs-container">
+  
+      #if($DataList.Count > 0)
+      #foreach($DataItem in $DataList)
+     <div class="resp_container">
+      <div class="resp_margin"> $DataItem.ContentText </div>
+    </div>
+      #end
+      #end
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+	$('#ResponsiveTabs_${ModuleID}').easyResponsiveTabs({
+		type: 'vertical',
+		width: 'auto',
+		fit: true,
+		switchingtime:${xf.ViewXmlSetting("animationtime","200")}
+		})
+		
+});
+	
+</script> 
+
+<style type="text/css">
+
+
+
+.$ThemeName ul.resp-tabs-list li.resp-tab-active span{
+	color:${xf.ViewXmlSetting("Color","#00bfa7")};
+	background-color:${xf.ViewXmlSetting("Color","#00bfa7")}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+.$ThemeName .resp-tab-active, 
+.$ThemeName .resp-tab-active:hover{
+	background-color:${xf.ViewXmlSetting("Color","#00bfa7")}
+}
+}
+
+
+</style>

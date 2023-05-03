@@ -1,0 +1,70 @@
+﻿<style type="text/css">
+.$ThemeName .sponsor${ModuleID}{
+	width:${xf.ViewXmlSetting("width","180")}px;
+	height:${xf.ViewXmlSetting("height",180)}px;
+}
+</style>
+
+
+<div id="FlipWall${ModuleID}" class="$ThemeName">
+    <div class="sponsorListHolder">
+        #if($DataList.Count > 0)
+                 #foreach($DataItem in $DataList)
+				    <div class="sponsor sponsor${ModuleID}" title="Click to flip">
+					    <div class="sponsorFlip">
+						    <img src="${xf.ViewLinkUrl($DataItem.Picture)}" alt="More about $DataItem.Title" />
+					    </div>
+					    <div class="sponsorData">
+						    <div class="sponsorDescription">
+							    $DataItem.Title
+						    </div>
+						  <div class="sponsorURL">
+                                $DataItem.ContentText
+						  </div>
+					    </div>
+				    </div>
+	 
+                #end
+             #end
+        
+    	    <div class="clear"></div>
+     </div>
+        ${Pager}
+ </div>
+
+
+
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+	    /* The following code is executed once the DOM is loaded */
+	    $('#FlipWall${ModuleID} .sponsorFlip').bind("click", function () {
+	        // $(this) point to the clicked .sponsorFlip element (caching it in elem for speed):
+	        var elem = $(this);
+	        // data('flipped') is a flag we set when we flip the element:
+	        if (elem.data('flipped')) {
+	            // If the element has already been flipped, use the revertFlip method
+	            // defined by the plug-in to revert to the default state automatically:
+	            elem.revertFlip();
+	            // Unsetting the flag:
+	            elem.data('flipped', false)
+	        }
+	        else {
+	            // Using the flip method defined by the plugin:
+	            elem.flip({
+	                direction: '${xf.ViewXmlSetting("direction","left")}',
+	                speed: ${xf.ViewXmlSetting("speed",350)},
+	                onBefore: function () {
+	                    // Insert the contents of the .sponsorData div (hidden from view with display:none)
+	                    // into the clicked .sponsorFlip div before the flipping animation starts:
+	                    elem.html(elem.siblings('.sponsorData').html());
+	                }
+	            });
+	            // Setting the flag:
+	            elem.data('flipped', true);
+	        }
+	    });
+	});
+</script>
+ 
+
+  

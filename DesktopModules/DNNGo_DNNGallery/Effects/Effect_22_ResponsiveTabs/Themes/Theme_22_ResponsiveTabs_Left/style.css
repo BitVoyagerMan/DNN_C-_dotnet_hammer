@@ -1,0 +1,162 @@
+﻿/*tabs top*/
+/*tabs Left*/
+.Theme_22_ResponsiveTabs_Left{
+	clear:both;
+}
+.Theme_22_ResponsiveTabs_Left:after {
+	clear:both;
+	content:".";
+	height:0px;
+	font-size:0px;
+	visibility:hidden;
+	display:block;
+}
+.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list {
+	float: left;
+	margin:0;
+	padding:1px 0;
+}
+.Theme_22_ResponsiveTabs_Left .resp-tabs-container {
+	padding:0;
+	margin:0;
+	overflow:auto;
+}
+.Theme_22_ResponsiveTabs_Left .resp-tab-content .resp_margin{
+	margin-left:25px;
+}
+
+.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list li {
+	font-size: 13px;
+	margin: 0;
+	list-style: none;
+	border-top:1px solid #e8e8e8;
+	border-right:1px solid #e8e8e8;
+	position:relative;
+	z-index:1;
+	min-width:120px;
+	transition: 		background-color ease-in 200ms;
+	-moz-transition: 	background-color ease-in 200ms; /* Firefox 4 */
+	-webkit-transition:     background-color ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 		background-color ease-in 200ms; /* Opera */
+	-ms-transition: 	background-color ease-in 200ms; /* IE9? */
+}
+.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list li:first-child{
+	border-top:none ;
+}
+.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list li span{
+	border: none;
+	padding: 8px 15px;
+	display:block;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list li:hover{
+	background:#eeeeee;
+}
+.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list li:hover span {
+	color:#333;}
+.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list li.resp-tab-active{
+	position: relative;
+	z-index: 1;
+	color:#FFF!important;
+}
+.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list li.resp-tab-active span {
+	background-image: url(images/tab-left-active-bg.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	margin-right: -16px;
+	padding-right:31px;
+	color:#FFF!important;
+}
+.Theme_22_ResponsiveTabs_Left  h2.resp-accordion,
+.Theme_22_ResponsiveTabs_Left .resp_container {
+   display:none;
+}
+
+@media only screen and (max-width: 768px) {
+	.Theme_22_ResponsiveTabs_Left ul.resp-tabs-list {
+		display: none;
+	}
+	.Theme_22_ResponsiveTabs_Left h2.resp-accordion {
+		display: block;
+		border:1px solid #e1e1e1;
+		border-bottom:none;
+		font-size:12px; 
+		font-weight:normal;
+		padding: 8px 15px;
+		cursor:pointer;
+		line-height: 1.6;
+		margin:0;
+		color:#919191;
+		transition: 		background-color ease-in 200ms;
+		-moz-transition: 	background-color ease-in 200ms; /* Firefox 4 */
+		-webkit-transition:     background-color ease-in 200ms; /* Safari and Chrome */
+		-o-transition: 		background-color ease-in 200ms; /* Opera */
+		-ms-transition: 	background-color ease-in 200ms; /* IE9? */
+	}
+	.Theme_22_ResponsiveTabs_Left .resp-arrow {
+		float:right;
+		position: relative;
+		top: 1px;
+		text-align:center;
+		font-size:16px;
+		line-height: 1.2;
+		display: inline-block;
+		font-family: 'Glyphicons Regular';
+		font-style: normal;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.Theme_22_ResponsiveTabs_Left .resp-arrow:empty{
+		width: 1em;
+	}
+	.Theme_22_ResponsiveTabs_Left .resp-arrow:before {
+		content: "\002B";
+	}
+	.Theme_22_ResponsiveTabs_Left .resp-tab-active .resp-arrow:before {
+		content: "\2212";
+	}
+	.Theme_22_ResponsiveTabs_Left .resp-accordion:hover {
+		background:#eeeeee;
+		color:#333333;
+	}
+	.Theme_22_ResponsiveTabs_Left .resp-tab-active,
+	.Theme_22_ResponsiveTabs_Left .resp-tab-active:hover{
+		background:#69b532;
+	}
+	.Theme_22_ResponsiveTabs_Left .resp-tab-active span{
+		color:#FFF;
+	}
+	
+	.Theme_22_ResponsiveTabs_Left .resp-tabs-container{
+		width:100%;
+		margin:0px;
+		border-radius:0px;
+		-moz-border-radius:0px;
+		-webkit-border-radius:0px;
+		border-bottom:1px solid #e1e1e1;
+	}
+	.Theme_22_ResponsiveTabs_Left .resp-tabs-container .resp_margin {
+		margin:15px;
+	}
+	.Theme_22_ResponsiveTabs_Left .resp-tab-content{
+		border:1px solid #e1e1e1;
+		border-bottom:none;
+		width:auto !important;
+		padding:0px;
+		margin-bottom:0px;
+		clear:both;
+		display:none;
+	}
+
+
+	.Theme_22_ResponsiveTabs_Left .resp-tab-content:after {
+		clear:both;
+		content:".";
+		height:0px;
+		font-size:0px;
+		visibility:hidden;
+		display:block;
+	}
+}

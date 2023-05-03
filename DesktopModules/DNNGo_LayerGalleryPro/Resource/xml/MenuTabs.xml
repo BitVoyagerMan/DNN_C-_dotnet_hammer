@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_LayerGalleryPro>
+  <Tabs>
+    <!--Dashboard-->
+    <!--<TabItem>
+      <Token><![CDATA[Dashboard]]></Token>
+      <Title><![CDATA[Dashboard]]></Title>
+      --><!--<Src><![CDATA[Manager_Dashboard.ascx]]></Src>--><!--
+      <Src><![CDATA[]]></Src>
+      <Icon><![CDATA[fa fa-dashboard]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[]]></IsAdministrator>
+    </TabItem>-->
+
+    <!--数据管理-->
+    <!--<TabItem>
+      <Token><![CDATA[DataList]]></Token>
+      <Title><![CDATA[Gallery]]></Title>
+      <Src><![CDATA[Setting_ManagerLists.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[]]></IsAdministrator>
+    </TabItem>-->
+	 
+    <TabItem>
+      <Token><![CDATA[Sliders]]></Token>
+      <Title><![CDATA[3D Sliders]]></Title>
+      <Src><![CDATA[Setting_ManagerSliders.ascx]]></Src>
+      <Icon><![CDATA[fa clip-list-4]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[]]></IsAdministrator>
+    </TabItem>
+    
+  
+    <TabItem>
+      <Token><![CDATA[ImportExport]]></Token>
+      <Title><![CDATA[Import&Export]]></Title>
+      <Src><![CDATA[Setting_ManagerImportExport.ascx]]></Src>
+      <Icon><![CDATA[fa fa-retweet]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[]]></IsAdministrator>
+    </TabItem>
+
+    <!--Media-->
+    <TabItem>
+      <Token><![CDATA[Library]]></Token>
+      <Title><![CDATA[Library]]></Title>
+      <Src><![CDATA[Setting_Library.ascx]]></Src>
+      <Icon><![CDATA[fa clip-image]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    <!--Effects-->
+
+ 
+
+    <!--Settings-->
+    <TabItem>
+      <Token><![CDATA[Setting]]></Token>
+      <Title><![CDATA[General Settings]]></Title>
+      <Src><![CDATA[Settings.ascx]]></Src>
+      <Icon><![CDATA[fa fa-wrench]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+
+
+
+    <!--License-->
+    <TabItem>
+      <Token><![CDATA[License]]></Token>
+      <Title><![CDATA[License]]></Title>
+      <Src><![CDATA[License.ascx]]></Src>
+      <Icon><![CDATA[clip-globe]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+
+
+
+    <!--Error-->
+    <TabItem>
+      <Token><![CDATA[Error]]></Token>
+      <Title><![CDATA[Error]]></Title>
+      <Src><![CDATA[Manager_ErrorCatch.ascx]]></Src>
+      <Icon><![CDATA[clip-globe]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    
+    <!--<TabItem>
+      <Token><![CDATA[Dashboard]]></Token>
+      <Title><![CDATA[Dashboard]]></Title>
+      --><!--<Src><![CDATA[Manager_Dashboard.ascx]]></Src>--><!--
+      <Src><![CDATA[]]></Src>
+      <Icon><![CDATA[fa fa-dashboard]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[]]></IsAdministrator>
+    </TabItem>-->
+
+    
+    
+    
+  </Tabs>
+</DNNGo_LayerGalleryPro>

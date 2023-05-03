@@ -1,0 +1,34 @@
+﻿ 
+
+<div class="$ThemeName" style="width:${xf.ViewXmlSetting("width","100%")};">
+<div id="tabs_${ModuleID}">
+   <ul>
+     #if($DataList.Count > 0)
+         #foreach($DataItem in $DataList)
+          <li class="tabitem_$velocityCount"><a href="#tabs_${ModuleID}_$velocityCount">$DataItem.Title</a></li>
+       #end
+     #end
+        
+   </ul>
+    #if($DataList.Count > 0)
+         #foreach($DataItem in $DataList)
+           <div id="tabs_${ModuleID}_$velocityCount" >
+              $DataItem.ContentText
+           </div>
+       #end
+     #end
+</div>
+</div>
+	<script type="text/javascript">
+	    jQuery(document).ready(function ($) {
+	        $("#tabs_${ModuleID}").tabs({
+	            collapsible: ${xf.ViewXmlSetting("collapsible","true")},
+	            fx: { ${xf.ViewXmlSetting("fx","opacity")}: 'toggle',duration:${xf.ViewXmlSetting("duration","150")} }, //opacity,height,width  
+	            event: "${xf.ViewXmlSetting("event","click")}", //mouseover,click
+	            cookie: { expires: ${xf.ViewXmlSetting("SelectedExpires",0)}}// store cookie for a day, without, it would be a session cookie
+	        });//.tabs('rotate', ${xf.ViewXmlSetting("rotate",3000)},${xf.ViewXmlSetting("RotateStop","false")}); 
+	    });
+	</script>
+ 
+
+  

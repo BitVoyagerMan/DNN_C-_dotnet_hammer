@@ -1,0 +1,286 @@
+/*
+    anythingSlider-E002-Blue
+
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+/* Overall Wrapper */
+.wrapper_Theme_01_Blue .loading li{
+	display:none;
+}
+.wrapper_Theme_01_Blue .loading{
+	background:url(images/loading.gif) 50% 50% no-repeat;
+}
+
+/******* SET DEFAULT DIMENSIONS HERE ********/
+.anythingSlider-Theme_01_Blue {
+	padding:0px 28px 30px 28px;
+	margin:0px auto;
+}
+* html .anythingSlider-Theme_01_Blue{
+	padding-bottom:0px;
+}
+/****** SET COLORS HERE *******/
+/* Default State */
+.anythingSlider-Theme_01_Blue.activeSlider .thumbNav a.cur,
+.anythingSlider-Theme_01_Blue.activeSlider .thumbNav a {
+	display:block;
+}
+.anythingSlider-Theme_01_Blue .anythingWindow {
+}
+.anythingSlider-Theme_01_Blue .start-stop {
+	background-color: #040;
+	color: #fff;
+}
+.anythingSlider-Theme_01_Blue .start-stop.playing {
+	background-color: #800;
+}
+.anythingSlider-Theme_01_Blue .start-stop:hover, .anythingSlider-Theme_01_Blue .start-stop.hover {
+	color: #ddd;
+}
+
+/* Active State */
+.anythingSlider-Theme_01_Blue.activeSlider .anythingWindow {
+
+}
+
+.anythingSlider-Theme_01_Blue .start-stop {
+	background-color: #080;
+	color: #fff;
+}
+.anythingSlider-Theme_01_Blue .start-stop.playing {
+	background-color: #d00;
+}
+.anythingSlider-Theme_01_Blue .start-stop:hover,
+.anythingSlider-Theme_01_Blue .start-stop.hover {
+	color: #fff;
+}
+
+/**** DO NOT CHANGE BELOW THIS LINE ****/
+/* anythingSlider-E002-Blue viewport window */
+.anythingSlider-Theme_01_Blue .anythingWindow {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/* wrapper: 45px right & left padding for the arrows, 28px @ bottom for navigation */
+.anythingSlider-Theme_01_Blue {
+	position: relative;
+
+}
+/* anythingSlider-E002-Blue base UL */
+ul.anythingBase {
+	background: transparent;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+ul.anythingBase li.panel {
+	background: transparent;
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+/* Navigation Arrows */
+.anythingSlider-Theme_01_Blue .arrow {
+	top: 50%;
+	position: absolute;
+	display: block;
+	height: 35px;
+	width: 28px;
+}
+.anythingSlider-Theme_01_Blue .arrow a {
+	display: block;
+	height: 35px;
+	margin: -17px 0 0 0;
+	width: 28px;
+	text-align: center;
+	outline: 0;
+	background: url(images/arrow.jpg) no-repeat;
+	text-indent: -9999px;
+	position:relative;
+}
+.anythingSlider-Theme_01_Blue .forward { right: 0px; }
+.anythingSlider-Theme_01_Blue .back { left: 0px;; }
+.anythingSlider-Theme_01_Blue .forward a { background-position: -28px 0px; }
+.anythingSlider-Theme_01_Blue .back a { background-position: 0px 0px; }
+.anythingSlider-Theme_01_Blue .forward a:hover, .anythingSlider-Theme_01_Blue .forward a.hover {background-position: -28px -35px; }
+.anythingSlider-Theme_01_Blue .back a:hover, .anythingSlider-Theme_01_Blue .back a.hover { background-position: 0px -35px; }
+
+/* Navigation Links */
+.anythingSlider-Theme_01_Blue .anythingControls { outline: 0;  padding:5px 0px;}
+.anythingSlider-Theme_01_Blue .thumbNav { margin: 0; padding:0px; list-style:none; text-align:center;}
+.anythingSlider-Theme_01_Blue .thumbNav li { display: inline-block; margin: 0; padding:0px; list-style:none; margin-right:7px;}
+*+html .anythingSlider-Theme_01_Blue .thumbNav li{
+	display:inline;
+}
+* html .anythingSlider-Theme_01_Blue .thumbNav li{
+	display:inline;
+}
+.anythingSlider-Theme_01_Blue .thumbNav a {
+	width:20px;
+	height:20px;
+	outline:none;
+	background:url(images/cirde.jpg) 0px 0px no-repeat;
+	text-indent:-9999px;
+	overflow:hidden;
+	display:block;
+}
+.anythingSlider-Theme_01_Blue .thumbNav a:hover {
+	background:url(images/cirde.jpg) 0px -20px no-repeat;
+}
+.anythingSlider-Theme_01_Blue .thumbNav a.cur{
+	background:url(images/cirde.jpg) 0px -20px no-repeat;	
+}	
+
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+.anythingSlider-Theme_01_Blue.rtl .thumbNav a { float: right; } /* reverse order of nav links */
+.anythingSlider-Theme_01_Blue.rtl .thumbNav { float: left; }    /* move nav link group to left */
+/* .anythingSlider-Theme_01_Blue.rtl .start-stop { float: right; } */ /* move start/stop button - in case you want to switch sides */
+
+/* Autoplay Start/Stop button */
+.anythingSlider-Theme_01_Blue .start-stop {
+	display:none!important;
+	background-repeat: repeat-x;
+	background-position: center top;
+	padding: 2px 5px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	z-index: 100;
+	outline: 0;
+}
+.anythingSlider-Theme_01_Blue .start-stop:hover, .anythingSlider-Theme_01_Blue .start-stop.hover { background-image: none; }
+
+.anythingSlider-Theme_01_Blue, .anythingSlider-Theme_01_Blue .anythingWindow, .anythingSlider-Theme_01_Blue .thumbNav a, .anythingSlider-Theme_01_Blue .arrow a, .anythingSlider-Theme_01_Blue .start-stop {
+
+}
+
+/***********************
+  COMMON SLIDER STYLING
+ ***********************/
+/* Overall Wrapper */
+.anythingSlider {
+	display: block;
+	overflow: visible !important;
+	position: relative;
+}
+/* anythingSlider viewport window */
+.anythingSlider .anythingWindow {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/* anythingSlider base (original element) */
+.anythingSlider .anythingBase {
+	background: transparent;
+	list-style: none;
+	position: absolute;
+	overflow: visible !important;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation arrow text; indent moved to span inside "a", for IE7;
+  apparently, a negative text-indent on an "a" link moves the link as well as the text */
+.anythingSlider .arrow span {
+	display: block;
+	visibility: hidden;
+}
+/* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+.anythingSlider .arrow.disabled {
+	display: none;
+}
+/* all panels inside the slider; horizontal mode */
+.anythingSlider .panel {
+	background: transparent;
+	display: block;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+	margin: 0;
+	position:relative;
+}
+/* vertical mode */
+.anythingSlider .vertical .panel {
+	float: none;
+}
+/* fade mode */
+.anythingSlider .fade .panel {
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:0;
+}
+/* fade mode active page - visible & on top */
+.anythingSlider .fade .activePage {
+	z-index: 1;
+}
+
+/***********************
+  RTL STYLING
+ ***********************/
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+.anythingSlider.rtl .anythingWindow {
+	direction: ltr;
+	unicode-bidi: bidi-override;
+}
+.anythingSlider.rtl .anythingControls ul { float: left; } /* move nav link group to left */
+.anythingSlider.rtl .anythingControls ul a { float: right; } /* reverse order of nav links */
+.anythingSlider.rtl .start-stop { /* float: right; */ } /* move start/stop button - in case you want to switch sides */
+
+/* probably not necessary, but added just in case */
+.anythingSlider,
+.anythingSlider .anythingWindow,
+.anythingSlider .anythingControls ul a,
+.anythingSlider .arrow a,
+.anythingSlider .start-stop {
+	transition-duration: 0;
+	-o-transition-duration: 0;
+	-moz-transition-duration: 0;
+	-webkit-transition-duration: 0;
+}
+
+
+
+
+
+/* position caption close button */
+.anythingSlider-Theme_01_Blue .caption-top .close,
+.anythingSlider-Theme_01_Blue .caption-right .close,
+.anythingSlider-Theme_01_Blue .caption-bottom .close,
+.anythingSlider-Theme_01_Blue .caption-left .close   { font-size: 80%; cursor: pointer; float: right; display: inline-block; margin:8px;}
+
+
+/* captions */
+/* set to position: relative here in case javascript is disabled, script sets captions to position: absolute */
+.anythingSlider-Theme_01_Blue .caption-top,
+.anythingSlider-Theme_01_Blue .caption-right,
+.anythingSlider-Theme_01_Blue .caption-bottom,
+.anythingSlider-Theme_01_Blue .caption-left { background: #000; width:100%; color: #fff; padding: 0px; margin: 0; position: relative; z-index: 10; opacity: .8; filter: alpha(opacity=80); }
+
+/* Top caption  */
+.anythingSlider-Theme_01_Blue .caption-top  { left: 0; top: 0; }
+
+/* Right caption  */
+.anythingSlider-Theme_01_Blue .caption-right  { right: 0; bottom: 0;   }
+
+/* Bottom caption   */
+.anythingSlider-Theme_01_Blue .caption-bottom { left: 0; bottom: 0;  }
+
+/* Left caption  */
+.anythingSlider-Theme_01_Blue .caption-left   { left: 0; bottom: 0;   }
+
+.anythingSlider-Theme_01_Blue .cap-in     { padding:10px; margin:0px; color:#fff;}
